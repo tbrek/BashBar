@@ -28,6 +28,8 @@ class StatusMenuController: NSObject {
     @IBAction func quitClicked(_ sender: NSMenuItem) {
         NSApplication.shared.terminate(self)
     }
+    @IBAction func Menu1(_ sender: Any) {
+    }
     
     
 }
