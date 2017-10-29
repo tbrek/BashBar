@@ -12,12 +12,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BashBar" customModuleProvider="target">
-            <connections>
-                <outlet property="cmd1_0" destination="iuT-gL-5La" id="SAz-kT-mzz"/>
-                <outlet property="lab1_0" destination="aUa-z7-Ogt" id="l9C-ak-vcv"/>
-            </connections>
-        </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BashBar" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="gfw-vL-vyp" customClass="StatusMenuController" customModule="BashBar" customModuleProvider="target">
             <connections>
@@ -26,20 +21,26 @@
         </customObject>
         <menu id="54M-Wx-fgy">
             <items>
-                <menuItem title="subMenu1" hidden="YES" id="qxr-me-aBd" userLabel="m_sublab1">
+                <menuItem title="subMenu1" hidden="YES" id="qxr-me-aBd" userLabel="m_lab1_0">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="subMenu1" id="D7S-k5-W7s">
                         <items>
-                            <menuItem title="Item" toolTip="Testing tool tip" id="OtF-0r-NAd" userLabel="m_sublab1_0">
+                            <menuItem title="Item" toolTip="Testing tool tip" id="OtF-0r-NAd" userLabel="m_lab1_1">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
-                            <menuItem title="Item" id="1dq-U8-Uc9" userLabel="m_sublab1_1">
+                            <menuItem title="Item" id="1dq-U8-Uc9" userLabel="m_lab1_2">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Item" id="Sj4-7g-IDc" userLabel="m_lab1_3">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Item" id="ABH-Qi-LXu" userLabel="m_lab1_4">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                             </menuItem>
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Menu1" id="xWo-0X-TjN" userLabel="m_lab1_0">
+                <menuItem title="Menu1" id="xWo-0X-TjN" userLabel="m_lab1">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="nKY-1w-JTg"/>
@@ -56,7 +57,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1364" height="828"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1364" height="828"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -79,13 +80,40 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="subMenuCheck1:" target="-1" id="59x-wA-Wbx"/>
+                                                <action selector="checkbox1:" target="C2b-P0-gDC" id="eQh-lT-Zl0"/>
                                             </connections>
                                         </button>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gkx-jX-mFr" userLabel="Label1">
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gkx-jX-mFr" userLabel="Label1_0">
                                             <rect key="frame" x="15" y="678" width="37" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="aEh-o2-Z9k">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8uk-cy-Pzu" userLabel="Label1_1">
+                                            <rect key="frame" x="15" y="631" width="62" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="lbA-0l-4rF">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-8u-KGi" userLabel="Command1_1">
+                                            <rect key="frame" x="373" y="631" width="128" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="kwg-HA-0Df">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1o-FA-bbx" userLabel="Command1_0">
+                                            <rect key="frame" x="373" y="678" width="93" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="tNo-N9-8gP">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -100,13 +128,40 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v1o-FA-bbx" userLabel="Command1">
-                                            <rect key="frame" x="373" y="678" width="93" height="17"/>
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jq-Ga-SxV" userLabel="p_lab1_1">
+                                            <rect key="frame" x="17" y="610" width="350" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="tNo-N9-8gP">
-                                                <font key="font" metaFont="smallSystem"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Fp8-0S-4aC">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-mX-hAq" userLabel="p_lab1_2">
+                                            <rect key="frame" x="17" y="584" width="350" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="QQ7-af-MWP">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NF7-5z-ECs" userLabel="p_lab1_3">
+                                            <rect key="frame" x="17" y="558" width="350" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="3zo-Qx-JGC">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PCu-5L-BxG" userLabel="p_lab1_4">
+                                            <rect key="frame" x="17" y="532" width="350" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="w2t-kn-dIW">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iuT-gL-5La" userLabel="p_cmd1_0">
@@ -118,43 +173,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8uk-cy-Pzu" userLabel="Sublabel1">
-                                            <rect key="frame" x="15" y="631" width="62" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="lbA-0l-4rF">
-                                                <font key="font" metaFont="smallSystem"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jq-Ga-SxV" userLabel="Ip_sublab1_0">
-                                            <rect key="frame" x="17" y="610" width="350" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Fp8-0S-4aC">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Adz-mX-hAq" userLabel="p_sublab1_1">
-                                            <rect key="frame" x="17" y="584" width="350" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="QQ7-af-MWP">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-8u-KGi" userLabel="Subcommand1">
-                                            <rect key="frame" x="373" y="631" width="128" height="17"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="kwg-HA-0Df">
-                                                <font key="font" metaFont="smallSystem"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOn-jQ-0Mj" userLabel="p_subcmd1_0">
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOn-jQ-0Mj" userLabel="p_cmd1_1">
                                             <rect key="frame" x="375" y="610" width="926" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="vvM-rX-Uyd">
@@ -163,10 +182,28 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-AZ-7q0" userLabel="p_subcmd1_1">
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-AZ-7q0" userLabel="p_cmd1_2">
                                             <rect key="frame" x="375" y="584" width="926" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="dC6-qW-KG6">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ij-TZ-8F4" userLabel="p_cmd1_3">
+                                            <rect key="frame" x="375" y="558" width="926" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="BVl-e4-dWF">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tz7-jx-BFt" userLabel="p_cmd1_4">
+                                            <rect key="frame" x="375" y="532" width="926" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="uJo-qd-bfR">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -205,17 +242,30 @@ Gw
         </window>
         <customObject id="C2b-P0-gDC" customClass="PreferencesController" customModule="BashBar" customModuleProvider="target">
             <connections>
+                <outlet property="Command1_0" destination="v1o-FA-bbx" id="90T-9C-WsB"/>
+                <outlet property="Command1_1" destination="FOm-8u-KGi" id="mqD-Hv-6DK"/>
+                <outlet property="Label1_1" destination="8uk-cy-Pzu" id="P09-We-laR"/>
                 <outlet property="cancelPref" destination="8R2-4B-4Qr" id="Bqn-ix-Fds"/>
-                <outlet property="cmd1_0" destination="iuT-gL-5La" id="2LF-RP-DvO"/>
-                <outlet property="cmd1_1" destination="uOn-jQ-0Mj" id="gRG-Ps-ygA"/>
-                <outlet property="cmd1_2" destination="b2e-AZ-7q0" id="psv-5D-CfD"/>
-                <outlet property="lab1_1" destination="2jq-Ga-SxV" id="fyU-5z-o94"/>
+                <outlet property="checkbox1" destination="0rE-Re-k6Y" id="wY4-81-Qld"/>
                 <outlet property="lab1_2" destination="Adz-mX-hAq" id="FGu-5g-XA7"/>
+                <outlet property="m_lab1" destination="xWo-0X-TjN" id="tF4-c2-DZZ"/>
+                <outlet property="m_lab1_0" destination="qxr-me-aBd" id="eJe-WC-5f3"/>
+                <outlet property="m_lab1_1" destination="OtF-0r-NAd" id="Bgk-DQ-Its"/>
+                <outlet property="m_lab1_2" destination="1dq-U8-Uc9" id="BfS-xE-COU"/>
+                <outlet property="m_lab1_3" destination="Sj4-7g-IDc" id="BpK-aq-yy6"/>
+                <outlet property="m_lab1_4" destination="ABH-Qi-LXu" id="wW8-ta-1sP"/>
                 <outlet property="menu1tab" destination="W08-ee-dt3" id="eo2-M6-3Ss"/>
+                <outlet property="p_cmd1_0" destination="iuT-gL-5La" id="qyB-05-VIP"/>
+                <outlet property="p_cmd1_1" destination="uOn-jQ-0Mj" id="l2f-FR-GT4"/>
+                <outlet property="p_cmd1_2" destination="b2e-AZ-7q0" id="fXW-t0-v6g"/>
+                <outlet property="p_cmd1_3" destination="5Ij-TZ-8F4" id="jZX-yH-xYo"/>
+                <outlet property="p_cmd1_4" destination="tz7-jx-BFt" id="Oub-1b-Xqe"/>
+                <outlet property="p_lab1_0" destination="aUa-z7-Ogt" id="qun-88-LaK"/>
+                <outlet property="p_lab1_1" destination="2jq-Ga-SxV" id="Bi5-Tn-viR"/>
+                <outlet property="p_lab1_2" destination="Adz-mX-hAq" id="uyE-NM-eVR"/>
+                <outlet property="p_lab1_3" destination="NF7-5z-ECs" id="ftg-TX-AbD"/>
+                <outlet property="p_lab1_4" destination="PCu-5L-BxG" id="GTK-eO-0d0"/>
                 <outlet property="savePref" destination="U57-PO-U0i" id="AmT-U0-me6"/>
-                <outlet property="sub1" destination="0rE-Re-k6Y" id="sZA-bZ-LgP"/>
-                <outlet property="subCmd1" destination="FOm-8u-KGi" id="1RH-bW-XrW"/>
-                <outlet property="subLabel1" destination="8uk-cy-Pzu" id="udC-6B-2Ps"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="TEm-os-iwh"/>
             </connections>
         </customObject>
