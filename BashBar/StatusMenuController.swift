@@ -10,6 +10,8 @@ import Cocoa
 
 class StatusMenuController: NSObject {
     
+    @IBOutlet weak var preferencesView: NSView!
+    @IBOutlet weak var preferencesWindow: NSWindow!
     @IBOutlet weak var bashMenu: NSMenu!
     
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)

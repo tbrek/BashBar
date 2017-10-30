@@ -2,15 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>menu1_title</key>
-	<string></string>
-	<key>lab1_0</key>
+	<key>checkbox_1</key>
+	<true/>
+	<key>p_lab1_0</key>
 	<string>Label0</string>
-	<key>cmd1_0</key>
+	<key>p_cmd1_0</key>
 	<string>Command0</string>
-	<key>lab1_1</key>
+	<key>p_lab1_1</key>
 	<string>Label1</string>
-	<key>cmd1_1</key>
+	<key>p_cmd1_1</key>
 	<string>Command1</string>
+	<key>p_lab1_2</key>
+	<string>Label2</string>
+	<key>p_cmd1_2</key>
+	<string>Command2</string>
+	<key>p_lab1_3</key>
+	<string>Label3</string>
+	<key>p_cmd1_3</key>
+	<string>Command3</string>
+	<key>p_lab1_4</key>
+	<string>Label4</string>
+	<key>p_cmd1_4</key>
+	<string>Command4</string>
 </dict>
 </plist>
