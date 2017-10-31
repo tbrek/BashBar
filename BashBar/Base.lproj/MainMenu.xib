@@ -12,18 +12,35 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BashBar" customModuleProvider="target">
+        <customObject id="sJd-RC-QzD" customClass="StatusMenuController" customModule="BashBar" customModuleProvider="target">
             <connections>
-                <outlet property="p_lab1_0" destination="aUa-z7-Ogt" id="QH9-gU-1fw"/>
+                <outlet property="Command1_0" destination="v1o-FA-bbx" id="zk5-7r-vBP"/>
+                <outlet property="Command1_1" destination="FOm-8u-KGi" id="Npo-lc-1Bv"/>
+                <outlet property="Label1_1" destination="8uk-cy-Pzu" id="6Bl-Mc-3RQ"/>
+                <outlet property="bashMenu" destination="54M-Wx-fgy" id="18W-gZ-iXN"/>
+                <outlet property="checkbox1" destination="0rE-Re-k6Y" id="UgW-xC-LWs"/>
+                <outlet property="m_lab1" destination="xWo-0X-TjN" id="2VR-p3-Vyn"/>
+                <outlet property="m_lab1_0" destination="qxr-me-aBd" id="vCG-FN-7fj"/>
+                <outlet property="m_lab1_1" destination="OtF-0r-NAd" id="Q8y-yG-3na"/>
+                <outlet property="m_lab1_2" destination="1dq-U8-Uc9" id="kiq-7S-bPh"/>
+                <outlet property="m_lab1_3" destination="Sj4-7g-IDc" id="42W-r6-eeq"/>
+                <outlet property="m_lab1_4" destination="ABH-Qi-LXu" id="C80-1o-kBB"/>
+                <outlet property="p_cmd1_0" destination="iuT-gL-5La" id="Ndi-o5-b5c"/>
+                <outlet property="p_cmd1_1" destination="uOn-jQ-0Mj" id="ID2-ug-iZr"/>
+                <outlet property="p_cmd1_2" destination="b2e-AZ-7q0" id="i7r-WE-mEK"/>
+                <outlet property="p_cmd1_3" destination="5Ij-TZ-8F4" id="JaE-iE-oYb"/>
+                <outlet property="p_cmd1_4" destination="tz7-jx-BFt" id="XSg-QZ-7dO"/>
+                <outlet property="p_lab1_0" destination="aUa-z7-Ogt" id="3Qt-VD-Pbo"/>
+                <outlet property="p_lab1_1" destination="2jq-Ga-SxV" id="uro-Sy-MzY"/>
+                <outlet property="p_lab1_2" destination="Adz-mX-hAq" id="VLm-Kb-Xav"/>
+                <outlet property="p_lab1_3" destination="NF7-5z-ECs" id="hgb-kN-sP4"/>
+                <outlet property="p_lab1_4" destination="PCu-5L-BxG" id="srD-2X-gGA"/>
+                <outlet property="preferencesView" destination="EiT-Mj-1SZ" id="vhG-bR-bg6"/>
+                <outlet property="preferencesWindow" destination="QvC-M9-y7g" id="DVE-Bn-Sqb"/>
             </connections>
         </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="BashBar" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="gfw-vL-vyp" customClass="StatusMenuController" customModule="BashBar" customModuleProvider="target">
-            <connections>
-                <outlet property="bashMenu" destination="54M-Wx-fgy" id="hOz-Cp-EjY"/>
-                <outlet property="preferencesView" destination="EiT-Mj-1SZ" id="PwY-t4-nxR"/>
-            </connections>
-        </customObject>
         <menu id="54M-Wx-fgy">
             <items>
                 <menuItem title="subMenu1" hidden="YES" id="qxr-me-aBd" userLabel="m_lab1_0">
@@ -52,13 +69,13 @@
                 <menuItem title="Preferences" id="Vuf-Vb-aDb">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="showPreferences:" target="C2b-P0-gDC" id="NaM-fI-dOp"/>
+                        <action selector="showPreferences:" target="sJd-RC-QzD" id="OZq-Tc-9ui"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Quit" id="hlG-lf-tY7">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="quitClicked:" target="gfw-vL-vyp" id="O8f-Zj-uov"/>
+                        <action selector="quitClicked:" target="sJd-RC-QzD" id="WiH-Wt-3ly"/>
                     </connections>
                 </menuItem>
             </items>
@@ -68,7 +85,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1364" height="828"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1364" height="828"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -91,7 +108,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="checkbox1:" target="C2b-P0-gDC" id="eQh-lT-Zl0"/>
+                                                <action selector="checkbox1:" target="sJd-RC-QzD" id="vOt-CD-D1s"/>
                                             </connections>
                                         </button>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gkx-jX-mFr" userLabel="Label1_0">
@@ -233,7 +250,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="savePreferences:" target="C2b-P0-gDC" id="mSe-rq-2OL"/>
+                            <action selector="savePreferences:" target="sJd-RC-QzD" id="KTo-Lf-PuW"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-4B-4Qr">
@@ -251,35 +268,5 @@ Gw
             </view>
             <point key="canvasLocation" x="578" y="231"/>
         </window>
-        <customObject id="C2b-P0-gDC" customClass="PreferencesController" customModule="BashBar" customModuleProvider="target">
-            <connections>
-                <outlet property="Command1_0" destination="v1o-FA-bbx" id="90T-9C-WsB"/>
-                <outlet property="Command1_1" destination="FOm-8u-KGi" id="mqD-Hv-6DK"/>
-                <outlet property="Label1_1" destination="8uk-cy-Pzu" id="P09-We-laR"/>
-                <outlet property="cancelPref" destination="8R2-4B-4Qr" id="Bqn-ix-Fds"/>
-                <outlet property="checkbox1" destination="0rE-Re-k6Y" id="wY4-81-Qld"/>
-                <outlet property="lab1_2" destination="Adz-mX-hAq" id="FGu-5g-XA7"/>
-                <outlet property="m_lab1" destination="xWo-0X-TjN" id="tF4-c2-DZZ"/>
-                <outlet property="m_lab1_0" destination="qxr-me-aBd" id="eJe-WC-5f3"/>
-                <outlet property="m_lab1_1" destination="OtF-0r-NAd" id="Bgk-DQ-Its"/>
-                <outlet property="m_lab1_2" destination="1dq-U8-Uc9" id="BfS-xE-COU"/>
-                <outlet property="m_lab1_3" destination="Sj4-7g-IDc" id="BpK-aq-yy6"/>
-                <outlet property="m_lab1_4" destination="ABH-Qi-LXu" id="wW8-ta-1sP"/>
-                <outlet property="menu1tab" destination="W08-ee-dt3" id="eo2-M6-3Ss"/>
-                <outlet property="p_cmd1_0" destination="iuT-gL-5La" id="qyB-05-VIP"/>
-                <outlet property="p_cmd1_1" destination="uOn-jQ-0Mj" id="l2f-FR-GT4"/>
-                <outlet property="p_cmd1_2" destination="b2e-AZ-7q0" id="fXW-t0-v6g"/>
-                <outlet property="p_cmd1_3" destination="5Ij-TZ-8F4" id="jZX-yH-xYo"/>
-                <outlet property="p_cmd1_4" destination="tz7-jx-BFt" id="Oub-1b-Xqe"/>
-                <outlet property="p_lab1_0" destination="aUa-z7-Ogt" id="qun-88-LaK"/>
-                <outlet property="p_lab1_1" destination="2jq-Ga-SxV" id="Bi5-Tn-viR"/>
-                <outlet property="p_lab1_2" destination="Adz-mX-hAq" id="uyE-NM-eVR"/>
-                <outlet property="p_lab1_3" destination="NF7-5z-ECs" id="ftg-TX-AbD"/>
-                <outlet property="p_lab1_4" destination="PCu-5L-BxG" id="GTK-eO-0d0"/>
-                <outlet property="savePref" destination="U57-PO-U0i" id="AmT-U0-me6"/>
-                <outlet property="viewPreferences" destination="EiT-Mj-1SZ" id="m9A-m0-lTr"/>
-                <outlet property="windowPreferences" destination="QvC-M9-y7g" id="MVB-n8-hrZ"/>
-            </connections>
-        </customObject>
     </objects>
 </document>
