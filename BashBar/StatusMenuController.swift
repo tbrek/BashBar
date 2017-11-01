@@ -214,7 +214,6 @@ class StatusMenuController: NSObject {
     
     @IBAction func m_lab1Clicked(_ sender: Any) {
         shell(p_cmd1_0.stringValue)
-        
     }
     @IBAction func m_lab1_1Clicked(_ sender: Any) {
         shell("")
