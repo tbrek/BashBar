@@ -20,11 +20,11 @@
                 <outlet property="bashMenu" destination="54M-Wx-fgy" id="18W-gZ-iXN"/>
                 <outlet property="checkbox1" destination="0rE-Re-k6Y" id="UgW-xC-LWs"/>
                 <outlet property="m_lab1" destination="xWo-0X-TjN" id="2VR-p3-Vyn"/>
-                <outlet property="m_lab1_0" destination="qxr-me-aBd" id="vCG-FN-7fj"/>
-                <outlet property="m_lab1_1" destination="OtF-0r-NAd" id="Q8y-yG-3na"/>
-                <outlet property="m_lab1_2" destination="1dq-U8-Uc9" id="kiq-7S-bPh"/>
-                <outlet property="m_lab1_3" destination="Sj4-7g-IDc" id="42W-r6-eeq"/>
-                <outlet property="m_lab1_4" destination="ABH-Qi-LXu" id="C80-1o-kBB"/>
+                <outlet property="m_lab1_0" destination="qxr-me-aBd" id="Tzt-sw-0ch"/>
+                <outlet property="m_lab1_1" destination="OtF-0r-NAd" id="B0v-X8-DWm"/>
+                <outlet property="m_lab1_2" destination="1dq-U8-Uc9" id="eZz-wD-kqi"/>
+                <outlet property="m_lab1_3" destination="Sj4-7g-IDc" id="dOm-Gg-429"/>
+                <outlet property="m_lab1_4" destination="ABH-Qi-LXu" id="Gk2-Gy-GKe"/>
                 <outlet property="p_cmd1_0" destination="iuT-gL-5La" id="Ndi-o5-b5c"/>
                 <outlet property="p_cmd1_1" destination="uOn-jQ-0Mj" id="ID2-ug-iZr"/>
                 <outlet property="p_cmd1_2" destination="b2e-AZ-7q0" id="i7r-WE-mEK"/>
@@ -50,25 +50,25 @@
                             <menuItem title="Item" toolTip="Testing tool tip" id="OtF-0r-NAd" userLabel="m_lab1_1">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="m_lab1_1Clicked:" target="sJd-RC-QzD" id="BSj-79-ccJ"/>
+                                    <action selector="menuClicked:" target="sJd-RC-QzD" id="iwa-0H-Ey9"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Item" id="1dq-U8-Uc9" userLabel="m_lab1_2">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="m_lab1_2Clicked:" target="sJd-RC-QzD" id="Xee-tf-l6n"/>
+                                    <action selector="menuClicked:" target="sJd-RC-QzD" id="2M2-id-dLI"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Item" id="Sj4-7g-IDc" userLabel="m_lab1_3">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="m_lab1_3Clicked:" target="sJd-RC-QzD" id="N7T-eI-UQY"/>
+                                    <action selector="menuClicked:" target="sJd-RC-QzD" id="jWT-Bg-JCE"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Item" id="ABH-Qi-LXu" userLabel="m_lab1_4">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="m_lab1_4Clicked:" target="sJd-RC-QzD" id="iC5-Zi-SeZ"/>
+                                    <action selector="menuClicked:" target="sJd-RC-QzD" id="rzf-8s-LZZ"/>
                                 </connections>
                             </menuItem>
                         </items>
@@ -77,7 +77,7 @@
                 <menuItem title="Menu1" id="xWo-0X-TjN" userLabel="m_lab1">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="m_lab1Clicked:" target="sJd-RC-QzD" id="rMm-kT-qU8"/>
+                        <action selector="menuClicked:" target="sJd-RC-QzD" id="H5k-Rw-jZD"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="nKY-1w-JTg"/>
@@ -100,7 +100,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1364" height="828"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1364" height="828"/>
                 <autoresizingMask key="autoresizingMask"/>
