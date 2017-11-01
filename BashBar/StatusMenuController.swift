@@ -193,4 +193,42 @@ class StatusMenuController: NSObject {
         
     }
     
+    private func shell(_ args: String) -> String {
+        var outstr = ""
+        let task = Process()
+        task.launchPath = "/bin/sh sudo"
+        task.arguments = ["-c", args]
+        let pipe = Pipe()
+        task.standardOutput = pipe
+        task.launch()
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        if let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) {
+            outstr = output as String
+        }
+        task.waitUntilExit()
+        NSLog(outstr)
+        return outstr
+    }
+    
+    // Actions
+    
+    @IBAction func m_lab1Clicked(_ sender: Any) {
+        shell(p_cmd1_0.stringValue)
+        
+    }
+    @IBAction func m_lab1_1Clicked(_ sender: Any) {
+        shell("")
+    }
+    @IBAction func m_lab1_2Clicked(_ sender: Any) {
+        shell("")
+    }
+    @IBAction func m_lab1_3Clicked(_ sender: Any) {
+        shell("")
+    }
+    @IBAction func m_lab1_4Clicked(_ sender: Any) {
+        shell("")
+    }
+    
+    
+    
 }

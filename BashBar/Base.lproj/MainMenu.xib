@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -49,21 +49,36 @@
                         <items>
                             <menuItem title="Item" toolTip="Testing tool tip" id="OtF-0r-NAd" userLabel="m_lab1_1">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="m_lab1_1Clicked:" target="sJd-RC-QzD" id="BSj-79-ccJ"/>
+                                </connections>
                             </menuItem>
                             <menuItem title="Item" id="1dq-U8-Uc9" userLabel="m_lab1_2">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="m_lab1_2Clicked:" target="sJd-RC-QzD" id="Xee-tf-l6n"/>
+                                </connections>
                             </menuItem>
                             <menuItem title="Item" id="Sj4-7g-IDc" userLabel="m_lab1_3">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="m_lab1_3Clicked:" target="sJd-RC-QzD" id="N7T-eI-UQY"/>
+                                </connections>
                             </menuItem>
                             <menuItem title="Item" id="ABH-Qi-LXu" userLabel="m_lab1_4">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="m_lab1_4Clicked:" target="sJd-RC-QzD" id="iC5-Zi-SeZ"/>
+                                </connections>
                             </menuItem>
                         </items>
                     </menu>
                 </menuItem>
                 <menuItem title="Menu1" id="xWo-0X-TjN" userLabel="m_lab1">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="m_lab1Clicked:" target="sJd-RC-QzD" id="rMm-kT-qU8"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="nKY-1w-JTg"/>
                 <menuItem title="Preferences" id="Vuf-Vb-aDb">
@@ -85,7 +100,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1364" height="828"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1364" height="828"/>
                 <autoresizingMask key="autoresizingMask"/>
