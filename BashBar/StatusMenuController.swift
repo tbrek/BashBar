@@ -193,41 +193,24 @@ class StatusMenuController: NSObject {
         
     }
     
-    private func shell(_ args: String) -> String {
-        var outstr = ""
-        let task = Process()
-        task.launchPath = "/bin/sh sudo"
-        task.arguments = ["-c", args]
-        let pipe = Pipe()
-        task.standardOutput = pipe
-        task.launch()
-        let data = pipe.fileHandleForReading.readDataToEndOfFile()
-        if let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue) {
-            outstr = output as String
+    private func shell(_ args: String) {
+        let error: NSAppleEventDescriptor
+        if args.range(of:"sudo") != nil {
+            NSAppleScript(source: "do shell script \"sudo "+args+"\" with administrator privileges")!.executeAndReturnError(error)
         }
-        task.waitUntilExit()
-        NSLog(outstr)
-        return outstr
+        else {
+            NSAppleScript(source: "do shell script \""+args+"\"")!.executeAndReturnError(error)
+            NSLog(error.stringValue!)
+        }
+//
     }
     
     // Actions
     
-    @IBAction func m_lab1Clicked(_ sender: Any) {
-        shell(p_cmd1_0.stringValue)
+    @IBAction func menuClicked(_ sender: NSMenuItem) {
+        shell(sender.toolTip!)
+        NSLog("poszlo")
+        
     }
-    @IBAction func m_lab1_1Clicked(_ sender: Any) {
-        shell("")
-    }
-    @IBAction func m_lab1_2Clicked(_ sender: Any) {
-        shell("")
-    }
-    @IBAction func m_lab1_3Clicked(_ sender: Any) {
-        shell("")
-    }
-    @IBAction func m_lab1_4Clicked(_ sender: Any) {
-        shell("")
-    }
-    
-    
-    
+
 }
