@@ -163,7 +163,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1039" height="535"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1039" height="535"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -467,7 +467,7 @@ Gw
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16O-i4-Ec4">
                         <rect key="frame" x="39" y="63" width="572" height="47"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" title="Please note: Commands requiring administrator privliges (when command starts with sudo) will prompt for admin password" id="TgL-kM-ytw">
+                        <textFieldCell key="cell" lineBreakMode="charWrapping" sendsActionOnEndEditing="YES" title="Please note: Commands requiring administrator privileges (when command starts with sudo) will prompt for admin password" id="TgL-kM-ytw">
                             <font key="font" metaFont="miniSystem"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
