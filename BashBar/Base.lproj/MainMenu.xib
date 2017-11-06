@@ -166,7 +166,7 @@
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1039" height="535"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mM8-G0-Ri8">
                         <rect key="frame" x="13" y="108" width="1007" height="413"/>
@@ -473,6 +473,21 @@ Gw
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpr-sO-IyA">
+                        <rect key="frame" x="807" y="17" width="40" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="bevel" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" enabled="NO" imageScaling="proportionallyDown" inset="2" pullsDown="YES" arrowPosition="noArrow" autoenablesItems="NO" id="scF-2c-uhQ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <menu key="menu" autoenablesItems="NO" id="2Z8-F4-xbP">
+                                <items>
+                                    <menuItem image="dropdown" hidden="YES" id="DgV-uH-Mlf"/>
+                                    <menuItem title="Import configuration..." id="XJg-mQ-1gx"/>
+                                    <menuItem title="Export configuration..." id="19B-h8-K4w"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
                 </subviews>
             </view>
             <point key="canvasLocation" x="415.5" y="84.5"/>
@@ -480,5 +495,6 @@ Gw
     </objects>
     <resources>
         <image name="donate-paypal-1x" width="253" height="100"/>
+        <image name="dropdown" width="44" height="26"/>
     </resources>
 </document>
