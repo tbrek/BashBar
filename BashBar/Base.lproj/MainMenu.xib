@@ -141,6 +141,9 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="7JU-fK-6fw"/>
+                <menuItem title="Open at login" id="puA-ib-ug6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem title="Preferences" id="Vuf-Vb-aDb">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
