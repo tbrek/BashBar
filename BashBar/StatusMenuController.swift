@@ -8,6 +8,7 @@
 
 import Cocoa
 
+
 class StatusMenuController: NSObject {
     
     @IBOutlet weak var preferencesView: NSView!
@@ -15,6 +16,13 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var bashMenu: NSMenu!
     @IBOutlet weak var errorMenu: NSMenuItem!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    
+    // Fix Cut, Copy & Paste
+   
+    
+    
+    
+    
     
     override func awakeFromNib() {
         //        statusItem.title = "bashBar"

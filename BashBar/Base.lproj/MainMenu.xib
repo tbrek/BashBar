@@ -157,7 +157,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="33" y="830"/>
+            <point key="canvasLocation" x="233" y="503"/>
         </menu>
         <window title="BashBar" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
@@ -168,6 +168,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="1039" height="535"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eax-sz-e5r">
+                        <rect key="frame" x="484" y="257" width="71" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="bevel" title="Copy" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" selectedItem="Ygn-fG-vSk" id="euv-j9-F64">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="olT-Kr-nDg">
+                                <items>
+                                    <menuItem title="Copy" state="on" keyEquivalent="c" id="Ygn-fG-vSk">
+                                        <connections>
+                                            <action selector="copy:" target="-1" id="w3o-2W-IjE"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Paste" keyEquivalent="v" id="ipR-mr-r1W">
+                                        <connections>
+                                            <action selector="paste:" target="-1" id="VZw-70-C0r"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Cut" keyEquivalent="x" id="0ab-Ki-ji1">
+                                        <connections>
+                                            <action selector="cut:" target="-1" id="aal-mb-PGO"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Select all" keyEquivalent="a" id="5qg-U7-J38">
+                                        <connections>
+                                            <action selector="selectAll:" target="-1" id="F6S-sa-DrB"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
                     <tabView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mM8-G0-Ri8">
                         <rect key="frame" x="13" y="108" width="1007" height="413"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
