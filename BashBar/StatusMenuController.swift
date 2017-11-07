@@ -32,7 +32,7 @@ class StatusMenuController: NSObject {
         statusItem.image = icon
         statusItem.menu = bashMenu
         readPropertyList()
-        updateMenu1()
+        updateMenu()
         
         // Insert code here to initialize your application
     }
@@ -47,12 +47,13 @@ class StatusMenuController: NSObject {
         self.preferencesWindow.orderFrontRegardless()
     }
     
-    // Checkboxes
-    @IBOutlet weak var checkbox1: NSButton!
-    
     // Buttons
     @IBOutlet weak var savePref: NSButton!
     @IBOutlet weak var cancelPref: NSButton!
+    
+    // Checkboxes
+    @IBOutlet weak var checkbox1: NSButton!
+    @IBOutlet weak var checkbox2: NSButton!
     
     // Menus
     @IBOutlet weak var m_lab1: NSMenuItem!
@@ -67,14 +68,32 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var m_lab1_8: NSMenuItem!
     @IBOutlet weak var m_lab1_9: NSMenuItem!
     @IBOutlet weak var m_lab1_10: NSMenuItem!
+    @IBOutlet weak var m_lab2: NSMenuItem!
+    @IBOutlet weak var m_lab2_0: NSMenuItem!
+    @IBOutlet weak var m_lab2_1: NSMenuItem!
+    @IBOutlet weak var m_lab2_2: NSMenuItem!
+    @IBOutlet weak var m_lab2_3: NSMenuItem!
+    @IBOutlet weak var m_lab2_4: NSMenuItem!
+    @IBOutlet weak var m_lab2_5: NSMenuItem!
+    @IBOutlet weak var m_lab2_6: NSMenuItem!
+    @IBOutlet weak var m_lab2_7: NSMenuItem!
+    @IBOutlet weak var m_lab2_8: NSMenuItem!
+    @IBOutlet weak var m_lab2_9: NSMenuItem!
+    @IBOutlet weak var m_lab2_10: NSMenuItem!
     
     // Tabs
     @IBOutlet weak var menu1tab: NSTabViewItem!
+    @IBOutlet weak var menu2tab: NSTabViewItem!
+    
     
     // Labels
     @IBOutlet weak var Label1_1: NSTextField!
     @IBOutlet weak var Command1_0: NSTextField!
     @IBOutlet weak var Command1_1: NSTextField!
+    
+    @IBOutlet weak var Label2_1: NSTextField!
+    @IBOutlet weak var Command2_0: NSTextField!
+    @IBOutlet weak var Command2_1: NSTextField!
     
     // Names
     @IBOutlet weak var p_lab1_0: NSTextField!
@@ -89,6 +108,18 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var p_lab1_9: NSTextField!
     @IBOutlet weak var p_lab1_10: NSTextField!
     
+    @IBOutlet weak var p_lab2_0: NSTextField!
+    @IBOutlet weak var p_lab2_1: NSTextField!
+    @IBOutlet weak var p_lab2_2: NSTextField!
+    @IBOutlet weak var p_lab2_3: NSTextField!
+    @IBOutlet weak var p_lab2_4: NSTextField!
+    @IBOutlet weak var p_lab2_5: NSTextField!
+    @IBOutlet weak var p_lab2_6: NSTextField!
+    @IBOutlet weak var p_lab2_7: NSTextField!
+    @IBOutlet weak var p_lab2_8: NSTextField!
+    @IBOutlet weak var p_lab2_9: NSTextField!
+    @IBOutlet weak var p_lab2_10: NSTextField!
+    
     // Commands
     @IBOutlet weak var p_cmd1_0: NSTextField!
     @IBOutlet weak var p_cmd1_1: NSTextField!
@@ -102,8 +133,20 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var p_cmd1_9: NSTextField!
     @IBOutlet weak var p_cmd1_10: NSTextField!
     
+    @IBOutlet weak var p_cmd2_0: NSTextField!
+    @IBOutlet weak var p_cmd2_1: NSTextField!
+    @IBOutlet weak var p_cmd2_2: NSTextField!
+    @IBOutlet weak var p_cmd2_3: NSTextField!
+    @IBOutlet weak var p_cmd2_4: NSTextField!
+    @IBOutlet weak var p_cmd2_5: NSTextField!
+    @IBOutlet weak var p_cmd2_6: NSTextField!
+    @IBOutlet weak var p_cmd2_7: NSTextField!
+    @IBOutlet weak var p_cmd2_8: NSTextField!
+    @IBOutlet weak var p_cmd2_9: NSTextField!
+    @IBOutlet weak var p_cmd2_10: NSTextField!
+    
     @IBAction func savePreferences(_ sender: Any) {
-        updateMenu1()
+        updateMenu()
         savePropertyList()
         self.preferencesWindow.orderOut(self)
     }
@@ -129,7 +172,10 @@ class StatusMenuController: NSObject {
         
         // Update label
         checkbox1.state  = (plistData["checkbox1"] as! Bool) == true ? .on : .off
-        self.checkbox1( 0 )
+        checkbox2.state  = (plistData["checkbox1"] as! Bool) == true ? .on : .off
+        
+        self.checkbox( 0 )
+        
         p_lab1_0.stringValue = plistData["p_lab1_0"] as! String
         p_cmd1_0.stringValue = plistData["p_cmd1_0"] as! String
         p_lab1_1.stringValue = plistData["p_lab1_1"] as! String
@@ -153,7 +199,30 @@ class StatusMenuController: NSObject {
         p_lab1_10.stringValue = plistData["p_lab1_10"] as! String
         p_cmd1_10.stringValue = plistData["p_cmd1_10"] as! String
         
-        updateMenu1()
+        p_lab2_0.stringValue = plistData["p_lab2_0"] as! String
+        p_cmd2_0.stringValue = plistData["p_cmd2_0"] as! String
+        p_lab2_1.stringValue = plistData["p_lab2_1"] as! String
+        p_cmd2_1.stringValue = plistData["p_cmd2_1"] as! String
+        p_lab2_2.stringValue = plistData["p_lab2_2"] as! String
+        p_cmd2_2.stringValue = plistData["p_cmd2_2"] as! String
+        p_lab2_3.stringValue = plistData["p_lab2_3"] as! String
+        p_cmd2_3.stringValue = plistData["p_cmd2_3"] as! String
+        p_lab2_4.stringValue = plistData["p_lab2_4"] as! String
+        p_cmd2_4.stringValue = plistData["p_cmd2_4"] as! String
+        p_lab2_5.stringValue = plistData["p_lab2_5"] as! String
+        p_cmd2_5.stringValue = plistData["p_cmd2_5"] as! String
+        p_lab2_6.stringValue = plistData["p_lab2_6"] as! String
+        p_cmd2_6.stringValue = plistData["p_cmd2_6"] as! String
+        p_lab2_7.stringValue = plistData["p_lab2_7"] as! String
+        p_cmd2_7.stringValue = plistData["p_cmd2_7"] as! String
+        p_lab2_8.stringValue = plistData["p_lab2_8"] as! String
+        p_cmd2_8.stringValue = plistData["p_cmd2_8"] as! String
+        p_lab2_9.stringValue = plistData["p_lab2_9"] as! String
+        p_cmd2_9.stringValue = plistData["p_cmd2_9"] as! String
+        p_lab2_10.stringValue = plistData["p_lab2_10"] as! String
+        p_cmd2_10.stringValue = plistData["p_cmd2_10"] as! String
+        
+        updateMenu()
         
     }
     
@@ -161,29 +230,54 @@ class StatusMenuController: NSObject {
 //        let fileManager = FileManager.default
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/com.tombrek.BashBar.plist")
-        let dicContent = ["checkbox1": checkbox1.state,
-                          "p_lab1_0": p_lab1_0.stringValue ,
-                          "p_cmd1_0": p_cmd1_0.stringValue ,
-                          "p_lab1_1": p_lab1_1.stringValue ,
-                          "p_cmd1_1": p_cmd1_1.stringValue ,
-                          "p_lab1_2": p_lab1_2.stringValue ,
-                          "p_cmd1_2": p_cmd1_2.stringValue ,
-                          "p_lab1_3": p_lab1_3.stringValue ,
-                          "p_cmd1_3": p_cmd1_3.stringValue ,
-                          "p_lab1_4": p_lab1_4.stringValue ,
-                          "p_cmd1_4": p_cmd1_4.stringValue ,
-                          "p_lab1_5": p_lab1_5.stringValue ,
-                          "p_cmd1_5": p_cmd1_5.stringValue ,
-                          "p_lab1_6": p_lab1_6.stringValue ,
-                          "p_cmd1_6": p_cmd1_6.stringValue ,
-                          "p_lab1_7": p_lab1_7.stringValue ,
-                          "p_cmd1_7": p_cmd1_7.stringValue ,
-                          "p_lab1_8": p_lab1_8.stringValue ,
-                          "p_cmd1_8": p_cmd1_8.stringValue ,
-                          "p_lab1_9": p_lab1_9.stringValue ,
-                          "p_cmd1_9": p_cmd1_9.stringValue ,
-                          "p_lab1_10": p_lab1_10.stringValue ,
-                          "p_cmd1_10": p_cmd1_10.stringValue
+        let dicContent = [
+            "checkbox1": checkbox1.state,
+            "p_lab1_0": p_lab1_0.stringValue ,
+            "p_cmd1_0": p_cmd1_0.stringValue ,
+            "p_lab1_1": p_lab1_1.stringValue ,
+            "p_cmd1_1": p_cmd1_1.stringValue ,
+            "p_lab1_2": p_lab1_2.stringValue ,
+            "p_cmd1_2": p_cmd1_2.stringValue ,
+            "p_lab1_3": p_lab1_3.stringValue ,
+            "p_cmd1_3": p_cmd1_3.stringValue ,
+            "p_lab1_4": p_lab1_4.stringValue ,
+            "p_cmd1_4": p_cmd1_4.stringValue ,
+            "p_lab1_5": p_lab1_5.stringValue ,
+            "p_cmd1_5": p_cmd1_5.stringValue ,
+            "p_lab1_6": p_lab1_6.stringValue ,
+            "p_cmd1_6": p_cmd1_6.stringValue ,
+            "p_lab1_7": p_lab1_7.stringValue ,
+            "p_cmd1_7": p_cmd1_7.stringValue ,
+            "p_lab1_8": p_lab1_8.stringValue ,
+            "p_cmd1_8": p_cmd1_8.stringValue ,
+            "p_lab1_9": p_lab1_9.stringValue ,
+            "p_cmd1_9": p_cmd1_9.stringValue ,
+            "p_lab1_10": p_lab1_10.stringValue ,
+            "p_cmd1_10": p_cmd1_10.stringValue ,
+            
+            "checkbox2": checkbox2.state,
+            "p_lab2_0": p_lab2_0.stringValue ,
+            "p_cmd2_0": p_cmd2_0.stringValue ,
+            "p_lab2_1": p_lab2_1.stringValue ,
+            "p_cmd2_1": p_cmd2_1.stringValue ,
+            "p_lab2_2": p_lab2_2.stringValue ,
+            "p_cmd2_2": p_cmd2_2.stringValue ,
+            "p_lab2_3": p_lab2_3.stringValue ,
+            "p_cmd2_3": p_cmd2_3.stringValue ,
+            "p_lab2_4": p_lab2_4.stringValue ,
+            "p_cmd2_4": p_cmd2_4.stringValue ,
+            "p_lab2_5": p_lab2_5.stringValue ,
+            "p_cmd2_5": p_cmd2_5.stringValue ,
+            "p_lab2_6": p_lab2_6.stringValue ,
+            "p_cmd2_6": p_cmd2_6.stringValue ,
+            "p_lab2_7": p_lab2_7.stringValue ,
+            "p_cmd2_7": p_cmd2_7.stringValue ,
+            "p_lab2_8": p_lab2_8.stringValue ,
+            "p_cmd2_8": p_cmd2_8.stringValue ,
+            "p_lab2_9": p_lab2_9.stringValue ,
+            "p_cmd2_9": p_cmd2_9.stringValue ,
+            "p_lab2_10": p_lab2_10.stringValue ,
+            "p_cmd2_10": p_cmd2_10.stringValue
                         ] as [String : Any]
        
         let plistData = NSDictionary(dictionary: dicContent)
@@ -196,16 +290,23 @@ class StatusMenuController: NSObject {
     }
     
     
-    @IBAction func checkbox1(_ sender: Any) {
+    @IBAction func checkbox(_ sender: Any) {
     
         // Update Menu
         m_lab1_0.isHidden = checkbox1.state == .on ? false : true
         m_lab1.isHidden    = checkbox1.state == .on ? true : false
         
+        m_lab2_0.isHidden = checkbox2.state == .on ? false : true
+        m_lab2.isHidden    = checkbox2.state == .on ? true : false
+        
         // Hide/Show Labels
         Label1_1.isHidden = checkbox1.state == .on ? false : true
         Command1_0.isHidden = checkbox1.state == .on ? true : false
         Command1_1.isHidden = checkbox1.state == .on ? false : true
+        
+        Label2_1.isHidden = checkbox2.state == .on ? false : true
+        Command2_0.isHidden = checkbox2.state == .on ? true : false
+        Command2_1.isHidden = checkbox2.state == .on ? false : true
         
         // Hide/Show Fields
         p_cmd1_0.isHidden  = checkbox1.state == .on ? true : false
@@ -230,13 +331,36 @@ class StatusMenuController: NSObject {
         p_lab1_10.isHidden  = checkbox1.state == .on ? false : true
         p_cmd1_10.isHidden  = checkbox1.state == .on ? false : true
         
+        p_cmd2_0.isHidden  = checkbox2.state == .on ? true : false
+        p_lab2_1.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_1.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_2.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_2.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_3.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_3.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_4.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_4.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_5.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_5.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_6.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_6.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_7.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_7.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_8.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_8.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_9.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_9.isHidden  = checkbox2.state == .on ? false : true
+        p_lab2_10.isHidden  = checkbox2.state == .on ? false : true
+        p_cmd2_10.isHidden  = checkbox2.state == .on ? false : true
+        
     }
     
     
-    func updateMenu1() {
+    func updateMenu() {
         
         // Tab
         menu1tab.label = p_lab1_0.stringValue
+        menu2tab.label = p_lab2_0.stringValue
         
         // Menus
         m_lab1.title      = p_lab1_0.stringValue
@@ -244,6 +368,12 @@ class StatusMenuController: NSObject {
         m_lab1.isHidden   = (p_lab1_0.stringValue == "" || checkbox1.state == .on) ? true : false
         m_lab1_0.title    = p_lab1_0.stringValue
         m_lab1_0.isHidden = (p_lab1_0.stringValue == "" || checkbox1.state == .off) ? true : false
+        
+        m_lab2.title      = p_lab2_0.stringValue
+        m_lab2.toolTip    = p_cmd2_0.stringValue
+        m_lab2.isHidden   = (p_lab2_0.stringValue == "" || checkbox2.state == .on) ? true : false
+        m_lab2_0.title    = p_lab2_0.stringValue
+        m_lab2_0.isHidden = (p_lab2_0.stringValue == "" || checkbox2.state == .off) ? true : false
       
         // Submenus
         m_lab1_1.title    = p_lab1_1.stringValue
@@ -276,6 +406,37 @@ class StatusMenuController: NSObject {
         m_lab1_10.title    = p_lab1_10.stringValue
         m_lab1_10.toolTip  = p_cmd1_10.stringValue
         m_lab1_10.isHidden = p_lab1_10.stringValue == "" ? true : false
+        
+        m_lab2_1.title    = p_lab2_1.stringValue
+        m_lab2_1.toolTip  = p_cmd2_1.stringValue
+        m_lab2_1.isHidden = p_lab2_1.stringValue == "" ? true : false
+        m_lab2_2.title    = p_lab2_2.stringValue
+        m_lab2_2.toolTip  = p_cmd2_2.stringValue
+        m_lab2_2.isHidden = p_lab2_2.stringValue == "" ? true : false
+        m_lab2_3.title    = p_lab2_3.stringValue
+        m_lab2_3.toolTip  = p_cmd2_3.stringValue
+        m_lab2_3.isHidden = p_lab2_3.stringValue == "" ? true : false
+        m_lab2_4.title    = p_lab2_4.stringValue
+        m_lab2_4.toolTip  = p_cmd2_4.stringValue
+        m_lab2_4.isHidden = p_lab2_4.stringValue == "" ? true : false
+        m_lab2_5.title    = p_lab2_5.stringValue
+        m_lab2_5.toolTip  = p_cmd2_5.stringValue
+        m_lab2_5.isHidden = p_lab2_5.stringValue == "" ? true : false
+        m_lab2_6.title    = p_lab2_6.stringValue
+        m_lab2_6.toolTip  = p_cmd2_6.stringValue
+        m_lab2_6.isHidden = p_lab2_6.stringValue == "" ? true : false
+        m_lab2_7.title    = p_lab2_7.stringValue
+        m_lab2_7.toolTip  = p_cmd2_7.stringValue
+        m_lab2_7.isHidden = p_lab2_7.stringValue == "" ? true : false
+        m_lab2_8.title    = p_lab2_8.stringValue
+        m_lab2_8.toolTip  = p_cmd2_8.stringValue
+        m_lab2_8.isHidden = p_lab2_8.stringValue == "" ? true : false
+        m_lab2_9.title    = p_lab2_9.stringValue
+        m_lab2_9.toolTip  = p_cmd2_9.stringValue
+        m_lab2_9.isHidden = p_lab2_9.stringValue == "" ? true : false
+        m_lab2_10.title    = p_lab2_10.stringValue
+        m_lab2_10.toolTip  = p_cmd2_10.stringValue
+        m_lab2_10.isHidden = p_lab2_10.stringValue == "" ? true : false
      
         
     }
