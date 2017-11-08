@@ -15,14 +15,8 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var preferencesWindow: NSWindow!
     @IBOutlet weak var bashMenu: NSMenu!
     @IBOutlet weak var errorMenu: NSMenuItem!
+    @IBOutlet weak var commandpromptItem: NSMenuItem!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    
-    // Fix Cut, Copy & Paste
-   
-    
-    
-    
-    
     
     override func awakeFromNib() {
         //        statusItem.title = "bashBar"
@@ -31,8 +25,15 @@ class StatusMenuController: NSObject {
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = bashMenu
+        let commandpromptstatusicon = NSImage(named: NSImage.Name(rawValue: "commandprompt"))
+        commandpromptstatusicon?.isTemplate = true
+        commandpromptItem.image = commandpromptstatusicon
+        
         readPropertyList()
         updateMenu()
+        
+        
+        
         
         // Insert code here to initialize your application
     }
