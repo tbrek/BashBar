@@ -32,11 +32,9 @@ class StatusMenuController: NSObject {
         readPropertyList()
         updateMenu()
         
-        
-        
-        
         // Insert code here to initialize your application
     }
+    
     // Quit app
     @IBAction func quitClicked(_ sender: NSMenuItem) {
         NSApplication.shared.terminate(self)
@@ -55,7 +53,15 @@ class StatusMenuController: NSObject {
     // Checkboxes
     @IBOutlet weak var checkbox1: NSButton!
     @IBOutlet weak var checkbox2: NSButton!
-    
+    @IBOutlet weak var checkbox3: NSButton!
+    @IBOutlet weak var checkbox4: NSButton!
+    @IBOutlet weak var checkbox5: NSButton!
+    @IBOutlet weak var checkbox6: NSButton!
+    @IBOutlet weak var checkbox7: NSButton!
+    @IBOutlet weak var checkbox8: NSButton!
+    @IBOutlet weak var checkbox9: NSButton!
+    @IBOutlet weak var checkbox10: NSButton!
+  
     // Menus
     @IBOutlet weak var m_lab1: NSMenuItem!
     @IBOutlet weak var m_lab1_0: NSMenuItem!
@@ -69,6 +75,7 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var m_lab1_8: NSMenuItem!
     @IBOutlet weak var m_lab1_9: NSMenuItem!
     @IBOutlet weak var m_lab1_10: NSMenuItem!
+    
     @IBOutlet weak var m_lab2: NSMenuItem!
     @IBOutlet weak var m_lab2_0: NSMenuItem!
     @IBOutlet weak var m_lab2_1: NSMenuItem!
@@ -82,10 +89,121 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var m_lab2_9: NSMenuItem!
     @IBOutlet weak var m_lab2_10: NSMenuItem!
     
+    @IBOutlet weak var m_lab3: NSMenuItem!
+    @IBOutlet weak var m_lab3_0: NSMenuItem!
+    @IBOutlet weak var m_lab3_1: NSMenuItem!
+    @IBOutlet weak var m_lab3_2: NSMenuItem!
+    @IBOutlet weak var m_lab3_3: NSMenuItem!
+    @IBOutlet weak var m_lab3_4: NSMenuItem!
+    @IBOutlet weak var m_lab3_5: NSMenuItem!
+    @IBOutlet weak var m_lab3_6: NSMenuItem!
+    @IBOutlet weak var m_lab3_7: NSMenuItem!
+    @IBOutlet weak var m_lab3_8: NSMenuItem!
+    @IBOutlet weak var m_lab3_9: NSMenuItem!
+    @IBOutlet weak var m_lab3_10: NSMenuItem!
+    
+    @IBOutlet weak var m_lab4: NSMenuItem!
+    @IBOutlet weak var m_lab4_0: NSMenuItem!
+    @IBOutlet weak var m_lab4_1: NSMenuItem!
+    @IBOutlet weak var m_lab4_2: NSMenuItem!
+    @IBOutlet weak var m_lab4_3: NSMenuItem!
+    @IBOutlet weak var m_lab4_4: NSMenuItem!
+    @IBOutlet weak var m_lab4_5: NSMenuItem!
+    @IBOutlet weak var m_lab4_6: NSMenuItem!
+    @IBOutlet weak var m_lab4_7: NSMenuItem!
+    @IBOutlet weak var m_lab4_8: NSMenuItem!
+    @IBOutlet weak var m_lab4_9: NSMenuItem!
+    @IBOutlet weak var m_lab4_10: NSMenuItem!
+    
+    @IBOutlet weak var m_lab5: NSMenuItem!
+    @IBOutlet weak var m_lab5_0: NSMenuItem!
+    @IBOutlet weak var m_lab5_1: NSMenuItem!
+    @IBOutlet weak var m_lab5_2: NSMenuItem!
+    @IBOutlet weak var m_lab5_3: NSMenuItem!
+    @IBOutlet weak var m_lab5_4: NSMenuItem!
+    @IBOutlet weak var m_lab5_5: NSMenuItem!
+    @IBOutlet weak var m_lab5_6: NSMenuItem!
+    @IBOutlet weak var m_lab5_7: NSMenuItem!
+    @IBOutlet weak var m_lab5_8: NSMenuItem!
+    @IBOutlet weak var m_lab5_9: NSMenuItem!
+    @IBOutlet weak var m_lab5_10: NSMenuItem!
+    
+    @IBOutlet weak var m_lab6: NSMenuItem!
+    @IBOutlet weak var m_lab6_0: NSMenuItem!
+    @IBOutlet weak var m_lab6_1: NSMenuItem!
+    @IBOutlet weak var m_lab6_2: NSMenuItem!
+    @IBOutlet weak var m_lab6_3: NSMenuItem!
+    @IBOutlet weak var m_lab6_4: NSMenuItem!
+    @IBOutlet weak var m_lab6_5: NSMenuItem!
+    @IBOutlet weak var m_lab6_6: NSMenuItem!
+    @IBOutlet weak var m_lab6_7: NSMenuItem!
+    @IBOutlet weak var m_lab6_8: NSMenuItem!
+    @IBOutlet weak var m_lab6_9: NSMenuItem!
+    @IBOutlet weak var m_lab6_10: NSMenuItem!
+    
+    @IBOutlet weak var m_lab7: NSMenuItem!
+    @IBOutlet weak var m_lab7_0: NSMenuItem!
+    @IBOutlet weak var m_lab7_1: NSMenuItem!
+    @IBOutlet weak var m_lab7_2: NSMenuItem!
+    @IBOutlet weak var m_lab7_3: NSMenuItem!
+    @IBOutlet weak var m_lab7_4: NSMenuItem!
+    @IBOutlet weak var m_lab7_5: NSMenuItem!
+    @IBOutlet weak var m_lab7_6: NSMenuItem!
+    @IBOutlet weak var m_lab7_7: NSMenuItem!
+    @IBOutlet weak var m_lab7_8: NSMenuItem!
+    @IBOutlet weak var m_lab7_9: NSMenuItem!
+    @IBOutlet weak var m_lab7_10: NSMenuItem!
+    
+    @IBOutlet weak var m_lab8: NSMenuItem!
+    @IBOutlet weak var m_lab8_0: NSMenuItem!
+    @IBOutlet weak var m_lab8_1: NSMenuItem!
+    @IBOutlet weak var m_lab8_2: NSMenuItem!
+    @IBOutlet weak var m_lab8_3: NSMenuItem!
+    @IBOutlet weak var m_lab8_4: NSMenuItem!
+    @IBOutlet weak var m_lab8_5: NSMenuItem!
+    @IBOutlet weak var m_lab8_6: NSMenuItem!
+    @IBOutlet weak var m_lab8_7: NSMenuItem!
+    @IBOutlet weak var m_lab8_8: NSMenuItem!
+    @IBOutlet weak var m_lab8_9: NSMenuItem!
+    @IBOutlet weak var m_lab8_10: NSMenuItem!
+    
+    @IBOutlet weak var m_lab9: NSMenuItem!
+    @IBOutlet weak var m_lab9_0: NSMenuItem!
+    @IBOutlet weak var m_lab9_1: NSMenuItem!
+    @IBOutlet weak var m_lab9_2: NSMenuItem!
+    @IBOutlet weak var m_lab9_3: NSMenuItem!
+    @IBOutlet weak var m_lab9_4: NSMenuItem!
+    @IBOutlet weak var m_lab9_5: NSMenuItem!
+    @IBOutlet weak var m_lab9_6: NSMenuItem!
+    @IBOutlet weak var m_lab9_7: NSMenuItem!
+    @IBOutlet weak var m_lab9_8: NSMenuItem!
+    @IBOutlet weak var m_lab9_9: NSMenuItem!
+    @IBOutlet weak var m_lab9_10: NSMenuItem!
+
+    @IBOutlet weak var m_lab10: NSMenuItem!
+    @IBOutlet weak var m_lab10_0: NSMenuItem!
+    @IBOutlet weak var m_lab10_1: NSMenuItem!
+    @IBOutlet weak var m_lab10_2: NSMenuItem!
+    @IBOutlet weak var m_lab10_3: NSMenuItem!
+    @IBOutlet weak var m_lab10_4: NSMenuItem!
+    @IBOutlet weak var m_lab10_5: NSMenuItem!
+    @IBOutlet weak var m_lab10_6: NSMenuItem!
+    @IBOutlet weak var m_lab10_7: NSMenuItem!
+    @IBOutlet weak var m_lab10_8: NSMenuItem!
+    @IBOutlet weak var m_lab10_9: NSMenuItem!
+    @IBOutlet weak var m_lab10_10: NSMenuItem!
+
     // Tabs
     @IBOutlet weak var menu1tab: NSTabViewItem!
     @IBOutlet weak var menu2tab: NSTabViewItem!
-    
+    @IBOutlet weak var menu3tab: NSTabViewItem!
+    @IBOutlet weak var menu4tab: NSTabViewItem!
+    @IBOutlet weak var menu5tab: NSTabViewItem!
+    @IBOutlet weak var menu6tab: NSTabViewItem!
+    @IBOutlet weak var menu7tab: NSTabViewItem!
+    @IBOutlet weak var menu8tab: NSTabViewItem!
+    @IBOutlet weak var menu9tab: NSTabViewItem!
+    @IBOutlet weak var menu10tab: NSTabViewItem!
     
     // Labels
     @IBOutlet weak var Label1_1: NSTextField!
@@ -95,6 +213,38 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var Label2_1: NSTextField!
     @IBOutlet weak var Command2_0: NSTextField!
     @IBOutlet weak var Command2_1: NSTextField!
+    
+    @IBOutlet weak var Label3_1: NSTextField!
+    @IBOutlet weak var Command3_0: NSTextField!
+    @IBOutlet weak var Command3_1: NSTextField!
+    
+    @IBOutlet weak var Label4_1: NSTextField!
+    @IBOutlet weak var Command4_0: NSTextField!
+    @IBOutlet weak var Command4_1: NSTextField!
+    
+    @IBOutlet weak var Label5_1: NSTextField!
+    @IBOutlet weak var Command5_0: NSTextField!
+    @IBOutlet weak var Command5_1: NSTextField!
+    
+    @IBOutlet weak var Label6_1: NSTextField!
+    @IBOutlet weak var Command6_0: NSTextField!
+    @IBOutlet weak var Command6_1: NSTextField!
+    
+    @IBOutlet weak var Label7_1: NSTextField!
+    @IBOutlet weak var Command7_0: NSTextField!
+    @IBOutlet weak var Command7_1: NSTextField!
+    
+    @IBOutlet weak var Label8_1: NSTextField!
+    @IBOutlet weak var Command8_0: NSTextField!
+    @IBOutlet weak var Command8_1: NSTextField!
+    
+    @IBOutlet weak var Label9_1: NSTextField!
+    @IBOutlet weak var Command9_0: NSTextField!
+    @IBOutlet weak var Command9_1: NSTextField!
+    
+    @IBOutlet weak var Label10_1: NSTextField!
+    @IBOutlet weak var Command10_0: NSTextField!
+    @IBOutlet weak var Command10_1: NSTextField!
     
     // Names
     @IBOutlet weak var p_lab1_0: NSTextField!
@@ -121,6 +271,102 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var p_lab2_9: NSTextField!
     @IBOutlet weak var p_lab2_10: NSTextField!
     
+    @IBOutlet weak var p_lab3_0: NSTextField!
+    @IBOutlet weak var p_lab3_1: NSTextField!
+    @IBOutlet weak var p_lab3_2: NSTextField!
+    @IBOutlet weak var p_lab3_3: NSTextField!
+    @IBOutlet weak var p_lab3_4: NSTextField!
+    @IBOutlet weak var p_lab3_5: NSTextField!
+    @IBOutlet weak var p_lab3_6: NSTextField!
+    @IBOutlet weak var p_lab3_7: NSTextField!
+    @IBOutlet weak var p_lab3_8: NSTextField!
+    @IBOutlet weak var p_lab3_9: NSTextField!
+    @IBOutlet weak var p_lab3_10: NSTextField!
+    
+    @IBOutlet weak var p_lab4_0: NSTextField!
+    @IBOutlet weak var p_lab4_1: NSTextField!
+    @IBOutlet weak var p_lab4_2: NSTextField!
+    @IBOutlet weak var p_lab4_3: NSTextField!
+    @IBOutlet weak var p_lab4_4: NSTextField!
+    @IBOutlet weak var p_lab4_5: NSTextField!
+    @IBOutlet weak var p_lab4_6: NSTextField!
+    @IBOutlet weak var p_lab4_7: NSTextField!
+    @IBOutlet weak var p_lab4_8: NSTextField!
+    @IBOutlet weak var p_lab4_9: NSTextField!
+    @IBOutlet weak var p_lab4_10: NSTextField!
+    
+    @IBOutlet weak var p_lab5_0: NSTextField!
+    @IBOutlet weak var p_lab5_1: NSTextField!
+    @IBOutlet weak var p_lab5_2: NSTextField!
+    @IBOutlet weak var p_lab5_3: NSTextField!
+    @IBOutlet weak var p_lab5_4: NSTextField!
+    @IBOutlet weak var p_lab5_5: NSTextField!
+    @IBOutlet weak var p_lab5_6: NSTextField!
+    @IBOutlet weak var p_lab5_7: NSTextField!
+    @IBOutlet weak var p_lab5_8: NSTextField!
+    @IBOutlet weak var p_lab5_9: NSTextField!
+    @IBOutlet weak var p_lab5_10: NSTextField!
+
+    @IBOutlet weak var p_lab6_0: NSTextField!
+    @IBOutlet weak var p_lab6_1: NSTextField!
+    @IBOutlet weak var p_lab6_2: NSTextField!
+    @IBOutlet weak var p_lab6_3: NSTextField!
+    @IBOutlet weak var p_lab6_4: NSTextField!
+    @IBOutlet weak var p_lab6_5: NSTextField!
+    @IBOutlet weak var p_lab6_6: NSTextField!
+    @IBOutlet weak var p_lab6_7: NSTextField!
+    @IBOutlet weak var p_lab6_8: NSTextField!
+    @IBOutlet weak var p_lab6_9: NSTextField!
+    @IBOutlet weak var p_lab6_10: NSTextField!
+
+    @IBOutlet weak var p_lab7_0: NSTextField!
+    @IBOutlet weak var p_lab7_1: NSTextField!
+    @IBOutlet weak var p_lab7_2: NSTextField!
+    @IBOutlet weak var p_lab7_3: NSTextField!
+    @IBOutlet weak var p_lab7_4: NSTextField!
+    @IBOutlet weak var p_lab7_5: NSTextField!
+    @IBOutlet weak var p_lab7_6: NSTextField!
+    @IBOutlet weak var p_lab7_7: NSTextField!
+    @IBOutlet weak var p_lab7_8: NSTextField!
+    @IBOutlet weak var p_lab7_9: NSTextField!
+    @IBOutlet weak var p_lab7_10: NSTextField!
+    
+    @IBOutlet weak var p_lab8_0: NSTextField!
+    @IBOutlet weak var p_lab8_1: NSTextField!
+    @IBOutlet weak var p_lab8_2: NSTextField!
+    @IBOutlet weak var p_lab8_3: NSTextField!
+    @IBOutlet weak var p_lab8_4: NSTextField!
+    @IBOutlet weak var p_lab8_5: NSTextField!
+    @IBOutlet weak var p_lab8_6: NSTextField!
+    @IBOutlet weak var p_lab8_7: NSTextField!
+    @IBOutlet weak var p_lab8_8: NSTextField!
+    @IBOutlet weak var p_lab8_9: NSTextField!
+    @IBOutlet weak var p_lab8_10: NSTextField!
+    
+    @IBOutlet weak var p_lab9_0: NSTextField!
+    @IBOutlet weak var p_lab9_1: NSTextField!
+    @IBOutlet weak var p_lab9_2: NSTextField!
+    @IBOutlet weak var p_lab9_3: NSTextField!
+    @IBOutlet weak var p_lab9_4: NSTextField!
+    @IBOutlet weak var p_lab9_5: NSTextField!
+    @IBOutlet weak var p_lab9_6: NSTextField!
+    @IBOutlet weak var p_lab9_7: NSTextField!
+    @IBOutlet weak var p_lab9_8: NSTextField!
+    @IBOutlet weak var p_lab9_9: NSTextField!
+    @IBOutlet weak var p_lab9_10: NSTextField!
+    
+    @IBOutlet weak var p_lab10_0: NSTextField!
+    @IBOutlet weak var p_lab10_1: NSTextField!
+    @IBOutlet weak var p_lab10_2: NSTextField!
+    @IBOutlet weak var p_lab10_3: NSTextField!
+    @IBOutlet weak var p_lab10_4: NSTextField!
+    @IBOutlet weak var p_lab10_5: NSTextField!
+    @IBOutlet weak var p_lab10_6: NSTextField!
+    @IBOutlet weak var p_lab10_7: NSTextField!
+    @IBOutlet weak var p_lab10_8: NSTextField!
+    @IBOutlet weak var p_lab10_9: NSTextField!
+    @IBOutlet weak var p_lab10_10: NSTextField!
+    
     // Commands
     @IBOutlet weak var p_cmd1_0: NSTextField!
     @IBOutlet weak var p_cmd1_1: NSTextField!
@@ -145,6 +391,102 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var p_cmd2_8: NSTextField!
     @IBOutlet weak var p_cmd2_9: NSTextField!
     @IBOutlet weak var p_cmd2_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd3_0: NSTextField!
+    @IBOutlet weak var p_cmd3_1: NSTextField!
+    @IBOutlet weak var p_cmd3_2: NSTextField!
+    @IBOutlet weak var p_cmd3_3: NSTextField!
+    @IBOutlet weak var p_cmd3_4: NSTextField!
+    @IBOutlet weak var p_cmd3_5: NSTextField!
+    @IBOutlet weak var p_cmd3_6: NSTextField!
+    @IBOutlet weak var p_cmd3_7: NSTextField!
+    @IBOutlet weak var p_cmd3_8: NSTextField!
+    @IBOutlet weak var p_cmd3_9: NSTextField!
+    @IBOutlet weak var p_cmd3_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd4_0: NSTextField!
+    @IBOutlet weak var p_cmd4_1: NSTextField!
+    @IBOutlet weak var p_cmd4_2: NSTextField!
+    @IBOutlet weak var p_cmd4_3: NSTextField!
+    @IBOutlet weak var p_cmd4_4: NSTextField!
+    @IBOutlet weak var p_cmd4_5: NSTextField!
+    @IBOutlet weak var p_cmd4_6: NSTextField!
+    @IBOutlet weak var p_cmd4_7: NSTextField!
+    @IBOutlet weak var p_cmd4_8: NSTextField!
+    @IBOutlet weak var p_cmd4_9: NSTextField!
+    @IBOutlet weak var p_cmd4_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd5_0: NSTextField!
+    @IBOutlet weak var p_cmd5_1: NSTextField!
+    @IBOutlet weak var p_cmd5_2: NSTextField!
+    @IBOutlet weak var p_cmd5_3: NSTextField!
+    @IBOutlet weak var p_cmd5_4: NSTextField!
+    @IBOutlet weak var p_cmd5_5: NSTextField!
+    @IBOutlet weak var p_cmd5_6: NSTextField!
+    @IBOutlet weak var p_cmd5_7: NSTextField!
+    @IBOutlet weak var p_cmd5_8: NSTextField!
+    @IBOutlet weak var p_cmd5_9: NSTextField!
+    @IBOutlet weak var p_cmd5_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd6_0: NSTextField!
+    @IBOutlet weak var p_cmd6_1: NSTextField!
+    @IBOutlet weak var p_cmd6_2: NSTextField!
+    @IBOutlet weak var p_cmd6_3: NSTextField!
+    @IBOutlet weak var p_cmd6_4: NSTextField!
+    @IBOutlet weak var p_cmd6_5: NSTextField!
+    @IBOutlet weak var p_cmd6_6: NSTextField!
+    @IBOutlet weak var p_cmd6_7: NSTextField!
+    @IBOutlet weak var p_cmd6_8: NSTextField!
+    @IBOutlet weak var p_cmd6_9: NSTextField!
+    @IBOutlet weak var p_cmd6_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd7_0: NSTextField!
+    @IBOutlet weak var p_cmd7_1: NSTextField!
+    @IBOutlet weak var p_cmd7_2: NSTextField!
+    @IBOutlet weak var p_cmd7_3: NSTextField!
+    @IBOutlet weak var p_cmd7_4: NSTextField!
+    @IBOutlet weak var p_cmd7_5: NSTextField!
+    @IBOutlet weak var p_cmd7_6: NSTextField!
+    @IBOutlet weak var p_cmd7_7: NSTextField!
+    @IBOutlet weak var p_cmd7_8: NSTextField!
+    @IBOutlet weak var p_cmd7_9: NSTextField!
+    @IBOutlet weak var p_cmd7_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd8_0: NSTextField!
+    @IBOutlet weak var p_cmd8_1: NSTextField!
+    @IBOutlet weak var p_cmd8_2: NSTextField!
+    @IBOutlet weak var p_cmd8_3: NSTextField!
+    @IBOutlet weak var p_cmd8_4: NSTextField!
+    @IBOutlet weak var p_cmd8_5: NSTextField!
+    @IBOutlet weak var p_cmd8_6: NSTextField!
+    @IBOutlet weak var p_cmd8_7: NSTextField!
+    @IBOutlet weak var p_cmd8_8: NSTextField!
+    @IBOutlet weak var p_cmd8_9: NSTextField!
+    @IBOutlet weak var p_cmd8_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd9_0: NSTextField!
+    @IBOutlet weak var p_cmd9_1: NSTextField!
+    @IBOutlet weak var p_cmd9_2: NSTextField!
+    @IBOutlet weak var p_cmd9_3: NSTextField!
+    @IBOutlet weak var p_cmd9_4: NSTextField!
+    @IBOutlet weak var p_cmd9_5: NSTextField!
+    @IBOutlet weak var p_cmd9_6: NSTextField!
+    @IBOutlet weak var p_cmd9_7: NSTextField!
+    @IBOutlet weak var p_cmd9_8: NSTextField!
+    @IBOutlet weak var p_cmd9_9: NSTextField!
+    @IBOutlet weak var p_cmd9_10: NSTextField!
+    
+    @IBOutlet weak var p_cmd10_0: NSTextField!
+    @IBOutlet weak var p_cmd10_1: NSTextField!
+    @IBOutlet weak var p_cmd10_2: NSTextField!
+    @IBOutlet weak var p_cmd10_3: NSTextField!
+    @IBOutlet weak var p_cmd10_4: NSTextField!
+    @IBOutlet weak var p_cmd10_5: NSTextField!
+    @IBOutlet weak var p_cmd10_6: NSTextField!
+    @IBOutlet weak var p_cmd10_7: NSTextField!
+    @IBOutlet weak var p_cmd10_8: NSTextField!
+    @IBOutlet weak var p_cmd10_9: NSTextField!
+    @IBOutlet weak var p_cmd10_10: NSTextField!
     
     @IBAction func savePreferences(_ sender: Any) {
         updateMenu()
@@ -173,7 +515,15 @@ class StatusMenuController: NSObject {
         
         // Update label
         checkbox1.state  = (plistData["checkbox1"] as! Bool) == true ? .on : .off
-        checkbox2.state  = (plistData["checkbox1"] as! Bool) == true ? .on : .off
+        checkbox2.state  = (plistData["checkbox2"] as! Bool) == true ? .on : .off
+        checkbox3.state  = (plistData["checkbox3"] as! Bool) == true ? .on : .off
+        checkbox4.state  = (plistData["checkbox4"] as! Bool) == true ? .on : .off
+        checkbox5.state  = (plistData["checkbox5"] as! Bool) == true ? .on : .off
+        checkbox6.state  = (plistData["checkbox6"] as! Bool) == true ? .on : .off
+        checkbox7.state  = (plistData["checkbox7"] as! Bool) == true ? .on : .off
+        checkbox8.state  = (plistData["checkbox8"] as! Bool) == true ? .on : .off
+        checkbox9.state  = (plistData["checkbox9"] as! Bool) == true ? .on : .off
+        checkbox10.state  = (plistData["checkbox10"] as! Bool) == true ? .on : .off
         
         self.checkbox( 0 )
         
@@ -222,6 +572,190 @@ class StatusMenuController: NSObject {
         p_cmd2_9.stringValue = plistData["p_cmd2_9"] as! String
         p_lab2_10.stringValue = plistData["p_lab2_10"] as! String
         p_cmd2_10.stringValue = plistData["p_cmd2_10"] as! String
+        
+        p_lab3_0.stringValue = plistData["p_lab3_0"] as! String
+        p_cmd3_0.stringValue = plistData["p_cmd3_0"] as! String
+        p_lab3_1.stringValue = plistData["p_lab3_1"] as! String
+        p_cmd3_1.stringValue = plistData["p_cmd3_1"] as! String
+        p_lab3_2.stringValue = plistData["p_lab3_2"] as! String
+        p_cmd3_2.stringValue = plistData["p_cmd3_2"] as! String
+        p_lab3_3.stringValue = plistData["p_lab3_3"] as! String
+        p_cmd3_3.stringValue = plistData["p_cmd3_3"] as! String
+        p_lab3_4.stringValue = plistData["p_lab3_4"] as! String
+        p_cmd3_4.stringValue = plistData["p_cmd3_4"] as! String
+        p_lab3_5.stringValue = plistData["p_lab3_5"] as! String
+        p_cmd3_5.stringValue = plistData["p_cmd3_5"] as! String
+        p_lab3_6.stringValue = plistData["p_lab3_6"] as! String
+        p_cmd3_6.stringValue = plistData["p_cmd3_6"] as! String
+        p_lab3_7.stringValue = plistData["p_lab3_7"] as! String
+        p_cmd3_7.stringValue = plistData["p_cmd3_7"] as! String
+        p_lab3_8.stringValue = plistData["p_lab3_8"] as! String
+        p_cmd3_8.stringValue = plistData["p_cmd3_8"] as! String
+        p_lab3_9.stringValue = plistData["p_lab3_9"] as! String
+        p_cmd3_9.stringValue = plistData["p_cmd3_9"] as! String
+        p_lab3_10.stringValue = plistData["p_la3_10"] as! String
+        p_cmd3_10.stringValue = plistData["p_cmd3_10"] as! String
+        
+        p_lab4_0.stringValue = plistData["p_lab4_0"] as! String
+        p_cmd4_0.stringValue = plistData["p_cmd4_0"] as! String
+        p_lab4_1.stringValue = plistData["p_lab4_1"] as! String
+        p_cmd4_1.stringValue = plistData["p_cmd4_1"] as! String
+        p_lab4_2.stringValue = plistData["p_lab4_2"] as! String
+        p_cmd4_2.stringValue = plistData["p_cmd4_2"] as! String
+        p_lab4_3.stringValue = plistData["p_lab4_3"] as! String
+        p_cmd4_3.stringValue = plistData["p_cmd4_3"] as! String
+        p_lab4_4.stringValue = plistData["p_lab4_4"] as! String
+        p_cmd4_4.stringValue = plistData["p_cmd4_4"] as! String
+        p_lab4_5.stringValue = plistData["p_lab4_5"] as! String
+        p_cmd4_5.stringValue = plistData["p_cmd4_5"] as! String
+        p_lab4_6.stringValue = plistData["p_lab4_6"] as! String
+        p_cmd4_6.stringValue = plistData["p_cmd4_6"] as! String
+        p_lab4_7.stringValue = plistData["p_lab4_7"] as! String
+        p_cmd4_7.stringValue = plistData["p_cmd4_7"] as! String
+        p_lab4_8.stringValue = plistData["p_lab4_8"] as! String
+        p_cmd4_8.stringValue = plistData["p_cmd4_8"] as! String
+        p_lab4_9.stringValue = plistData["p_lab4_9"] as! String
+        p_cmd4_9.stringValue = plistData["p_cmd4_9"] as! String
+        p_lab4_10.stringValue = plistData["p_lab4_10"] as! String
+        p_cmd4_10.stringValue = plistData["p_cmd4_10"] as! String
+        
+        p_lab5_0.stringValue = plistData["p_lab5_0"] as! String
+        p_cmd5_0.stringValue = plistData["p_cmd5_0"] as! String
+        p_lab5_1.stringValue = plistData["p_lab5_1"] as! String
+        p_cmd5_1.stringValue = plistData["p_cmd5_1"] as! String
+        p_lab5_2.stringValue = plistData["p_lab5_2"] as! String
+        p_cmd5_2.stringValue = plistData["p_cmd5_2"] as! String
+        p_lab5_3.stringValue = plistData["p_lab5_3"] as! String
+        p_cmd5_3.stringValue = plistData["p_cmd5_3"] as! String
+        p_lab5_4.stringValue = plistData["p_lab5_4"] as! String
+        p_cmd5_4.stringValue = plistData["p_cmd5_4"] as! String
+        p_lab5_5.stringValue = plistData["p_lab5_5"] as! String
+        p_cmd5_5.stringValue = plistData["p_cmd5_5"] as! String
+        p_lab5_6.stringValue = plistData["p_lab5_6"] as! String
+        p_cmd5_6.stringValue = plistData["p_cmd5_6"] as! String
+        p_lab5_7.stringValue = plistData["p_lab5_7"] as! String
+        p_cmd5_7.stringValue = plistData["p_cmd5_7"] as! String
+        p_lab5_8.stringValue = plistData["p_lab5_8"] as! String
+        p_cmd5_8.stringValue = plistData["p_cmd5_8"] as! String
+        p_lab5_9.stringValue = plistData["p_lab5_9"] as! String
+        p_cmd5_9.stringValue = plistData["p_cmd5_9"] as! String
+        p_lab5_10.stringValue = plistData["p_lab5_10"] as! String
+        p_cmd5_10.stringValue = plistData["p_cmd5_10"] as! String
+        
+        p_lab6_0.stringValue = plistData["p_lab6_0"] as! String
+        p_cmd6_0.stringValue = plistData["p_cmd6_0"] as! String
+        p_lab6_1.stringValue = plistData["p_lab6_1"] as! String
+        p_cmd6_1.stringValue = plistData["p_cmd6_1"] as! String
+        p_lab6_2.stringValue = plistData["p_lab6_2"] as! String
+        p_cmd6_2.stringValue = plistData["p_cmd6_2"] as! String
+        p_lab6_3.stringValue = plistData["p_lab6_3"] as! String
+        p_cmd6_3.stringValue = plistData["p_cmd6_3"] as! String
+        p_lab6_4.stringValue = plistData["p_lab6_4"] as! String
+        p_cmd6_4.stringValue = plistData["p_cmd6_4"] as! String
+        p_lab6_5.stringValue = plistData["p_lab6_5"] as! String
+        p_cmd6_5.stringValue = plistData["p_cmd6_5"] as! String
+        p_lab6_6.stringValue = plistData["p_lab6_6"] as! String
+        p_cmd6_6.stringValue = plistData["p_cmd6_6"] as! String
+        p_lab6_7.stringValue = plistData["p_lab6_7"] as! String
+        p_cmd6_7.stringValue = plistData["p_cmd6_7"] as! String
+        p_lab6_8.stringValue = plistData["p_lab6_8"] as! String
+        p_cmd6_8.stringValue = plistData["p_cmd6_8"] as! String
+        p_lab6_9.stringValue = plistData["p_lab6_9"] as! String
+        p_cmd6_9.stringValue = plistData["p_cmd6_9"] as! String
+        p_lab6_10.stringValue = plistData["p_lab6_10"] as! String
+        p_cmd6_10.stringValue = plistData["p_cmd6_10"] as! String
+        
+        p_lab7_0.stringValue = plistData["p_lab7_0"] as! String
+        p_cmd7_0.stringValue = plistData["p_cmd7_0"] as! String
+        p_lab7_1.stringValue = plistData["p_lab7_1"] as! String
+        p_cmd7_1.stringValue = plistData["p_cmd7_1"] as! String
+        p_lab7_2.stringValue = plistData["p_lab7_2"] as! String
+        p_cmd7_2.stringValue = plistData["p_cmd7_2"] as! String
+        p_lab7_3.stringValue = plistData["p_lab7_3"] as! String
+        p_cmd7_3.stringValue = plistData["p_cmd7_3"] as! String
+        p_lab7_4.stringValue = plistData["p_lab7_4"] as! String
+        p_cmd7_4.stringValue = plistData["p_cmd7_4"] as! String
+        p_lab7_5.stringValue = plistData["p_lab7_5"] as! String
+        p_cmd7_5.stringValue = plistData["p_cmd7_5"] as! String
+        p_lab7_6.stringValue = plistData["p_lab7_6"] as! String
+        p_cmd7_6.stringValue = plistData["p_cmd7_6"] as! String
+        p_lab7_7.stringValue = plistData["p_lab7_7"] as! String
+        p_cmd7_7.stringValue = plistData["p_cmd7_7"] as! String
+        p_lab7_8.stringValue = plistData["p_lab7_8"] as! String
+        p_cmd7_8.stringValue = plistData["p_cmd7_8"] as! String
+        p_lab7_9.stringValue = plistData["p_lab7_9"] as! String
+        p_cmd7_9.stringValue = plistData["p_cmd7_9"] as! String
+        p_lab7_10.stringValue = plistData["p_lab7_10"] as! String
+        p_cmd7_10.stringValue = plistData["p_cmd7_10"] as! String
+        
+        p_lab8_0.stringValue = plistData["p_lab8_0"] as! String
+        p_cmd8_0.stringValue = plistData["p_cmd8_0"] as! String
+        p_lab8_1.stringValue = plistData["p_lab8_1"] as! String
+        p_cmd8_1.stringValue = plistData["p_cmd8_1"] as! String
+        p_lab8_2.stringValue = plistData["p_lab8_2"] as! String
+        p_cmd8_2.stringValue = plistData["p_cmd8_2"] as! String
+        p_lab8_3.stringValue = plistData["p_lab8_3"] as! String
+        p_cmd8_3.stringValue = plistData["p_cmd8_3"] as! String
+        p_lab8_4.stringValue = plistData["p_lab8_4"] as! String
+        p_cmd8_4.stringValue = plistData["p_cmd8_4"] as! String
+        p_lab8_5.stringValue = plistData["p_lab8_5"] as! String
+        p_cmd8_5.stringValue = plistData["p_cmd8_5"] as! String
+        p_lab8_6.stringValue = plistData["p_lab8_6"] as! String
+        p_cmd8_6.stringValue = plistData["p_cmd8_6"] as! String
+        p_lab8_7.stringValue = plistData["p_lab8_7"] as! String
+        p_cmd8_7.stringValue = plistData["p_cmd8_7"] as! String
+        p_lab8_8.stringValue = plistData["p_lab8_8"] as! String
+        p_cmd8_8.stringValue = plistData["p_cmd8_8"] as! String
+        p_lab8_9.stringValue = plistData["p_lab8_9"] as! String
+        p_cmd8_9.stringValue = plistData["p_cmd8_9"] as! String
+        p_lab8_10.stringValue = plistData["p_lab8_10"] as! String
+        p_cmd8_10.stringValue = plistData["p_cmd8_10"] as! String
+        
+        p_lab9_0.stringValue = plistData["p_lab9_0"] as! String
+        p_cmd9_0.stringValue = plistData["p_cmd9_0"] as! String
+        p_lab9_1.stringValue = plistData["p_lab9_1"] as! String
+        p_cmd9_1.stringValue = plistData["p_cmd9_1"] as! String
+        p_lab9_2.stringValue = plistData["p_lab9_2"] as! String
+        p_cmd9_2.stringValue = plistData["p_cmd9_2"] as! String
+        p_lab9_3.stringValue = plistData["p_lab9_3"] as! String
+        p_cmd9_3.stringValue = plistData["p_cmd9_3"] as! String
+        p_lab9_4.stringValue = plistData["p_lab9_4"] as! String
+        p_cmd9_4.stringValue = plistData["p_cmd9_4"] as! String
+        p_lab9_5.stringValue = plistData["p_lab9_5"] as! String
+        p_cmd9_5.stringValue = plistData["p_cmd9_5"] as! String
+        p_lab9_6.stringValue = plistData["p_lab9_6"] as! String
+        p_cmd9_6.stringValue = plistData["p_cmd9_6"] as! String
+        p_lab9_7.stringValue = plistData["p_lab9_7"] as! String
+        p_cmd9_7.stringValue = plistData["p_cmd9_7"] as! String
+        p_lab9_8.stringValue = plistData["p_lab9_8"] as! String
+        p_cmd9_8.stringValue = plistData["p_cmd9_8"] as! String
+        p_lab9_9.stringValue = plistData["p_lab9_9"] as! String
+        p_cmd9_9.stringValue = plistData["p_cmd9_9"] as! String
+        p_lab9_10.stringValue = plistData["p_lab9_10"] as! String
+        p_cmd9_10.stringValue = plistData["p_cmd9_10"] as! String
+        
+        p_lab10_0.stringValue = plistData["p_lab10_0"] as! String
+        p_cmd10_0.stringValue = plistData["p_cmd10_0"] as! String
+        p_lab10_1.stringValue = plistData["p_lab10_1"] as! String
+        p_cmd10_1.stringValue = plistData["p_cmd10_1"] as! String
+        p_lab10_2.stringValue = plistData["p_lab10_2"] as! String
+        p_cmd10_2.stringValue = plistData["p_cmd10_2"] as! String
+        p_lab10_3.stringValue = plistData["p_lab10_3"] as! String
+        p_cmd10_3.stringValue = plistData["p_cmd10_3"] as! String
+        p_lab10_4.stringValue = plistData["p_lab10_4"] as! String
+        p_cmd10_4.stringValue = plistData["p_cmd10_4"] as! String
+        p_lab10_5.stringValue = plistData["p_lab10_5"] as! String
+        p_cmd10_5.stringValue = plistData["p_cmd10_5"] as! String
+        p_lab10_6.stringValue = plistData["p_lab10_6"] as! String
+        p_cmd10_6.stringValue = plistData["p_cmd10_6"] as! String
+        p_lab10_7.stringValue = plistData["p_lab10_7"] as! String
+        p_cmd10_7.stringValue = plistData["p_cmd10_7"] as! String
+        p_lab10_8.stringValue = plistData["p_lab10_8"] as! String
+        p_cmd10_8.stringValue = plistData["p_cmd10_8"] as! String
+        p_lab10_9.stringValue = plistData["p_lab10_9"] as! String
+        p_cmd10_9.stringValue = plistData["p_cmd10_9"] as! String
+        p_lab10_10.stringValue = plistData["p_lab10_10"] as! String
+        p_cmd10_10.stringValue = plistData["p_cmd10_10"] as! String
         
         updateMenu()
         
@@ -278,7 +812,199 @@ class StatusMenuController: NSObject {
             "p_lab2_9": p_lab2_9.stringValue ,
             "p_cmd2_9": p_cmd2_9.stringValue ,
             "p_lab2_10": p_lab2_10.stringValue ,
-            "p_cmd2_10": p_cmd2_10.stringValue
+            "p_cmd2_10": p_cmd2_10.stringValue ,
+            
+            "checkbox3": checkbox3.state,
+            "p_lab3_0": p_lab3_0.stringValue ,
+            "p_cmd3_0": p_cmd3_0.stringValue ,
+            "p_lab3_1": p_lab3_1.stringValue ,
+            "p_cmd3_1": p_cmd3_1.stringValue ,
+            "p_lab3_2": p_lab3_2.stringValue ,
+            "p_cmd3_2": p_cmd3_2.stringValue ,
+            "p_lab3_3": p_lab3_3.stringValue ,
+            "p_cmd3_3": p_cmd3_3.stringValue ,
+            "p_lab3_4": p_lab3_4.stringValue ,
+            "p_cmd3_4": p_cmd3_4.stringValue ,
+            "p_lab3_5": p_lab3_5.stringValue ,
+            "p_cmd3_5": p_cmd3_5.stringValue ,
+            "p_lab3_6": p_lab3_6.stringValue ,
+            "p_cmd3_6": p_cmd3_6.stringValue ,
+            "p_lab3_7": p_lab3_7.stringValue ,
+            "p_cmd3_7": p_cmd3_7.stringValue ,
+            "p_lab3_8": p_lab3_8.stringValue ,
+            "p_cmd3_8": p_cmd3_8.stringValue ,
+            "p_lab3_9": p_lab3_9.stringValue ,
+            "p_cmd3_9": p_cmd3_9.stringValue ,
+            "p_lab3_10": p_lab3_10.stringValue ,
+            "p_cmd3_10": p_cmd3_10.stringValue ,
+            
+            "checkbox4": checkbox4.state,
+            "p_lab4_0": p_lab4_0.stringValue ,
+            "p_cmd4_0": p_cmd4_0.stringValue ,
+            "p_lab4_1": p_lab4_1.stringValue ,
+            "p_cmd4_1": p_cmd4_1.stringValue ,
+            "p_lab4_2": p_lab4_2.stringValue ,
+            "p_cmd4_2": p_cmd4_2.stringValue ,
+            "p_lab4_3": p_lab4_3.stringValue ,
+            "p_cmd4_3": p_cmd4_3.stringValue ,
+            "p_lab4_4": p_lab4_4.stringValue ,
+            "p_cmd4_4": p_cmd4_4.stringValue ,
+            "p_lab4_5": p_lab4_5.stringValue ,
+            "p_cmd4_5": p_cmd4_5.stringValue ,
+            "p_lab4_6": p_lab4_6.stringValue ,
+            "p_cmd4_6": p_cmd4_6.stringValue ,
+            "p_lab4_7": p_lab4_7.stringValue ,
+            "p_cmd4_7": p_cmd4_7.stringValue ,
+            "p_lab4_8": p_lab4_8.stringValue ,
+            "p_cmd4_8": p_cmd4_8.stringValue ,
+            "p_lab4_9": p_lab4_9.stringValue ,
+            "p_cmd4_9": p_cmd4_9.stringValue ,
+            "p_lab4_10": p_lab4_10.stringValue ,
+            "p_cmd4_10": p_cmd4_10.stringValue ,
+            
+            "checkbox5": checkbox5.state,
+            "p_lab5_0": p_lab5_0.stringValue ,
+            "p_cmd5_0": p_cmd5_0.stringValue ,
+            "p_lab5_1": p_lab5_1.stringValue ,
+            "p_cmd5_1": p_cmd5_1.stringValue ,
+            "p_lab5_2": p_lab5_2.stringValue ,
+            "p_cmd5_2": p_cmd5_2.stringValue ,
+            "p_lab5_3": p_lab5_3.stringValue ,
+            "p_cmd5_3": p_cmd5_3.stringValue ,
+            "p_lab5_4": p_lab5_4.stringValue ,
+            "p_cmd5_4": p_cmd5_4.stringValue ,
+            "p_lab5_5": p_lab5_5.stringValue ,
+            "p_cmd5_5": p_cmd5_5.stringValue ,
+            "p_lab5_6": p_lab5_6.stringValue ,
+            "p_cmd5_6": p_cmd5_6.stringValue ,
+            "p_lab5_7": p_lab5_7.stringValue ,
+            "p_cmd5_7": p_cmd5_7.stringValue ,
+            "p_lab5_8": p_lab5_8.stringValue ,
+            "p_cmd5_8": p_cmd5_8.stringValue ,
+            "p_lab5_9": p_lab5_9.stringValue ,
+            "p_cmd5_9": p_cmd5_9.stringValue ,
+            "p_lab5_10": p_lab5_10.stringValue ,
+            "p_cmd5_10": p_cmd5_10.stringValue ,
+            
+            "checkbox6": checkbox6.state,
+            "p_lab6_0": p_lab6_0.stringValue ,
+            "p_cmd6_0": p_cmd6_0.stringValue ,
+            "p_lab6_1": p_lab6_1.stringValue ,
+            "p_cmd6_1": p_cmd6_1.stringValue ,
+            "p_lab6_2": p_lab6_2.stringValue ,
+            "p_cmd6_2": p_cmd6_2.stringValue ,
+            "p_lab6_3": p_lab6_3.stringValue ,
+            "p_cmd6_3": p_cmd6_3.stringValue ,
+            "p_lab6_4": p_lab6_4.stringValue ,
+            "p_cmd6_4": p_cmd6_4.stringValue ,
+            "p_lab6_5": p_lab6_5.stringValue ,
+            "p_cmd6_5": p_cmd6_5.stringValue ,
+            "p_lab6_6": p_lab6_6.stringValue ,
+            "p_cmd6_6": p_cmd6_6.stringValue ,
+            "p_lab6_7": p_lab6_7.stringValue ,
+            "p_cmd6_7": p_cmd6_7.stringValue ,
+            "p_lab6_8": p_lab6_8.stringValue ,
+            "p_cmd6_8": p_cmd6_8.stringValue ,
+            "p_lab6_9": p_lab6_9.stringValue ,
+            "p_cmd6_9": p_cmd6_9.stringValue ,
+            "p_lab6_10": p_lab6_10.stringValue ,
+            "p_cmd6_10": p_cmd6_10.stringValue ,
+            
+            "checkbox7": checkbox7.state,
+            "p_lab7_0": p_lab7_0.stringValue ,
+            "p_cmd7_0": p_cmd7_0.stringValue ,
+            "p_lab7_1": p_lab7_1.stringValue ,
+            "p_cmd7_1": p_cmd7_1.stringValue ,
+            "p_lab7_2": p_lab7_2.stringValue ,
+            "p_cmd7_2": p_cmd7_2.stringValue ,
+            "p_lab7_3": p_lab7_3.stringValue ,
+            "p_cmd7_3": p_cmd7_3.stringValue ,
+            "p_lab7_4": p_lab7_4.stringValue ,
+            "p_cmd7_4": p_cmd7_4.stringValue ,
+            "p_lab7_5": p_lab7_5.stringValue ,
+            "p_cmd7_5": p_cmd7_5.stringValue ,
+            "p_lab7_6": p_lab7_6.stringValue ,
+            "p_cmd7_6": p_cmd7_6.stringValue ,
+            "p_lab7_7": p_lab7_7.stringValue ,
+            "p_cmd7_7": p_cmd7_7.stringValue ,
+            "p_lab7_8": p_lab7_8.stringValue ,
+            "p_cmd7_8": p_cmd7_8.stringValue ,
+            "p_lab7_9": p_lab7_9.stringValue ,
+            "p_cmd7_9": p_cmd7_9.stringValue ,
+            "p_lab7_10": p_lab7_10.stringValue ,
+            "p_cmd7_10": p_cmd7_10.stringValue ,
+            
+            "checkbox8": checkbox8.state,
+            "p_lab8_0": p_lab8_0.stringValue ,
+            "p_cmd8_0": p_cmd8_0.stringValue ,
+            "p_lab8_1": p_lab8_1.stringValue ,
+            "p_cmd8_1": p_cmd8_1.stringValue ,
+            "p_lab8_2": p_lab8_2.stringValue ,
+            "p_cmd8_2": p_cmd8_2.stringValue ,
+            "p_lab8_3": p_lab8_3.stringValue ,
+            "p_cmd8_3": p_cmd8_3.stringValue ,
+            "p_lab8_4": p_lab8_4.stringValue ,
+            "p_cmd8_4": p_cmd8_4.stringValue ,
+            "p_lab8_5": p_lab8_5.stringValue ,
+            "p_cmd8_5": p_cmd8_5.stringValue ,
+            "p_lab8_6": p_lab8_6.stringValue ,
+            "p_cmd8_6": p_cmd8_6.stringValue ,
+            "p_lab8_7": p_lab8_7.stringValue ,
+            "p_cmd8_7": p_cmd8_7.stringValue ,
+            "p_lab8_8": p_lab8_8.stringValue ,
+            "p_cmd8_8": p_cmd8_8.stringValue ,
+            "p_lab8_9": p_lab8_9.stringValue ,
+            "p_cmd8_9": p_cmd8_9.stringValue ,
+            "p_lab8_10": p_lab8_10.stringValue ,
+            "p_cmd8_10": p_cmd8_10.stringValue ,
+            
+            "checkbox9": checkbox9.state,
+            "p_lab9_0": p_lab9_0.stringValue ,
+            "p_cmd9_0": p_cmd9_0.stringValue ,
+            "p_lab9_1": p_lab9_1.stringValue ,
+            "p_cmd9_1": p_cmd9_1.stringValue ,
+            "p_lab9_2": p_lab9_2.stringValue ,
+            "p_cmd9_2": p_cmd9_2.stringValue ,
+            "p_lab9_3": p_lab9_3.stringValue ,
+            "p_cmd9_3": p_cmd9_3.stringValue ,
+            "p_lab9_4": p_lab9_4.stringValue ,
+            "p_cmd9_4": p_cmd9_4.stringValue ,
+            "p_lab9_5": p_lab9_5.stringValue ,
+            "p_cmd9_5": p_cmd9_5.stringValue ,
+            "p_lab9_6": p_lab9_6.stringValue ,
+            "p_cmd9_6": p_cmd9_6.stringValue ,
+            "p_lab9_7": p_lab9_7.stringValue ,
+            "p_cmd9_7": p_cmd9_7.stringValue ,
+            "p_lab9_8": p_lab9_8.stringValue ,
+            "p_cmd9_8": p_cmd9_8.stringValue ,
+            "p_lab9_9": p_lab9_9.stringValue ,
+            "p_cmd9_9": p_cmd9_9.stringValue ,
+            "p_lab9_10": p_lab9_10.stringValue ,
+            "p_cmd9_10": p_cmd9_10.stringValue ,
+            
+            "checkbox10": checkbox10.state,
+            "p_lab10_0": p_lab10_0.stringValue ,
+            "p_cmd10_0": p_cmd10_0.stringValue ,
+            "p_lab10_1": p_lab10_1.stringValue ,
+            "p_cmd10_1": p_cmd10_1.stringValue ,
+            "p_lab10_2": p_lab10_2.stringValue ,
+            "p_cmd10_2": p_cmd10_2.stringValue ,
+            "p_lab10_3": p_lab10_3.stringValue ,
+            "p_cmd10_3": p_cmd10_3.stringValue ,
+            "p_lab10_4": p_lab10_4.stringValue ,
+            "p_cmd10_4": p_cmd10_4.stringValue ,
+            "p_lab10_5": p_lab10_5.stringValue ,
+            "p_cmd10_5": p_cmd10_5.stringValue ,
+            "p_lab10_6": p_lab10_6.stringValue ,
+            "p_cmd10_6": p_cmd10_6.stringValue ,
+            "p_lab10_7": p_lab10_7.stringValue ,
+            "p_cmd10_7": p_cmd10_7.stringValue ,
+            "p_lab10_8": p_lab10_8.stringValue ,
+            "p_cmd10_8": p_cmd10_8.stringValue ,
+            "p_lab10_9": p_lab10_9.stringValue ,
+            "p_cmd10_9": p_cmd10_9.stringValue ,
+            "p_lab10_10": p_lab10_10.stringValue ,
+            "p_cmd10_10": p_cmd10_10.stringValue
                         ] as [String : Any]
        
         let plistData = NSDictionary(dictionary: dicContent)
@@ -296,6 +1022,17 @@ class StatusMenuController: NSObject {
         // Update Menu
         m_lab1_0.isHidden = checkbox1.state == .on ? false : true
         m_lab1.isHidden    = checkbox1.state == .on ? true : false
+        
+        m_lab2_0.isHidden = checkbox2.state == .on ? false : true
+        m_lab2.isHidden    = checkbox2.state == .on ? true : false
+        
+        m_lab3_0.isHidden = checkbox3.state == .on ? false : true
+        m_lab3.isHidden    = checkbox3.state == .on ? true : false
+        
+        // Tutaj
+        
+        m_lab2_0.isHidden = checkbox2.state == .on ? false : true
+        m_lab2.isHidden    = checkbox2.state == .on ? true : false
         
         m_lab2_0.isHidden = checkbox2.state == .on ? false : true
         m_lab2.isHidden    = checkbox2.state == .on ? true : false
