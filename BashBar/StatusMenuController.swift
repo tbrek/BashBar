@@ -1029,13 +1029,26 @@ class StatusMenuController: NSObject {
         m_lab3_0.isHidden = checkbox3.state == .on ? false : true
         m_lab3.isHidden    = checkbox3.state == .on ? true : false
         
-        // Tutaj
+        m_lab4_0.isHidden = checkbox4.state == .on ? false : true
+        m_lab4.isHidden    = checkbox4.state == .on ? true : false
         
-        m_lab2_0.isHidden = checkbox2.state == .on ? false : true
-        m_lab2.isHidden    = checkbox2.state == .on ? true : false
+        m_lab5_0.isHidden = checkbox5.state == .on ? false : true
+        m_lab5.isHidden    = checkbox5.state == .on ? true : false
         
-        m_lab2_0.isHidden = checkbox2.state == .on ? false : true
-        m_lab2.isHidden    = checkbox2.state == .on ? true : false
+        m_lab6_0.isHidden = checkbox6.state == .on ? false : true
+        m_lab6.isHidden    = checkbox6.state == .on ? true : false
+        
+        m_lab7_0.isHidden = checkbox7.state == .on ? false : true
+        m_lab7.isHidden    = checkbox7.state == .on ? true : false
+        
+        m_lab8_0.isHidden = checkbox8.state == .on ? false : true
+        m_lab8.isHidden    = checkbox8.state == .on ? true : false
+        
+        m_lab9_0.isHidden = checkbox9.state == .on ? false : true
+        m_lab9.isHidden    = checkbox9.state == .on ? true : false
+        
+        m_lab10_0.isHidden = checkbox10.state == .on ? false : true
+        m_lab10.isHidden    = checkbox10.state == .on ? true : false
         
         // Hide/Show Labels
         Label1_1.isHidden = checkbox1.state == .on ? false : true
@@ -1045,6 +1058,38 @@ class StatusMenuController: NSObject {
         Label2_1.isHidden = checkbox2.state == .on ? false : true
         Command2_0.isHidden = checkbox2.state == .on ? true : false
         Command2_1.isHidden = checkbox2.state == .on ? false : true
+        
+        Label3_1.isHidden = checkbox3.state == .on ? false : true
+        Command3_0.isHidden = checkbox3.state == .on ? true : false
+        Command3_1.isHidden = checkbox3.state == .on ? false : true
+        
+        Label4_1.isHidden = checkbox4.state == .on ? false : true
+        Command4_0.isHidden = checkbox4.state == .on ? true : false
+        Command4_1.isHidden = checkbox4.state == .on ? false : true
+        
+        Label5_1.isHidden = checkbox5.state == .on ? false : true
+        Command5_0.isHidden = checkbox5.state == .on ? true : false
+        Command5_1.isHidden = checkbox5.state == .on ? false : true
+        
+        Label6_1.isHidden = checkbox6.state == .on ? false : true
+        Command6_0.isHidden = checkbox6.state == .on ? true : false
+        Command6_1.isHidden = checkbox6.state == .on ? false : true
+        
+        Label7_1.isHidden = checkbox7.state == .on ? false : true
+        Command7_0.isHidden = checkbox7.state == .on ? true : false
+        Command7_1.isHidden = checkbox7.state == .on ? false : true
+        
+        Label8_1.isHidden = checkbox8.state == .on ? false : true
+        Command8_0.isHidden = checkbox8.state == .on ? true : false
+        Command8_1.isHidden = checkbox8.state == .on ? false : true
+        
+        Label9_1.isHidden = checkbox9.state == .on ? false : true
+        Command9_0.isHidden = checkbox9.state == .on ? true : false
+        Command9_1.isHidden = checkbox9.state == .on ? false : true
+        
+        Label10_1.isHidden = checkbox10.state == .on ? false : true
+        Command10_0.isHidden = checkbox10.state == .on ? true : false
+        Command10_1.isHidden = checkbox10.state == .on ? false : true
         
         // Hide/Show Fields
         p_cmd1_0.isHidden  = checkbox1.state == .on ? true : false
@@ -1068,6 +1113,8 @@ class StatusMenuController: NSObject {
         p_cmd1_9.isHidden  = checkbox1.state == .on ? false : true
         p_lab1_10.isHidden  = checkbox1.state == .on ? false : true
         p_cmd1_10.isHidden  = checkbox1.state == .on ? false : true
+        
+        // Tutaj
         
         p_cmd2_0.isHidden  = checkbox2.state == .on ? true : false
         p_lab2_1.isHidden  = checkbox2.state == .on ? false : true
