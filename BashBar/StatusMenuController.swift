@@ -1114,8 +1114,6 @@ class StatusMenuController: NSObject {
         p_lab1_10.isHidden  = checkbox1.state == .on ? false : true
         p_cmd1_10.isHidden  = checkbox1.state == .on ? false : true
         
-        // Tutaj
-        
         p_cmd2_0.isHidden  = checkbox2.state == .on ? true : false
         p_lab2_1.isHidden  = checkbox2.state == .on ? false : true
         p_cmd2_1.isHidden  = checkbox2.state == .on ? false : true
@@ -1137,6 +1135,182 @@ class StatusMenuController: NSObject {
         p_cmd2_9.isHidden  = checkbox2.state == .on ? false : true
         p_lab2_10.isHidden  = checkbox2.state == .on ? false : true
         p_cmd2_10.isHidden  = checkbox2.state == .on ? false : true
+        
+        p_cmd3_0.isHidden  = checkbox3.state == .on ? true : false
+        p_lab3_1.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_1.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_2.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_2.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_3.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_3.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_4.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_4.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_5.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_5.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_6.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_6.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_7.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_7.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_8.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_8.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_9.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_9.isHidden  = checkbox3.state == .on ? false : true
+        p_lab3_10.isHidden  = checkbox3.state == .on ? false : true
+        p_cmd3_10.isHidden  = checkbox3.state == .on ? false : true
+        
+        p_cmd4_0.isHidden  = checkbox4.state == .on ? true : false
+        p_lab4_1.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_1.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_2.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_2.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_3.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_3.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_4.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_4.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_5.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_5.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_6.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_6.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_7.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_7.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_8.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_8.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_9.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_9.isHidden  = checkbox4.state == .on ? false : true
+        p_lab4_10.isHidden  = checkbox4.state == .on ? false : true
+        p_cmd4_10.isHidden  = checkbox4.state == .on ? false : true
+        
+        p_cmd5_0.isHidden  = checkbox5.state == .on ? true : false
+        p_lab5_1.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_1.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_2.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_2.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_3.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_3.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_4.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_4.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_5.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_5.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_6.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_6.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_7.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_7.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_8.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_8.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_9.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_9.isHidden  = checkbox5.state == .on ? false : true
+        p_lab5_10.isHidden  = checkbox5.state == .on ? false : true
+        p_cmd5_10.isHidden  = checkbox5.state == .on ? false : true
+        
+        p_cmd6_0.isHidden  = checkbox6.state == .on ? true : false
+        p_lab6_1.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_1.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_2.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_2.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_3.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_3.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_4.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_4.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_5.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_5.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_6.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_6.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_7.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_7.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_8.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_8.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_9.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_9.isHidden  = checkbox6.state == .on ? false : true
+        p_lab6_10.isHidden  = checkbox6.state == .on ? false : true
+        p_cmd6_10.isHidden  = checkbox6.state == .on ? false : true
+        
+        p_cmd7_0.isHidden  = checkbox7.state == .on ? true : false
+        p_lab7_1.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_1.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_2.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_2.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_3.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_3.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_4.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_4.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_5.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_5.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_6.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_6.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_7.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_7.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_8.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_8.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_9.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_9.isHidden  = checkbox7.state == .on ? false : true
+        p_lab7_10.isHidden  = checkbox7.state == .on ? false : true
+        p_cmd7_10.isHidden  = checkbox7.state == .on ? false : true
+        
+        p_cmd8_0.isHidden  = checkbox8.state == .on ? true : false
+        p_lab8_1.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_1.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_2.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_2.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_3.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_3.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_4.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_4.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_5.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_5.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_6.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_6.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_7.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_7.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_8.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_8.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_9.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_9.isHidden  = checkbox8.state == .on ? false : true
+        p_lab8_10.isHidden  = checkbox8.state == .on ? false : true
+        p_cmd8_10.isHidden  = checkbox8.state == .on ? false : true
+        
+        p_cmd9_0.isHidden  = checkbox9.state == .on ? true : false
+        p_lab9_1.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_1.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_2.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_2.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_3.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_3.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_4.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_4.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_5.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_5.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_6.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_6.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_7.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_7.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_8.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_8.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_9.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_9.isHidden  = checkbox9.state == .on ? false : true
+        p_lab9_10.isHidden  = checkbox9.state == .on ? false : true
+        p_cmd9_10.isHidden  = checkbox9.state == .on ? false : true
+        
+        p_cmd10_0.isHidden  = checkbox10.state == .on ? true : false
+        p_lab10_1.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_1.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_2.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_2.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_3.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_3.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_4.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_4.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_5.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_5.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_6.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_6.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_7.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_7.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_8.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_8.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_9.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_9.isHidden  = checkbox10.state == .on ? false : true
+        p_lab10_10.isHidden  = checkbox10.state == .on ? false : true
+        p_cmd10_10.isHidden  = checkbox10.state == .on ? false : true
         
     }
     
