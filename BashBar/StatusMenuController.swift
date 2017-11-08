@@ -593,7 +593,7 @@ class StatusMenuController: NSObject {
         p_cmd3_8.stringValue = plistData["p_cmd3_8"] as! String
         p_lab3_9.stringValue = plistData["p_lab3_9"] as! String
         p_cmd3_9.stringValue = plistData["p_cmd3_9"] as! String
-        p_lab3_10.stringValue = plistData["p_la3_10"] as! String
+        p_lab3_10.stringValue = plistData["p_lab3_10"] as! String
         p_cmd3_10.stringValue = plistData["p_cmd3_10"] as! String
         
         p_lab4_0.stringValue = plistData["p_lab4_0"] as! String
@@ -1320,6 +1320,14 @@ class StatusMenuController: NSObject {
         // Tab
         menu1tab.label = p_lab1_0.stringValue
         menu2tab.label = p_lab2_0.stringValue
+        menu3tab.label = p_lab3_0.stringValue
+        menu4tab.label = p_lab4_0.stringValue
+        menu5tab.label = p_lab5_0.stringValue
+        menu6tab.label = p_lab6_0.stringValue
+        menu7tab.label = p_lab7_0.stringValue
+        menu8tab.label = p_lab8_0.stringValue
+        menu9tab.label = p_lab9_0.stringValue
+        menu10tab.label = p_lab10_0.stringValue
         
         // Menus
         m_lab1.title      = p_lab1_0.stringValue
@@ -1333,6 +1341,54 @@ class StatusMenuController: NSObject {
         m_lab2.isHidden   = (p_lab2_0.stringValue == "" || checkbox2.state == .on) ? true : false
         m_lab2_0.title    = p_lab2_0.stringValue
         m_lab2_0.isHidden = (p_lab2_0.stringValue == "" || checkbox2.state == .off) ? true : false
+        
+        m_lab3.title      = p_lab3_0.stringValue
+        m_lab3.toolTip    = p_cmd3_0.stringValue
+        m_lab3.isHidden   = (p_lab3_0.stringValue == "" || checkbox3.state == .on) ? true : false
+        m_lab3_0.title    = p_lab3_0.stringValue
+        m_lab3_0.isHidden = (p_lab3_0.stringValue == "" || checkbox3.state == .off) ? true : false
+        
+        m_lab4.title      = p_lab4_0.stringValue
+        m_lab4.toolTip    = p_cmd4_0.stringValue
+        m_lab4.isHidden   = (p_lab4_0.stringValue == "" || checkbox4.state == .on) ? true : false
+        m_lab4_0.title    = p_lab4_0.stringValue
+        m_lab4_0.isHidden = (p_lab4_0.stringValue == "" || checkbox4.state == .off) ? true : false
+        
+        m_lab5.title      = p_lab5_0.stringValue
+        m_lab5.toolTip    = p_cmd5_0.stringValue
+        m_lab5.isHidden   = (p_lab5_0.stringValue == "" || checkbox5.state == .on) ? true : false
+        m_lab5_0.title    = p_lab5_0.stringValue
+        m_lab5_0.isHidden = (p_lab5_0.stringValue == "" || checkbox5.state == .off) ? true : false
+        
+        m_lab6.title      = p_lab6_0.stringValue
+        m_lab6.toolTip    = p_cmd6_0.stringValue
+        m_lab6.isHidden   = (p_lab6_0.stringValue == "" || checkbox6.state == .on) ? true : false
+        m_lab6_0.title    = p_lab6_0.stringValue
+        m_lab6_0.isHidden = (p_lab6_0.stringValue == "" || checkbox6.state == .off) ? true : false
+        
+        m_lab7.title      = p_lab7_0.stringValue
+        m_lab7.toolTip    = p_cmd7_0.stringValue
+        m_lab7.isHidden   = (p_lab7_0.stringValue == "" || checkbox7.state == .on) ? true : false
+        m_lab7_0.title    = p_lab7_0.stringValue
+        m_lab7_0.isHidden = (p_lab7_0.stringValue == "" || checkbox7.state == .off) ? true : false
+        
+        m_lab8.title      = p_lab8_0.stringValue
+        m_lab8.toolTip    = p_cmd8_0.stringValue
+        m_lab8.isHidden   = (p_lab8_0.stringValue == "" || checkbox8.state == .on) ? true : false
+        m_lab8_0.title    = p_lab8_0.stringValue
+        m_lab8_0.isHidden = (p_lab8_0.stringValue == "" || checkbox8.state == .off) ? true : false
+        
+        m_lab9.title      = p_lab9_0.stringValue
+        m_lab9.toolTip    = p_cmd9_0.stringValue
+        m_lab9.isHidden   = (p_lab9_0.stringValue == "" || checkbox9.state == .on) ? true : false
+        m_lab9_0.title    = p_lab9_0.stringValue
+        m_lab9_0.isHidden = (p_lab9_0.stringValue == "" || checkbox9.state == .off) ? true : false
+        
+        m_lab10.title      = p_lab10_0.stringValue
+        m_lab10.toolTip    = p_cmd10_0.stringValue
+        m_lab10.isHidden   = (p_lab10_0.stringValue == "" || checkbox10.state == .on) ? true : false
+        m_lab10_0.title    = p_lab10_0.stringValue
+        m_lab10_0.isHidden = (p_lab10_0.stringValue == "" || checkbox10.state == .off) ? true : false
       
         // Submenus
         m_lab1_1.title    = p_lab1_1.stringValue
@@ -1396,8 +1452,255 @@ class StatusMenuController: NSObject {
         m_lab2_10.title    = p_lab2_10.stringValue
         m_lab2_10.toolTip  = p_cmd2_10.stringValue
         m_lab2_10.isHidden = p_lab2_10.stringValue == "" ? true : false
-     
         
+        m_lab3_1.title    = p_lab3_1.stringValue
+        m_lab3_1.toolTip  = p_cmd3_1.stringValue
+        m_lab3_1.isHidden = p_lab3_1.stringValue == "" ? true : false
+        m_lab3_2.title    = p_lab3_2.stringValue
+        m_lab3_2.toolTip  = p_cmd3_2.stringValue
+        m_lab3_2.isHidden = p_lab3_2.stringValue == "" ? true : false
+        m_lab3_3.title    = p_lab3_3.stringValue
+        m_lab3_3.toolTip  = p_cmd3_3.stringValue
+        m_lab3_3.isHidden = p_lab3_3.stringValue == "" ? true : false
+        m_lab3_4.title    = p_lab3_4.stringValue
+        m_lab3_4.toolTip  = p_cmd3_4.stringValue
+        m_lab3_4.isHidden = p_lab3_4.stringValue == "" ? true : false
+        m_lab3_5.title    = p_lab3_5.stringValue
+        m_lab3_5.toolTip  = p_cmd3_5.stringValue
+        m_lab3_5.isHidden = p_lab3_5.stringValue == "" ? true : false
+        m_lab3_6.title    = p_lab3_6.stringValue
+        m_lab3_6.toolTip  = p_cmd3_6.stringValue
+        m_lab3_6.isHidden = p_lab3_6.stringValue == "" ? true : false
+        m_lab3_7.title    = p_lab3_7.stringValue
+        m_lab3_7.toolTip  = p_cmd3_7.stringValue
+        m_lab3_7.isHidden = p_lab3_7.stringValue == "" ? true : false
+        m_lab3_8.title    = p_lab3_8.stringValue
+        m_lab3_8.toolTip  = p_cmd3_8.stringValue
+        m_lab3_8.isHidden = p_lab3_8.stringValue == "" ? true : false
+        m_lab3_9.title    = p_lab3_9.stringValue
+        m_lab3_9.toolTip  = p_cmd3_9.stringValue
+        m_lab3_9.isHidden = p_lab3_9.stringValue == "" ? true : false
+        m_lab3_10.title    = p_lab3_10.stringValue
+        m_lab3_10.toolTip  = p_cmd3_10.stringValue
+        m_lab3_10.isHidden = p_lab3_10.stringValue == "" ? true : false
+        
+        m_lab4_1.title    = p_lab4_1.stringValue
+        m_lab4_1.toolTip  = p_cmd4_1.stringValue
+        m_lab4_1.isHidden = p_lab4_1.stringValue == "" ? true : false
+        m_lab4_2.title    = p_lab4_2.stringValue
+        m_lab4_2.toolTip  = p_cmd4_2.stringValue
+        m_lab4_2.isHidden = p_lab4_2.stringValue == "" ? true : false
+        m_lab4_3.title    = p_lab4_3.stringValue
+        m_lab4_3.toolTip  = p_cmd4_3.stringValue
+        m_lab4_3.isHidden = p_lab4_3.stringValue == "" ? true : false
+        m_lab4_4.title    = p_lab4_4.stringValue
+        m_lab4_4.toolTip  = p_cmd4_4.stringValue
+        m_lab4_4.isHidden = p_lab4_4.stringValue == "" ? true : false
+        m_lab4_5.title    = p_lab4_5.stringValue
+        m_lab4_5.toolTip  = p_cmd4_5.stringValue
+        m_lab4_5.isHidden = p_lab4_5.stringValue == "" ? true : false
+        m_lab4_6.title    = p_lab4_6.stringValue
+        m_lab4_6.toolTip  = p_cmd4_6.stringValue
+        m_lab4_6.isHidden = p_lab4_6.stringValue == "" ? true : false
+        m_lab4_7.title    = p_lab4_7.stringValue
+        m_lab4_7.toolTip  = p_cmd4_7.stringValue
+        m_lab4_7.isHidden = p_lab4_7.stringValue == "" ? true : false
+        m_lab4_8.title    = p_lab4_8.stringValue
+        m_lab4_8.toolTip  = p_cmd4_8.stringValue
+        m_lab4_8.isHidden = p_lab4_8.stringValue == "" ? true : false
+        m_lab4_9.title    = p_lab4_9.stringValue
+        m_lab4_9.toolTip  = p_cmd4_9.stringValue
+        m_lab4_9.isHidden = p_lab4_9.stringValue == "" ? true : false
+        m_lab4_10.title    = p_lab4_10.stringValue
+        m_lab4_10.toolTip  = p_cmd4_10.stringValue
+        m_lab4_10.isHidden = p_lab4_10.stringValue == "" ? true : false
+        
+        m_lab5_1.title    = p_lab5_1.stringValue
+        m_lab5_1.toolTip  = p_cmd5_1.stringValue
+        m_lab5_1.isHidden = p_lab5_1.stringValue == "" ? true : false
+        m_lab5_2.title    = p_lab5_2.stringValue
+        m_lab5_2.toolTip  = p_cmd5_2.stringValue
+        m_lab5_2.isHidden = p_lab5_2.stringValue == "" ? true : false
+        m_lab5_3.title    = p_lab5_3.stringValue
+        m_lab5_3.toolTip  = p_cmd5_3.stringValue
+        m_lab5_3.isHidden = p_lab5_3.stringValue == "" ? true : false
+        m_lab5_4.title    = p_lab5_4.stringValue
+        m_lab5_4.toolTip  = p_cmd5_4.stringValue
+        m_lab5_4.isHidden = p_lab5_4.stringValue == "" ? true : false
+        m_lab5_5.title    = p_lab5_5.stringValue
+        m_lab5_5.toolTip  = p_cmd5_5.stringValue
+        m_lab5_5.isHidden = p_lab5_5.stringValue == "" ? true : false
+        m_lab5_6.title    = p_lab5_6.stringValue
+        m_lab5_6.toolTip  = p_cmd5_6.stringValue
+        m_lab5_6.isHidden = p_lab5_6.stringValue == "" ? true : false
+        m_lab5_7.title    = p_lab5_7.stringValue
+        m_lab5_7.toolTip  = p_cmd5_7.stringValue
+        m_lab5_7.isHidden = p_lab5_7.stringValue == "" ? true : false
+        m_lab5_8.title    = p_lab5_8.stringValue
+        m_lab5_8.toolTip  = p_cmd5_8.stringValue
+        m_lab5_8.isHidden = p_lab5_8.stringValue == "" ? true : false
+        m_lab5_9.title    = p_lab5_9.stringValue
+        m_lab5_9.toolTip  = p_cmd5_9.stringValue
+        m_lab5_9.isHidden = p_lab5_9.stringValue == "" ? true : false
+        m_lab5_10.title    = p_lab5_10.stringValue
+        m_lab5_10.toolTip  = p_cmd5_10.stringValue
+        m_lab5_10.isHidden = p_lab5_10.stringValue == "" ? true : false
+        
+        m_lab6_1.title    = p_lab6_1.stringValue
+        m_lab6_1.toolTip  = p_cmd6_1.stringValue
+        m_lab6_1.isHidden = p_lab6_1.stringValue == "" ? true : false
+        m_lab6_2.title    = p_lab6_2.stringValue
+        m_lab6_2.toolTip  = p_cmd6_2.stringValue
+        m_lab6_2.isHidden = p_lab6_2.stringValue == "" ? true : false
+        m_lab6_3.title    = p_lab6_3.stringValue
+        m_lab6_3.toolTip  = p_cmd6_3.stringValue
+        m_lab6_3.isHidden = p_lab6_3.stringValue == "" ? true : false
+        m_lab6_4.title    = p_lab6_4.stringValue
+        m_lab6_4.toolTip  = p_cmd6_4.stringValue
+        m_lab6_4.isHidden = p_lab6_4.stringValue == "" ? true : false
+        m_lab6_5.title    = p_lab6_5.stringValue
+        m_lab6_5.toolTip  = p_cmd6_5.stringValue
+        m_lab6_5.isHidden = p_lab6_5.stringValue == "" ? true : false
+        m_lab6_6.title    = p_lab6_6.stringValue
+        m_lab6_6.toolTip  = p_cmd6_6.stringValue
+        m_lab6_6.isHidden = p_lab6_6.stringValue == "" ? true : false
+        m_lab6_7.title    = p_lab6_7.stringValue
+        m_lab6_7.toolTip  = p_cmd6_7.stringValue
+        m_lab6_7.isHidden = p_lab6_7.stringValue == "" ? true : false
+        m_lab6_8.title    = p_lab6_8.stringValue
+        m_lab6_8.toolTip  = p_cmd6_8.stringValue
+        m_lab6_8.isHidden = p_lab6_8.stringValue == "" ? true : false
+        m_lab6_9.title    = p_lab6_9.stringValue
+        m_lab6_9.toolTip  = p_cmd6_9.stringValue
+        m_lab6_9.isHidden = p_lab6_9.stringValue == "" ? true : false
+        m_lab6_10.title    = p_lab6_10.stringValue
+        m_lab6_10.toolTip  = p_cmd6_10.stringValue
+        m_lab6_10.isHidden = p_lab6_10.stringValue == "" ? true : false
+        
+        m_lab7_1.title    = p_lab7_1.stringValue
+        m_lab7_1.toolTip  = p_cmd7_1.stringValue
+        m_lab7_1.isHidden = p_lab7_1.stringValue == "" ? true : false
+        m_lab7_2.title    = p_lab7_2.stringValue
+        m_lab7_2.toolTip  = p_cmd7_2.stringValue
+        m_lab7_2.isHidden = p_lab7_2.stringValue == "" ? true : false
+        m_lab7_3.title    = p_lab7_3.stringValue
+        m_lab7_3.toolTip  = p_cmd7_3.stringValue
+        m_lab7_3.isHidden = p_lab7_3.stringValue == "" ? true : false
+        m_lab7_4.title    = p_lab7_4.stringValue
+        m_lab7_4.toolTip  = p_cmd7_4.stringValue
+        m_lab7_4.isHidden = p_lab7_4.stringValue == "" ? true : false
+        m_lab7_5.title    = p_lab7_5.stringValue
+        m_lab7_5.toolTip  = p_cmd7_5.stringValue
+        m_lab7_5.isHidden = p_lab7_5.stringValue == "" ? true : false
+        m_lab7_6.title    = p_lab7_6.stringValue
+        m_lab7_6.toolTip  = p_cmd7_6.stringValue
+        m_lab7_6.isHidden = p_lab7_6.stringValue == "" ? true : false
+        m_lab7_7.title    = p_lab7_7.stringValue
+        m_lab7_7.toolTip  = p_cmd7_7.stringValue
+        m_lab7_7.isHidden = p_lab7_7.stringValue == "" ? true : false
+        m_lab7_8.title    = p_lab7_8.stringValue
+        m_lab7_8.toolTip  = p_cmd7_8.stringValue
+        m_lab7_8.isHidden = p_lab7_8.stringValue == "" ? true : false
+        m_lab7_9.title    = p_lab7_9.stringValue
+        m_lab7_9.toolTip  = p_cmd7_9.stringValue
+        m_lab7_9.isHidden = p_lab7_9.stringValue == "" ? true : false
+        m_lab7_10.title    = p_lab7_10.stringValue
+        m_lab7_10.toolTip  = p_cmd7_10.stringValue
+        m_lab7_10.isHidden = p_lab7_10.stringValue == "" ? true : false
+        
+        m_lab8_1.title    = p_lab8_1.stringValue
+        m_lab8_1.toolTip  = p_cmd8_1.stringValue
+        m_lab8_1.isHidden = p_lab8_1.stringValue == "" ? true : false
+        m_lab8_2.title    = p_lab8_2.stringValue
+        m_lab8_2.toolTip  = p_cmd8_2.stringValue
+        m_lab8_2.isHidden = p_lab8_2.stringValue == "" ? true : false
+        m_lab8_3.title    = p_lab8_3.stringValue
+        m_lab8_3.toolTip  = p_cmd8_3.stringValue
+        m_lab8_3.isHidden = p_lab8_3.stringValue == "" ? true : false
+        m_lab8_4.title    = p_lab8_4.stringValue
+        m_lab8_4.toolTip  = p_cmd8_4.stringValue
+        m_lab8_4.isHidden = p_lab8_4.stringValue == "" ? true : false
+        m_lab8_5.title    = p_lab8_5.stringValue
+        m_lab8_5.toolTip  = p_cmd8_5.stringValue
+        m_lab8_5.isHidden = p_lab8_5.stringValue == "" ? true : false
+        m_lab8_6.title    = p_lab8_6.stringValue
+        m_lab8_6.toolTip  = p_cmd8_6.stringValue
+        m_lab8_6.isHidden = p_lab8_6.stringValue == "" ? true : false
+        m_lab8_7.title    = p_lab8_7.stringValue
+        m_lab8_7.toolTip  = p_cmd8_7.stringValue
+        m_lab8_7.isHidden = p_lab8_7.stringValue == "" ? true : false
+        m_lab8_8.title    = p_lab8_8.stringValue
+        m_lab8_8.toolTip  = p_cmd8_8.stringValue
+        m_lab8_8.isHidden = p_lab8_8.stringValue == "" ? true : false
+        m_lab8_9.title    = p_lab8_9.stringValue
+        m_lab8_9.toolTip  = p_cmd8_9.stringValue
+        m_lab8_9.isHidden = p_lab8_9.stringValue == "" ? true : false
+        m_lab8_10.title    = p_lab8_10.stringValue
+        m_lab8_10.toolTip  = p_cmd8_10.stringValue
+        m_lab8_10.isHidden = p_lab8_10.stringValue == "" ? true : false
+        
+        m_lab9_1.title    = p_lab9_1.stringValue
+        m_lab9_1.toolTip  = p_cmd9_1.stringValue
+        m_lab9_1.isHidden = p_lab9_1.stringValue == "" ? true : false
+        m_lab9_2.title    = p_lab9_2.stringValue
+        m_lab9_2.toolTip  = p_cmd9_2.stringValue
+        m_lab9_2.isHidden = p_lab9_2.stringValue == "" ? true : false
+        m_lab9_3.title    = p_lab9_3.stringValue
+        m_lab9_3.toolTip  = p_cmd9_3.stringValue
+        m_lab9_3.isHidden = p_lab9_3.stringValue == "" ? true : false
+        m_lab9_4.title    = p_lab9_4.stringValue
+        m_lab9_4.toolTip  = p_cmd9_4.stringValue
+        m_lab9_4.isHidden = p_lab9_4.stringValue == "" ? true : false
+        m_lab9_5.title    = p_lab9_5.stringValue
+        m_lab9_5.toolTip  = p_cmd9_5.stringValue
+        m_lab9_5.isHidden = p_lab9_5.stringValue == "" ? true : false
+        m_lab9_6.title    = p_lab9_6.stringValue
+        m_lab9_6.toolTip  = p_cmd9_6.stringValue
+        m_lab9_6.isHidden = p_lab9_6.stringValue == "" ? true : false
+        m_lab9_7.title    = p_lab9_7.stringValue
+        m_lab9_7.toolTip  = p_cmd9_7.stringValue
+        m_lab9_7.isHidden = p_lab9_7.stringValue == "" ? true : false
+        m_lab9_8.title    = p_lab9_8.stringValue
+        m_lab9_8.toolTip  = p_cmd9_8.stringValue
+        m_lab9_8.isHidden = p_lab9_8.stringValue == "" ? true : false
+        m_lab9_9.title    = p_lab9_9.stringValue
+        m_lab9_9.toolTip  = p_cmd9_9.stringValue
+        m_lab9_9.isHidden = p_lab9_9.stringValue == "" ? true : false
+        m_lab9_10.title    = p_lab9_10.stringValue
+        m_lab9_10.toolTip  = p_cmd9_10.stringValue
+        m_lab9_10.isHidden = p_lab9_10.stringValue == "" ? true : false
+        
+        m_lab10_1.title    = p_lab10_1.stringValue
+        m_lab10_1.toolTip  = p_cmd10_1.stringValue
+        m_lab10_1.isHidden = p_lab10_1.stringValue == "" ? true : false
+        m_lab10_2.title    = p_lab10_2.stringValue
+        m_lab10_2.toolTip  = p_cmd10_2.stringValue
+        m_lab10_2.isHidden = p_lab10_2.stringValue == "" ? true : false
+        m_lab10_3.title    = p_lab10_3.stringValue
+        m_lab10_3.toolTip  = p_cmd10_3.stringValue
+        m_lab10_3.isHidden = p_lab10_3.stringValue == "" ? true : false
+        m_lab10_4.title    = p_lab10_4.stringValue
+        m_lab10_4.toolTip  = p_cmd10_4.stringValue
+        m_lab10_4.isHidden = p_lab10_4.stringValue == "" ? true : false
+        m_lab10_5.title    = p_lab10_5.stringValue
+        m_lab10_5.toolTip  = p_cmd10_5.stringValue
+        m_lab10_5.isHidden = p_lab10_5.stringValue == "" ? true : false
+        m_lab10_6.title    = p_lab10_6.stringValue
+        m_lab10_6.toolTip  = p_cmd10_6.stringValue
+        m_lab10_6.isHidden = p_lab10_6.stringValue == "" ? true : false
+        m_lab10_7.title    = p_lab10_7.stringValue
+        m_lab10_7.toolTip  = p_cmd10_7.stringValue
+        m_lab10_7.isHidden = p_lab10_7.stringValue == "" ? true : false
+        m_lab10_8.title    = p_lab10_8.stringValue
+        m_lab10_8.toolTip  = p_cmd10_8.stringValue
+        m_lab10_8.isHidden = p_lab10_8.stringValue == "" ? true : false
+        m_lab10_9.title    = p_lab10_9.stringValue
+        m_lab10_9.toolTip  = p_cmd10_9.stringValue
+        m_lab10_9.isHidden = p_lab10_9.stringValue == "" ? true : false
+        m_lab10_10.title    = p_lab10_10.stringValue
+        m_lab10_10.toolTip  = p_cmd10_10.stringValue
+        m_lab10_10.isHidden = p_lab10_10.stringValue == "" ? true : false
+     
     }
     
     private func shell(_ args: String) {
