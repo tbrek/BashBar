@@ -40,11 +40,18 @@ class StatusMenuController: NSObject {
         NSApplication.shared.terminate(self)
     }
     
+    // Show notifications
+    @IBAction func enableNotifications(_ sender: Any) {
+        notificationsEnabled.state = notificationsEnabled.state == .on ? .off : .on
+    }
+    
+    
     // Show preferences
     @IBAction func showPreferences(_ sender: Any) {
        // readPropertyList()
         self.preferencesWindow.orderFrontRegardless()
     }
+    @IBOutlet weak var notificationsEnabled: NSMenuItem!
     
     // Buttons
     @IBOutlet weak var savePref: NSButton!
@@ -1725,11 +1732,14 @@ class StatusMenuController: NSObject {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
                 print((error?.object(forKey: NSAppleScript.errorMessage) as! String))
             }
+            if notificationsEnabled.state == .on {
+                showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
+            }
         }
         
         
     }
-    
+
     // Actions
     @IBAction func menuClicked(_ sender: NSMenuItem) {
         shell(sender.toolTip!)
@@ -1744,5 +1754,17 @@ class StatusMenuController: NSObject {
     @IBAction func donateClicked(_ sender: Any) {
         NSWorkspace.shared.open(NSURL(string: "https://paypal.me/TBrek")! as URL)
     }
+    
+    // Notifications
+    func showNotification(message:String, title:String = "App Name") -> Void {
+        let notification = NSUserNotification()
+        notification.title = title
+        notification.informativeText = message
+        notification.hasReplyButton = false
+        notification.hasActionButton = false
+        NSUserNotificationCenter.default.deliver(notification)
+        
+    }
+    
     
 }
