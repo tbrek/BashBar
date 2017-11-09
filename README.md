@@ -1,6 +1,6 @@
 # BashBar
 
-!Logo(/blob/master/BashBar/Assets.xcassets/AppIcon.appiconset/icon_128x128.png)
+<img src="https://github.com/tbrek/BashBar/blob/master/BashBar/Assets.xcassets/AppIcon.appiconset/icon_128x128.png">
 
 An open-source terminal command/script launcher
 
