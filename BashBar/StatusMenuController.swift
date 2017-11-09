@@ -43,6 +43,7 @@ class StatusMenuController: NSObject {
     // Show notifications
     @IBAction func enableNotifications(_ sender: Any) {
         notificationsEnabled.state = notificationsEnabled.state == .on ? .off : .on
+        savePropertyList()
     }
     
     
@@ -532,6 +533,9 @@ class StatusMenuController: NSObject {
         checkbox9.state  = (plistData["checkbox9"] as! Bool) == true ? .on : .off
         checkbox10.state  = (plistData["checkbox10"] as! Bool) == true ? .on : .off
         
+        // Update notification status
+        notificationsEnabled.state = (plistData["notificationsEnabled"] as! Bool) == true ? .on : .off
+        
         self.checkbox( 0 )
         
         p_lab1_0.stringValue = plistData["p_lab1_0"] as! String
@@ -773,6 +777,9 @@ class StatusMenuController: NSObject {
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/com.tombrek.BashBar.plist")
         let dicContent = [
+            
+            "notificationsEnabled": notificationsEnabled.state,
+            
             "checkbox1": checkbox1.state,
             "p_lab1_0": p_lab1_0.stringValue ,
             "p_cmd1_0": p_cmd1_0.stringValue ,
@@ -1017,10 +1024,12 @@ class StatusMenuController: NSObject {
         let plistData = NSDictionary(dictionary: dicContent)
         let success:Bool = plistData.write(toFile: path, atomically: true)
         if success {
-            print("file has been created!")
-        }else{
-            print("unable to create the file")
+  //          print("file has been created!")
         }
+            else
+          {
+  //          print("unable to create the file")
+          }
     }
     
     
@@ -1730,7 +1739,7 @@ class StatusMenuController: NSObject {
 //                print(output.stringValue)
             } else if (error != nil) {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
-                print((error?.object(forKey: NSAppleScript.errorMessage) as! String))
+//                print((error?.object(forKey: NSAppleScript.errorMessage) as! String))
             }
             if notificationsEnabled.state == .on {
                 showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
