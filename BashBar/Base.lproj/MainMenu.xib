@@ -1209,7 +1209,7 @@
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem identifier="" id="W08-ee-dt3">
-                                <view key="view" id="E8a-p5-8Oq">
+                                <view key="view" ambiguous="YES" id="E8a-p5-8Oq">
                                     <rect key="frame" x="10" y="33" width="1008" height="367"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -1363,7 +1363,7 @@
                                             <rect key="frame" x="375" y="127" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="PQN-Yb-cIY">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1372,7 +1372,7 @@
                                             <rect key="frame" x="375" y="99" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="dYT-Lz-Lee">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1381,7 +1381,7 @@
                                             <rect key="frame" x="375" y="71" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="Okc-GN-sik">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1390,7 +1390,7 @@
                                             <rect key="frame" x="375" y="42" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="Spl-er-LhA">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1399,7 +1399,7 @@
                                             <rect key="frame" x="375" y="14" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="FvU-ml-oy9">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1408,7 +1408,7 @@
                                             <rect key="frame" x="375" y="306" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" usesSingleLineMode="YES" id="SN9-cI-eeW">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1417,7 +1417,7 @@
                                             <rect key="frame" x="375" y="182" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="uJo-qd-bfR">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1426,7 +1426,7 @@
                                             <rect key="frame" x="375" y="155" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="IUu-AR-ftM">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1435,7 +1435,7 @@
                                             <rect key="frame" x="375" y="260" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="vvM-rX-Uyd">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1444,7 +1444,7 @@
                                             <rect key="frame" x="375" y="234" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="dC6-qW-KG6">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1453,7 +1453,7 @@
                                             <rect key="frame" x="375" y="208" width="599" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="BVl-e4-dWF">
-                                                <font key="font" size="13" name="AndaleMono"/>
+                                                <font key="font" size="12" name="LucidaConsole"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2727,7 +2727,7 @@
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Menu7" identifier="" id="7HS-F5-Gyg" userLabel="Menu 7tab">
-                                <view key="view" ambiguous="YES" id="ggl-9D-WRC">
+                                <view key="view" id="ggl-9D-WRC">
                                     <rect key="frame" x="10" y="33" width="1008" height="367"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -3765,7 +3765,39 @@ Gw
                             <action selector="cancelClicked:" target="sJd-RC-QzD" id="8z8-ga-4iy"/>
                         </connections>
                     </button>
-                    <button hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Lc-Am0">
+                    <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eax-sz-e5r" userLabel="Copy/Paste/Cut">
+                        <rect key="frame" x="53" y="34" width="71" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="bevel" title="Copy" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" selectedItem="Ygn-fG-vSk" id="euv-j9-F64">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="olT-Kr-nDg">
+                                <items>
+                                    <menuItem title="Copy" state="on" keyEquivalent="c" id="Ygn-fG-vSk">
+                                        <connections>
+                                            <action selector="copy:" target="-1" id="w3o-2W-IjE"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Paste" keyEquivalent="v" id="ipR-mr-r1W">
+                                        <connections>
+                                            <action selector="paste:" target="-1" id="VZw-70-C0r"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Cut" keyEquivalent="x" id="0ab-Ki-ji1">
+                                        <connections>
+                                            <action selector="cut:" target="-1" id="aal-mb-PGO"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Select all" keyEquivalent="a" id="5qg-U7-J38">
+                                        <connections>
+                                            <action selector="selectAll:" target="-1" id="F6S-sa-DrB"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Lc-Am0" userLabel="PayPal">
                         <rect key="frame" x="47" y="20" width="91" height="48"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="donate-paypal-1x" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="tdg-8K-we8">
@@ -3789,38 +3821,6 @@ Gw
             </view>
             <point key="canvasLocation" x="423" y="84.5"/>
         </window>
-        <popUpButton id="eax-sz-e5r" userLabel="Copy/Paste/Cut">
-            <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <popUpButtonCell key="cell" type="bevel" title="Copy" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" selectedItem="Ygn-fG-vSk" id="euv-j9-F64">
-                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                <font key="font" metaFont="menu"/>
-                <menu key="menu" id="olT-Kr-nDg">
-                    <items>
-                        <menuItem title="Copy" state="on" keyEquivalent="c" id="Ygn-fG-vSk">
-                            <connections>
-                                <action selector="copy:" target="-1" id="w3o-2W-IjE"/>
-                            </connections>
-                        </menuItem>
-                        <menuItem title="Paste" keyEquivalent="v" id="ipR-mr-r1W">
-                            <connections>
-                                <action selector="paste:" target="-1" id="VZw-70-C0r"/>
-                            </connections>
-                        </menuItem>
-                        <menuItem title="Cut" keyEquivalent="x" id="0ab-Ki-ji1">
-                            <connections>
-                                <action selector="cut:" target="-1" id="aal-mb-PGO"/>
-                            </connections>
-                        </menuItem>
-                        <menuItem title="Select all" keyEquivalent="a" id="5qg-U7-J38">
-                            <connections>
-                                <action selector="selectAll:" target="-1" id="F6S-sa-DrB"/>
-                            </connections>
-                        </menuItem>
-                    </items>
-                </menu>
-            </popUpButtonCell>
-        </popUpButton>
     </objects>
     <resources>
         <image name="donate-paypal-1x" width="253" height="100"/>

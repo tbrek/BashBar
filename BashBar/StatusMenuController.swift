@@ -1732,8 +1732,8 @@ class StatusMenuController: NSObject {
         }
         
         var error: NSDictionary?
-        if let scriptObject = NSAppleScript(source: myAppleScript) {
-            if let _: NSAppleEventDescriptor = scriptObject.executeAndReturnError(
+        let scriptObject = NSAppleScript(source: myAppleScript)
+        if let _: NSAppleEventDescriptor = scriptObject?.executeAndReturnError(
                 &error) {
                 errorMenu.title = "Success"
 //                print(output.stringValue)
@@ -1744,7 +1744,7 @@ class StatusMenuController: NSObject {
             if notificationsEnabled.state == .on {
                 showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
             }
-        }
+        
         
         
     }
