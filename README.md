@@ -1,12 +1,8 @@
 # BashBar
-<p align="center">
 
-![bashbarlogo]
-
-</p>
+<p align="center">![bashbarlogo]</p>
 
 An open-source terminal command/script launcher
-</div>
 
 ## Getting started
 
