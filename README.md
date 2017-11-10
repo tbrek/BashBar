@@ -1,6 +1,8 @@
 # BashBar
 <p align="center">
-![logo]
+
+![bashbarlogo]
+
 </p>
 
 An open-source terminal command/script launcher
@@ -31,7 +33,7 @@ Simply copy it to your /Application folder and run.
 
 
 
-[logo]: images/logo_128x128.png
+[bashbarlogo]: images/logo_128x128.png
 [menu]: images/menu.png
 [preferences]: /images/preferences.png
 
