@@ -14,13 +14,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D516D0751FB510B000AF5F3E /* BashBar.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = BashBar.zip; sourceTree = "<group>"; };
 		D52EA0AF1F9F8A2600C8EB48 /* BashBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BashBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52EA0B21F9F8A2600C8EB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D52EA0B71F9F8A2600C8EB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D52EA0B91F9F8A2600C8EB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52EA0BA1F9F8A2600C8EB48 /* BashBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BashBar.entitlements; sourceTree = "<group>"; };
+		D551BBE51FB5C3170061CF60 /* BashBar.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = BashBar.zip; path = "../../../../../../Library/Developer/Xcode/Archives/2017-11-10/BashBar 10-11-2017, 11.20.xcarchive/Products/Applications/BashBar.zip"; sourceTree = "<group>"; };
 		D5CBD4441FA13C2100115484 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,13 +54,13 @@
 		D52EA0B11F9F8A2600C8EB48 /* BashBar */ = {
 			isa = PBXGroup;
 			children = (
+				D551BBE51FB5C3170061CF60 /* BashBar.zip */,
 				D52EA0B21F9F8A2600C8EB48 /* AppDelegate.swift */,
 				D5CBD4441FA13C2100115484 /* StatusMenuController.swift */,
 				D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */,
 				D52EA0B61F9F8A2600C8EB48 /* MainMenu.xib */,
 				D52EA0B91F9F8A2600C8EB48 /* Info.plist */,
 				D52EA0BA1F9F8A2600C8EB48 /* BashBar.entitlements */,
-				D516D0751FB510B000AF5F3E /* BashBar.zip */,
 			);
 			path = BashBar;
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 				TargetAttributes = {
 					D52EA0AE1F9F8A2600C8EB48 = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -193,6 +193,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = UJTM88G62N;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -251,6 +252,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = UJTM88G62N;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -272,12 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				INFOPLIST_FILE = BashBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tombrek.BashBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.bashbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -288,12 +291,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				INFOPLIST_FILE = BashBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tombrek.BashBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.bashbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
