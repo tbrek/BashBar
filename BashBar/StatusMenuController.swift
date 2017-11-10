@@ -1773,6 +1773,7 @@ class StatusMenuController: NSObject {
         notification.hasActionButton = false
         NSUserNotificationCenter.default.deliver(notification)
         
+        
     }
     
     
