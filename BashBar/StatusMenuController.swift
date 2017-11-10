@@ -508,7 +508,7 @@ class StatusMenuController: NSObject {
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: AnyObject] = [:] //Our data
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tombrek.BashBar.plist")
+        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         if (!fileManager.fileExists(atPath: path)) {
             NSLog("Nie ma nic")
             savePropertyList()
@@ -775,7 +775,7 @@ class StatusMenuController: NSObject {
     func savePropertyList() {
 //        let fileManager = FileManager.default
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tombrek.BashBar.plist")
+        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         let dicContent = [
             
             "notificationsEnabled": notificationsEnabled.state,
