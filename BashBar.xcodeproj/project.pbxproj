@@ -20,7 +20,6 @@
 		D52EA0B71F9F8A2600C8EB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D52EA0B91F9F8A2600C8EB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52EA0BA1F9F8A2600C8EB48 /* BashBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BashBar.entitlements; sourceTree = "<group>"; };
-		D551BBE51FB5C3170061CF60 /* BashBar.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = BashBar.zip; path = "../../../../../../Library/Developer/Xcode/Archives/2017-11-10/BashBar 10-11-2017, 11.20.xcarchive/Products/Applications/BashBar.zip"; sourceTree = "<group>"; };
 		D5CBD4441FA13C2100115484 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +53,6 @@
 		D52EA0B11F9F8A2600C8EB48 /* BashBar */ = {
 			isa = PBXGroup;
 			children = (
-				D551BBE51FB5C3170061CF60 /* BashBar.zip */,
 				D52EA0B21F9F8A2600C8EB48 /* AppDelegate.swift */,
 				D5CBD4441FA13C2100115484 /* StatusMenuController.swift */,
 				D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */,
@@ -210,7 +208,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -263,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
