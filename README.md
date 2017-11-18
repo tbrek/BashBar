@@ -26,6 +26,7 @@ Simply copy it to your /Application folder and run.
 
 ## Change log
 
+1.0 (current version) - Sandboxing & open-at-login added<br>
 0.6 inital release
 
 

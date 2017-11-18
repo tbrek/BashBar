@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -189,6 +190,7 @@
                 <outlet property="menu8tab" destination="HhQ-Pf-Wrp" id="RnJ-i8-Uyx"/>
                 <outlet property="menu9tab" destination="mrh-Sk-u9B" id="0P9-kg-O2g"/>
                 <outlet property="notificationsEnabled" destination="ymA-bv-LIn" id="0kf-8d-XZQ"/>
+                <outlet property="openAtLogin" destination="KJ8-Od-Qh0" id="AsM-DY-r8n"/>
                 <outlet property="p_cmd10_0" destination="t4A-Af-SeD" id="7ys-uM-cqh"/>
                 <outlet property="p_cmd10_1" destination="CuL-Pv-RdD" id="Now-Kh-tqu"/>
                 <outlet property="p_cmd10_10" destination="zMO-Oc-1MQ" id="6YN-XW-Clt"/>
@@ -1177,6 +1179,12 @@
                             </menuItem>
                             <menuItem title="Export..." enabled="NO" id="dDM-4E-OiL">
                                 <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Open at login" id="KJ8-Od-Qh0">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="set:" target="sJd-RC-QzD" id="FVs-kX-O9c"/>
+                                </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="qWU-pp-EFg"/>
                             <menuItem title="Open at login" hidden="YES" id="puA-ib-ug6">
