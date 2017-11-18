@@ -20,7 +20,7 @@ When you hit **Edit menus** you'll be presented 10 tabs which you can use to ent
 
 ### Installing
 
-Download latest version [0.6](https://github.com/tbrek/BashBar/raw/master/BashBar/BashBar.zip)
+Download latest version [1.0](https://github.com/tbrek/BashBar/raw/master/BashBar/BashBar.zip)
 
 Simply copy it to your /Application folder and run.
 
