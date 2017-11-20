@@ -7,10 +7,12 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 
 class StatusMenuController: NSObject {
     
+    @IBOutlet weak var openAtLogin: NSMenuItem!
     @IBOutlet weak var preferencesView: NSView!
     @IBOutlet weak var preferencesWindow: NSWindow!
     @IBOutlet weak var bashMenu: NSMenu!
@@ -45,6 +47,34 @@ class StatusMenuController: NSObject {
         notificationsEnabled.state = notificationsEnabled.state == .on ? .off : .on
         savePropertyList()
     }
+    
+    // Open at login
+    @IBAction func set(_ sender: Any) {
+        if (openAtLogin.state == .on) {
+            openAtLogin.state = .off
+        }
+        else {
+            openAtLogin.state = .on
+            
+        }
+        let appBundleIdentifier = "com.tbrek.BashBarLauncher"
+        let autoLauncher = (self.openAtLogin.state == .on)
+        savePropertyList()
+        if SMLoginItemSetEnabled(appBundleIdentifier as CFString, autoLauncher) {
+            if autoLauncher {
+                NSLog("Successfully added login item.")
+                NSApplication.shared.terminate(self)
+            } else {
+                NSLog("Successfully removed login item.")
+            }
+            
+        } else {
+            NSLog("Failed to add login item.")
+        }
+        
+        
+    }
+    
     
     
     // Show preferences
@@ -508,7 +538,7 @@ class StatusMenuController: NSObject {
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
         var plistData: [String: AnyObject] = [:] //Our data
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tombrek.BashBar.plist")
+        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         if (!fileManager.fileExists(atPath: path)) {
             NSLog("Nie ma nic")
             savePropertyList()
@@ -520,6 +550,9 @@ class StatusMenuController: NSObject {
         } catch {
             print("Error reading plist: \(error), format: \(propertyListFormat)")
         }
+        
+        // Update openAtLogin menu item
+        openAtLogin.state = (plistData["openAtLogin"] as! Bool) == true ? .on : .off
         
         // Update label
         checkbox1.state  = (plistData["checkbox1"] as! Bool) == true ? .on : .off
@@ -775,9 +808,9 @@ class StatusMenuController: NSObject {
     func savePropertyList() {
 //        let fileManager = FileManager.default
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tombrek.BashBar.plist")
+        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         let dicContent = [
-            
+            "openAtLogin": openAtLogin.state,
             "notificationsEnabled": notificationsEnabled.state,
             
             "checkbox1": checkbox1.state,
@@ -1772,6 +1805,7 @@ class StatusMenuController: NSObject {
         notification.hasReplyButton = false
         notification.hasActionButton = false
         NSUserNotificationCenter.default.deliver(notification)
+        
         
     }
     
