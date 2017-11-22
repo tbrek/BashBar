@@ -540,7 +540,7 @@ class StatusMenuController: NSObject {
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         if (!fileManager.fileExists(atPath: path)) {
-            NSLog("Nie ma nic")
+            NSLog("Settings file does not exists. Creating blank one.")
             savePropertyList()
         }
         let plistXML = FileManager.default.contents(atPath: path)!
