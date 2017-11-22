@@ -20,13 +20,14 @@ When you hit **Edit menus** you'll be presented 10 tabs which you can use to ent
 
 ### Installing
 
-Download latest version [1.0](https://github.com/tbrek/BashBar/raw/master/BashBar.zip)
+Download latest version [1.1](https://github.com/tbrek/BashBar/raw/master/BashBar.zip)
 
 Simply copy it to your /Application folder and run.
 
 ## Change log
 
-1.0 (current version) - Sandboxing & open-at-login added<br>
+1.1 (current version) - removed sandboxing as it cause problems with commands run with sudo<br>
+1.0 Sandboxing & open-at-login added<br>
 0.6 inital release
 
 
