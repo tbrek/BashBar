@@ -12,6 +12,9 @@ import ServiceManagement
 
 class StatusMenuController: NSObject {
     
+    @IBOutlet weak var resultsWindow: NSPanel!
+    @IBOutlet weak var closeResults: NSButton!
+    @IBOutlet weak var commandResults: NSTextField!
     @IBOutlet weak var openAtLogin: NSMenuItem!
     @IBOutlet weak var preferencesView: NSView!
     @IBOutlet weak var preferencesWindow: NSWindow!
@@ -67,21 +70,22 @@ class StatusMenuController: NSObject {
             } else {
                 NSLog("Successfully removed login item.")
             }
-            
         } else {
             NSLog("Failed to add login item.")
         }
-        
-        
     }
-    
-    
     
     // Show preferences
     @IBAction func showPreferences(_ sender: Any) {
        // readPropertyList()
         self.preferencesWindow.orderFrontRegardless()
     }
+    
+    @IBAction func showResults(_ sender: Any) {
+        self.resultsWindow.orderFrontRegardless()
+    }
+    
+    
     @IBOutlet weak var notificationsEnabled: NSMenuItem!
     
     // Buttons
@@ -531,6 +535,11 @@ class StatusMenuController: NSObject {
         savePropertyList()
         self.preferencesWindow.orderOut(self)
     }
+    
+    @IBAction func closeResults(_ sender: Any) {
+        self.resultsWindow.orderOut(self)
+    }
+    
     
     // Update menu and label from plist
     func readPropertyList() {
@@ -1766,18 +1775,20 @@ class StatusMenuController: NSObject {
         
         var error: NSDictionary?
         let scriptObject = NSAppleScript(source: myAppleScript)
-        if let _: NSAppleEventDescriptor = scriptObject?.executeAndReturnError(
+        if let output: NSAppleEventDescriptor = scriptObject?.executeAndReturnError(
                 &error) {
                 errorMenu.title = "Success"
-//                print(output.stringValue)
+            commandResults.stringValue = output.stringValue!
+ //               print(output.stringValue)
             } else if (error != nil) {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
-//                print((error?.object(forKey: NSAppleScript.errorMessage) as! String))
+            
+            commandResults.stringValue = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             }
             if notificationsEnabled.state == .on {
                 showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
             }
-        
+      
         
         
     }
