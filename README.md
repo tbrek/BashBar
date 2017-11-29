@@ -26,10 +26,11 @@ Simply copy it to your /Application folder and run.
 
 ## Change log
 
-1.2 (current version) - added output window shown when user clicks results cell in menu<br>
+1.3 (current version) - Output window is now resizable and scrollable<br>
+1.2 Added output window shown when user clicks results cell in menu<br>
 1.1 Removed sandboxing as it cause problems with commands run with sudo<br>
 1.0 Sandboxing & open-at-login added<br>
-0.6 inital release
+0.6 Inital release
 
 
 
