@@ -1778,12 +1778,14 @@ class StatusMenuController: NSObject {
         if let output: NSAppleEventDescriptor = scriptObject?.executeAndReturnError(
                 &error) {
                 errorMenu.title = "Success"
-            resultsView.font = NSFont(name: "Andale Mono", size: 10.0)
-            resultsView.string = output.stringValue!
+                resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
+                resultsView.font = NSFont(name: "Andale Mono", size: 12.0)
+                resultsView.string = output.stringValue!
  //               print(output.stringValue)
             } else if (error != nil) {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
-            
+            resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
+            resultsView.font = NSFont(name: "Andale Mono", size: 12.0)
             resultsView.string = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             }
             if notificationsEnabled.state == .on {
