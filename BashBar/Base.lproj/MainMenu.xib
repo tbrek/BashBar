@@ -3835,7 +3835,7 @@ Gw
             </view>
             <point key="canvasLocation" x="423" y="84.5"/>
         </window>
-        <window title="Results" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EWL-p4-6Ye" userLabel="Results WIndow" customClass="NSPanel">
+        <window title="Results" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EWL-p4-6Ye" userLabel="Results WIndow" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="167" y="107" width="843" height="680"/>
@@ -3868,7 +3868,7 @@ Gw
                                     <color key="textColor" red="0.51372549019607838" green="0.58039215686274503" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                     <size key="minSize" width="786" height="597"/>
-                                    <size key="maxSize" width="786" height="10000000"/>
+                                    <size key="maxSize" width="803" height="10000000"/>
                                     <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </textView>
                             </subviews>
