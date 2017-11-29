@@ -82,7 +82,7 @@ class StatusMenuController: NSObject {
     }
     
     @IBAction func showResults(_ sender: Any) {
-        self.resultsWindow.orderFrontRegardless()
+        self.resultsWindow.makeKeyAndOrderFront((Any).self)
     }
     
     
