@@ -14,9 +14,9 @@ class StatusMenuController: NSObject {
     
     @IBOutlet weak var resultsWindow: NSPanel!
     @IBOutlet weak var closeResults: NSButton!
-    @IBOutlet weak var commandResults: NSTextField!
     @IBOutlet weak var openAtLogin: NSMenuItem!
     @IBOutlet weak var preferencesView: NSView!
+    @IBOutlet var resultsView: NSTextView!
     @IBOutlet weak var preferencesWindow: NSWindow!
     @IBOutlet weak var bashMenu: NSMenu!
     @IBOutlet weak var errorMenu: NSMenuItem!
@@ -1778,12 +1778,13 @@ class StatusMenuController: NSObject {
         if let output: NSAppleEventDescriptor = scriptObject?.executeAndReturnError(
                 &error) {
                 errorMenu.title = "Success"
-            commandResults.stringValue = output.stringValue!
+            resultsView.font = NSFont(name: "Andale Mono", size: 10.0)
+            resultsView.string = output.stringValue!
  //               print(output.stringValue)
             } else if (error != nil) {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             
-            commandResults.stringValue = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
+            resultsView.string = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             }
             if notificationsEnabled.state == .on {
                 showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")

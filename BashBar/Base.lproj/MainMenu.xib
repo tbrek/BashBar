@@ -58,7 +58,6 @@
                 <outlet property="checkbox8" destination="LiF-uU-2DA" id="sNi-XA-Gt9"/>
                 <outlet property="checkbox9" destination="p4H-Ya-53L" id="fhx-Qc-P21"/>
                 <outlet property="closeResults" destination="paI-43-ihf" id="6IJ-Sg-CvJ"/>
-                <outlet property="commandResults" destination="QjK-c5-nyN" id="L3a-Sh-xnc"/>
                 <outlet property="commandpromptItem" destination="uwX-3O-5Hs" id="8Ac-5E-H9r"/>
                 <outlet property="errorMenu" destination="JQD-hG-1IO" id="7Vi-kz-hBj"/>
                 <outlet property="m_lab1" destination="xWo-0X-TjN" id="2VR-p3-Vyn"/>
@@ -415,6 +414,7 @@
                 <outlet property="p_lab9_9" destination="0Zo-YD-c1m" id="9Yg-1Z-Cn0"/>
                 <outlet property="preferencesView" destination="EiT-Mj-1SZ" id="vhG-bR-bg6"/>
                 <outlet property="preferencesWindow" destination="QvC-M9-y7g" id="DVE-Bn-Sqb"/>
+                <outlet property="resultsView" destination="Z3I-SM-VaT" id="S2x-1d-CUW"/>
                 <outlet property="resultsWindow" destination="EWL-p4-6Ye" id="BZV-MJ-jeC"/>
                 <outlet property="savePref" destination="U57-PO-U0i" id="mfe-0E-Y2D"/>
             </connections>
@@ -1212,7 +1212,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1054" height="535"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1054" height="535"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3782,17 +3782,17 @@ Gw
                     <popUpButton fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eax-sz-e5r" userLabel="Copy/Paste/Cut">
                         <rect key="frame" x="53" y="34" width="71" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <popUpButtonCell key="cell" type="bevel" title="Copy" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" selectedItem="Ygn-fG-vSk" id="euv-j9-F64">
+                        <popUpButtonCell key="cell" type="bevel" title="Paste" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" selectedItem="ipR-mr-r1W" id="euv-j9-F64">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" id="olT-Kr-nDg">
                                 <items>
-                                    <menuItem title="Copy" state="on" keyEquivalent="c" id="Ygn-fG-vSk">
+                                    <menuItem title="Copy" keyEquivalent="c" id="Ygn-fG-vSk">
                                         <connections>
                                             <action selector="copy:" target="-1" id="w3o-2W-IjE"/>
                                         </connections>
                                     </menuItem>
-                                    <menuItem title="Paste" keyEquivalent="v" id="ipR-mr-r1W">
+                                    <menuItem title="Paste" state="on" keyEquivalent="v" id="ipR-mr-r1W">
                                         <connections>
                                             <action selector="paste:" target="-1" id="VZw-70-C0r"/>
                                         </connections>
@@ -3835,24 +3835,15 @@ Gw
             </view>
             <point key="canvasLocation" x="423" y="84.5"/>
         </window>
-        <window title="Resuts" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EWL-p4-6Ye" userLabel="Results WIndow" customClass="NSPanel">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
+        <window title="Results" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EWL-p4-6Ye" userLabel="Results WIndow" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="167" y="107" width="843" height="680"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
             <view key="contentView" id="bvd-IE-yJU">
                 <rect key="frame" x="0.0" y="0.0" width="843" height="680"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField verticalHuggingPriority="750" fixedFrame="YES" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjK-c5-nyN">
-                        <rect key="frame" x="20" y="59" width="803" height="601"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="xzB-m3-1PO">
-                            <font key="font" size="12" name="AndaleMono"/>
-                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="paI-43-ihf">
                         <rect key="frame" x="754" y="13" width="75" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
@@ -3864,6 +3855,34 @@ Gw
                             <action selector="closeResults:" target="sJd-RC-QzD" id="xzY-AZ-nmT"/>
                         </connections>
                     </button>
+                    <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azF-pO-K2V">
+                        <rect key="frame" x="20" y="61" width="803" height="599"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" ambiguous="YES" id="SFu-pt-472">
+                            <rect key="frame" x="1" y="1" width="786" height="597"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Z3I-SM-VaT">
+                                    <rect key="frame" x="0.0" y="0.0" width="786" height="597"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="textColor" red="0.51372549019607838" green="0.58039215686274503" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                    <size key="minSize" width="786" height="597"/>
+                                    <size key="maxSize" width="786" height="10000000"/>
+                                    <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="K0K-Eh-Xaa">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="pEq-AI-S6n">
+                            <rect key="frame" x="787" y="1" width="15" height="597"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
                 </subviews>
             </view>
             <point key="canvasLocation" x="590.5" y="-617"/>
