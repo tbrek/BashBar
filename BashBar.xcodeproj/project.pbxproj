@@ -3,18 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D52EA0B31F9F8A2600C8EB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52EA0B21F9F8A2600C8EB48 /* AppDelegate.swift */; };
 		D52EA0B51F9F8A2600C8EB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */; };
 		D52EA0B81F9F8A2600C8EB48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D52EA0B61F9F8A2600C8EB48 /* MainMenu.xib */; };
-		D55E36EC1FBF50E000064EEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D55E36EB1FBF50E000064EEB /* AppDelegate.m */; };
-		D55E36EE1FBF50E000064EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55E36ED1FBF50E000064EEB /* Assets.xcassets */; };
-		D55E36F11FBF50E000064EEB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D55E36EF1FBF50E000064EEB /* MainMenu.xib */; };
-		D55E36F41FBF50E000064EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D55E36F31FBF50E000064EEB /* main.m */; };
-		D55E36FA1FBF534400064EEB /* BashBarLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = D55E36E81FBF50DF00064EEB /* BashBarLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D5CBD4451FA13C2100115484 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD4441FA13C2100115484 /* StatusMenuController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +20,6 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				D55E36FA1FBF534400064EEB /* BashBarLauncher.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +32,6 @@
 		D52EA0B71F9F8A2600C8EB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D52EA0B91F9F8A2600C8EB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52EA0BA1F9F8A2600C8EB48 /* BashBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BashBar.entitlements; sourceTree = "<group>"; };
-		D55E36E81FBF50DF00064EEB /* BashBarLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BashBarLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55E36EA1FBF50DF00064EEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D55E36EB1FBF50E000064EEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D55E36ED1FBF50E000064EEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,13 +44,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		D52EA0AC1F9F8A2600C8EB48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D55E36E51FBF50DF00064EEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				D52EA0AF1F9F8A2600C8EB48 /* BashBar.app */,
-				D55E36E81FBF50DF00064EEB /* BashBarLauncher.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,23 +118,6 @@
 			productReference = D52EA0AF1F9F8A2600C8EB48 /* BashBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D55E36E71FBF50DF00064EEB /* BashBarLauncher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D55E36F61FBF50E000064EEB /* Build configuration list for PBXNativeTarget "BashBarLauncher" */;
-			buildPhases = (
-				D55E36E41FBF50DF00064EEB /* Sources */,
-				D55E36E51FBF50DF00064EEB /* Frameworks */,
-				D55E36E61FBF50DF00064EEB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BashBarLauncher;
-			productName = BashBarLauncher;
-			productReference = D55E36E81FBF50DF00064EEB /* BashBarLauncher.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,20 +125,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Tom Brek";
 				TargetAttributes = {
 					D52EA0AE1F9F8A2600C8EB48 = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Sandbox = {
-								enabled = 0;
-							};
-						};
-					};
-					D55E36E71FBF50DF00064EEB = {
-						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = UJTM88G62N;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -181,7 +141,7 @@
 				};
 			};
 			buildConfigurationList = D52EA0AA1F9F8A2600C8EB48 /* Build configuration list for PBXProject "BashBar" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,7 +154,6 @@
 			projectRoot = "";
 			targets = (
 				D52EA0AE1F9F8A2600C8EB48 /* BashBar */,
-				D55E36E71FBF50DF00064EEB /* BashBarLauncher */,
 			);
 		};
 /* End PBXProject section */
@@ -209,15 +168,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D55E36E61FBF50DF00064EEB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D55E36EE1FBF50E000064EEB /* Assets.xcassets in Resources */,
-				D55E36F11FBF50E000064EEB /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -227,15 +177,6 @@
 			files = (
 				D5CBD4451FA13C2100115484 /* StatusMenuController.swift in Sources */,
 				D52EA0B31F9F8A2600C8EB48 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D55E36E41FBF50DF00064EEB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D55E36F41FBF50E000064EEB /* main.m in Sources */,
-				D55E36EC1FBF50E000064EEB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +216,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -282,6 +224,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -334,6 +277,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -341,6 +285,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -375,12 +320,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				INFOPLIST_FILE = BashBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.BashBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -392,50 +338,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				INFOPLIST_FILE = BashBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.BashBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		D55E36F71FBF50E000064EEB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UJTM88G62N;
-				INFOPLIST_FILE = BashBarLauncher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.BashBarLauncher;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		D55E36F81FBF50E000064EEB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UJTM88G62N;
-				INFOPLIST_FILE = BashBarLauncher/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.BashBarLauncher;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -456,15 +369,6 @@
 			buildConfigurations = (
 				D52EA0BE1F9F8A2600C8EB48 /* Debug */,
 				D52EA0BF1F9F8A2600C8EB48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D55E36F61FBF50E000064EEB /* Build configuration list for PBXNativeTarget "BashBarLauncher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D55E36F71FBF50E000064EEB /* Debug */,
-				D55E36F81FBF50E000064EEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
