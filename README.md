@@ -1,7 +1,4 @@
 # BashBar
-<p align="center">
-<img src="/images/logo_128x128.png">
-</p>
 
 An open-source terminal command/script launcher
 
