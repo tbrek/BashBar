@@ -28,6 +28,8 @@
 	<string>Copyright © 2017 Tom Brek. All rights reserved.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
+	<key>SUFeedURL</key>
+	<string>https://github.com/tbrek/BashBar/releases</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
