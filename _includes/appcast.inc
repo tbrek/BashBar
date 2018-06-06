@@ -8,10 +8,10 @@
          <item>
             <title>Version 1.8</title>
 						<sparkle:releaseNotesLink>
-							https://github.com/tbrek/BashBar/releases/tag/v.1.6
+							https://github.com/tbrek/BashBar/releases/tag/v.1.8
 						</sparkle:releaseNotesLink>
-            <pubDate>Wed, 09 Jan 2006 19:20:11 +0000</pubDate>
-            <enclosure url="http://you.com/app/Your Great App 2.0.zip" sparkle:version="1.8" length="1623481" type="application/octet-stream"  />
+            <pubDate>Wed, 06 Jun 2018 15:37:00 +0000</pubDate>
+            <enclosure url="http://you.com/app/Your Great App 2.0.zip" sparkle:version="1.8" type="application/octet-stream"  />
          </item>
 
    </channel>
