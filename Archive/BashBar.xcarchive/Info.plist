@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/BashBar.app</string>
+		<key>CFBundleIdentifier</key>
+		<string>com.tbrek.BashBar</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.5</string>
+		<key>CFBundleVersion</key>
+		<string>20180606001</string>
+		<key>SigningIdentity</key>
+		<string>Mac Developer: me@tombrek.com (9VR6422LM8)</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2018-06-06T11:24:59Z</date>
+	<key>Name</key>
+	<string>BashBar</string>
+	<key>SchemeName</key>
+	<string>BashBar</string>
+</dict>
+</plist>
