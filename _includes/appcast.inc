@@ -13,7 +13,7 @@
           <pubDate>Mon, 05 Oct 2015 19:20:11 +0000</pubDate>
           <enclosure url="https://example.com/downloads/app.zip.or.dmg.or.tar.etc"
                      sparkle:version="2.0"
-                     length="1623481"
+                     length="0"
                      type="application/octet-stream" />
       </item>
    </channel>

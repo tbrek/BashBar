@@ -35,7 +35,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>https://raw.githubusercontent.com/tbrek/BashBar/master/_includes/appcast.inc</string>
+	<string>https://raw.githubusercontent.com/tbrek/BashBar/41cfc2957392c6bfb722517f689de9a88a40924a/_includes/appcast.inc</string>
 	<key>SUPublicDSAKeyFile</key>
 	<string>dsa_pub.pem</string>
 </dict>
