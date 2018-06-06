@@ -8,11 +8,9 @@
       <item>
           <title>Version 1.6</title>
           <sparkle:releaseNotesLink>
-            Test1
-            Test2
           </sparkle:releaseNotesLink>
           <pubDate>Mon, 06 Jun 2018 19:20:11 +0000</pubDate>
-          <enclosure url="https://github.com/tbrek/BashBar/releases/download/v.1.6/BashBar.v1.6.b20180606003.zip"
+          <enclosure url="https://github.com/tbrek/BashBar/releases/download/v.1.6/BashBar.1.7.dmg"
                      sparkle:version="1.6"
                      length="0"
                      type="application/octet-stream" />
