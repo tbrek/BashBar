@@ -6,6 +6,16 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
       <item>
+          <title>Version 1.7.1</title>
+          <!-- <sparkle:releaseNotesLink>
+          </sparkle:releaseNotesLink> -->
+          <pubDate>Mon, 09 Jun 2018 07:00:00 +0000</pubDate>
+          <enclosure url="https://github.com/tbrek/BashBar/releases/download/v.1.7.1/BashBar.1.7.1.dmg"
+                     sparkle:version="1.7.1"
+                     length="0"
+                     type="application/octet-stream" />
+      </item>
+      <item>
           <title>Version 1.7</title>
           <!-- <sparkle:releaseNotesLink>
           </sparkle:releaseNotesLink> -->
