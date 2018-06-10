@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D507E18F20CCEC66001DE209 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = D507E18E20CCEC66001DE209 /* dsa_pub.pem */; settings = {ASSET_TAGS = (New, ); }; };
 		D52EA0B31F9F8A2600C8EB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52EA0B21F9F8A2600C8EB48 /* AppDelegate.swift */; };
 		D52EA0B51F9F8A2600C8EB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */; };
 		D52EA0B81F9F8A2600C8EB48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D52EA0B61F9F8A2600C8EB48 /* MainMenu.xib */; };
-		D5908CB220C8699E00B10CE3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = D5908CB120C8699E00B10CE3 /* dsa_pub.pem */; };
 		D5CBD4451FA13C2100115484 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD4441FA13C2100115484 /* StatusMenuController.swift */; };
 		D5E3516120C7EA4E003B95F3 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E3516020C7EA4E003B95F3 /* Sparkle.framework */; };
 		D5E3516220C7EA8D003B95F3 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5E3516020C7EA4E003B95F3 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -30,13 +30,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D507E18E20CCEC66001DE209 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		D52EA0AF1F9F8A2600C8EB48 /* BashBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BashBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D52EA0B21F9F8A2600C8EB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D52EA0B71F9F8A2600C8EB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D52EA0B91F9F8A2600C8EB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52EA0BA1F9F8A2600C8EB48 /* BashBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BashBar.entitlements; sourceTree = "<group>"; };
-		D5908CB120C8699E00B10CE3 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		D5CBD4441FA13C2100115484 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		D5E3516020C7EA4E003B95F3 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,6 @@
 		D52EA0A61F9F8A2600C8EB48 = {
 			isa = PBXGroup;
 			children = (
-				D5908CB120C8699E00B10CE3 /* dsa_pub.pem */,
 				D52EA0B11F9F8A2600C8EB48 /* BashBar */,
 				D52EA0B01F9F8A2600C8EB48 /* Products */,
 				D5E3515920C7E783003B95F3 /* Frameworks */,
@@ -74,6 +73,7 @@
 		D52EA0B11F9F8A2600C8EB48 /* BashBar */ = {
 			isa = PBXGroup;
 			children = (
+				D507E18E20CCEC66001DE209 /* dsa_pub.pem */,
 				D52EA0B21F9F8A2600C8EB48 /* AppDelegate.swift */,
 				D5CBD4441FA13C2100115484 /* StatusMenuController.swift */,
 				D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */,
@@ -119,6 +119,9 @@
 		D52EA0A71F9F8A2600C8EB48 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Tom Brek";
@@ -158,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D52EA0B51F9F8A2600C8EB48 /* Assets.xcassets in Resources */,
-				D5908CB220C8699E00B10CE3 /* dsa_pub.pem in Resources */,
+				D507E18F20CCEC66001DE209 /* dsa_pub.pem in Resources */,
 				D52EA0B81F9F8A2600C8EB48 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
