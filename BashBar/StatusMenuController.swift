@@ -21,6 +21,7 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var errorMenu: NSMenuItem!
     @IBOutlet weak var commandpromptItem: NSMenuItem!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    var plistData: [String: AnyObject] = [:]
     
     override func awakeFromNib() {
         //        statusItem.title = "bashBar"
@@ -53,18 +54,47 @@ class StatusMenuController: NSObject {
     // Import settings
     
     @IBAction func importSettings(_ sender: Any) {
-        NSLog("import settings")
+        let dialog = NSOpenPanel()
+        dialog.title = "Select a .plist file"
+        dialog.allowsMultipleSelection = false
+        dialog.showsResizeIndicator = true
+        dialog.allowedFileTypes = ["plist"]
+        
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url
+            if (result != nil) {
+                let path = result!.path
+                NSLog(path)
+                let fileManager = FileManager.default
+                var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+                let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+                if (!fileManager.fileExists(atPath: path)) {
+                    NSLog("Settings file does not exists. Creating blank one.")
+                    savePropertyList()
+                }
+                let plistXML = FileManager.default.contents(atPath: path)!
+                do {
+                    plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
+                } catch {
+                    print("Error reading plist: \(error), format: \(propertyListFormat)")
+                }
+                convertPlist()
+            }
+        }
+        else {
+            NSLog("User cancelled")
+        }
     }
     
     // Export settings
     
     @IBAction func exportSettings(_ sender: Any) {
         NSLog("export settings")
+
     }
     
     // Show preferences
     @IBAction func showPreferences(_ sender: Any) {
-       // readPropertyList()
         self.preferencesWindow.orderFrontRegardless()
     }
     
@@ -532,7 +562,7 @@ class StatusMenuController: NSObject {
     func readPropertyList() {
         let fileManager = FileManager.default
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
-        var plistData: [String: AnyObject] = [:] //Our data
+//        var plistData: [String: AnyObject] = [:] //Our data
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         if (!fileManager.fileExists(atPath: path)) {
@@ -546,7 +576,11 @@ class StatusMenuController: NSObject {
         } catch {
             print("Error reading plist: \(error), format: \(propertyListFormat)")
         }
-        
+        convertPlist()
+    }
+    
+    
+    func convertPlist() {
         // Update label
         checkbox1.state  = (plistData["checkbox1"] as! Bool) == true ? .on : .off
         checkbox2.state  = (plistData["checkbox2"] as! Bool) == true ? .on : .off
@@ -795,11 +829,9 @@ class StatusMenuController: NSObject {
         p_cmd10_10.stringValue = plistData["p_cmd10_10"] as! String
         
         updateMenu()
-        
     }
     
     func savePropertyList() {
-//        let fileManager = FileManager.default
         let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
         let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         let dicContent = [
