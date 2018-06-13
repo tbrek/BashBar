@@ -50,7 +50,18 @@ class StatusMenuController: NSObject {
         savePropertyList()
     }
     
-   
+    // Import settings
+    
+    @IBAction func importSettings(_ sender: Any) {
+        NSLog("import settings")
+    }
+    
+    // Export settings
+    
+    @IBAction func exportSettings(_ sender: Any) {
+        NSLog("export settings")
+    }
+    
     // Show preferences
     @IBAction func showPreferences(_ sender: Any) {
        // readPropertyList()
