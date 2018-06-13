@@ -22,6 +22,8 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var commandpromptItem: NSMenuItem!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     var plistData: [String: AnyObject] = [:]
+    var path: String!
+    var documentDirectory: String!
     
     override func awakeFromNib() {
         //        statusItem.title = "bashBar"
@@ -63,11 +65,11 @@ class StatusMenuController: NSObject {
         if (dialog.runModal() == NSApplication.ModalResponse.OK) {
             let result = dialog.url
             if (result != nil) {
-                let path = result!.path
+                path = result!.path
                 NSLog(path)
                 let fileManager = FileManager.default
                 var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
-                let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+                documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
                 if (!fileManager.fileExists(atPath: path)) {
                     NSLog("Settings file does not exists. Creating blank one.")
                     savePropertyList()
@@ -90,7 +92,21 @@ class StatusMenuController: NSObject {
     
     @IBAction func exportSettings(_ sender: Any) {
         NSLog("export settings")
-
+        let dialog = NSSavePanel()
+        dialog.title = "Select a folder to save .plist file"
+        dialog.allowedFileTypes = ["plist"]
+        dialog.showsResizeIndicator = true
+        dialog.allowsOtherFileTypes = false
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url
+            if (result != nil) {
+                path = result!.path
+                saveToPlist()
+            }
+        }
+        else {
+            NSLog("User cancelled")
+        }
     }
     
     // Show preferences
@@ -561,10 +577,9 @@ class StatusMenuController: NSObject {
     // Update menu and label from plist
     func readPropertyList() {
         let fileManager = FileManager.default
-        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
-//        var plistData: [String: AnyObject] = [:] //Our data
-        let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
+        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+        documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+        path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         if (!fileManager.fileExists(atPath: path)) {
             NSLog("Settings file does not exists. Creating blank one.")
             savePropertyList()
@@ -832,8 +847,13 @@ class StatusMenuController: NSObject {
     }
     
     func savePropertyList() {
-        let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
+        documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+        path = documentDirectory.appending("/com.tbrek.BashBar.plist")
+        saveToPlist()
+    }
+    
+        
+    func saveToPlist() {
         let dicContent = [
             "notificationsEnabled": notificationsEnabled.state,
             
@@ -1081,11 +1101,11 @@ class StatusMenuController: NSObject {
         let plistData = NSDictionary(dictionary: dicContent)
         let success:Bool = plistData.write(toFile: path, atomically: true)
         if success {
-  //          print("file has been created!")
+
         }
             else
           {
-  //          print("unable to create the file")
+            
           }
     }
     
