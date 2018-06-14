@@ -21,6 +21,9 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var errorMenu: NSMenuItem!
     @IBOutlet weak var commandpromptItem: NSMenuItem!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    var plistData: [String: AnyObject] = [:]
+    var path: String!
+    var documentDirectory: String!
     
     override func awakeFromNib() {
         //        statusItem.title = "bashBar"
@@ -50,10 +53,72 @@ class StatusMenuController: NSObject {
         savePropertyList()
     }
     
-   
+    // Import settings
+    
+    @IBAction func importSettings(_ sender: Any) {
+        let importAlert = NSAlert()
+        importAlert.messageText = "This will overwrite your current settings"
+        importAlert.informativeText = "Blah blah"
+        importAlert.alertStyle = .warning
+        importAlert.addButton(withTitle: "OK")
+        importAlert.addButton(withTitle: "Cancel")
+        let shallWeImport = importAlert.runModal()
+        if shallWeImport == NSApplication.ModalResponse.alertFirstButtonReturn {
+            let dialog = NSOpenPanel()
+            dialog.title = "Select a .plist file"
+            dialog.allowsMultipleSelection = false
+            dialog.showsResizeIndicator = true
+            dialog.allowedFileTypes = ["plist"]
+            if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+                let result = dialog.url
+                if (result != nil) {
+                    path = result!.path
+                    NSLog(path)
+                    let fileManager = FileManager.default
+                    var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+                    documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+                    if (!fileManager.fileExists(atPath: path)) {
+                        NSLog("Settings file does not exists. Creating blank one.")
+                        savePropertyList()
+                    }
+                    let plistXML = FileManager.default.contents(atPath: path)!
+                    do {
+                        plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
+                    } catch {
+                        print("Error reading plist: \(error), format: \(propertyListFormat)")
+                    }
+                    convertPlist()
+                }
+            }
+            else {
+                NSLog("User cancelled")
+            }
+        }
+    }
+    
+    // Export settings
+    
+    @IBAction func exportSettings(_ sender: Any) {
+        NSLog("export settings")
+        let dialog = NSSavePanel()
+        dialog.title = "Select a folder to save .plist file"
+        dialog.allowedFileTypes = ["plist"]
+        dialog.showsResizeIndicator = true
+        dialog.allowsOtherFileTypes = false
+        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+            let result = dialog.url
+            if (result != nil) {
+                path = result!.path
+                saveToPlist()
+            }
+        }
+        else {
+            NSLog("User cancelled")
+        }
+    }
+    
     // Show preferences
     @IBAction func showPreferences(_ sender: Any) {
-       // readPropertyList()
         self.preferencesWindow.orderFrontRegardless()
     }
     
@@ -520,10 +585,9 @@ class StatusMenuController: NSObject {
     // Update menu and label from plist
     func readPropertyList() {
         let fileManager = FileManager.default
-        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml //Format of the Property List.
-        var plistData: [String: AnyObject] = [:] //Our data
-        let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
+        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+        documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+        path = documentDirectory.appending("/com.tbrek.BashBar.plist")
         if (!fileManager.fileExists(atPath: path)) {
             NSLog("Settings file does not exists. Creating blank one.")
             savePropertyList()
@@ -535,7 +599,11 @@ class StatusMenuController: NSObject {
         } catch {
             print("Error reading plist: \(error), format: \(propertyListFormat)")
         }
-        
+        convertPlist()
+    }
+    
+    
+    func convertPlist() {
         // Update label
         checkbox1.state  = (plistData["checkbox1"] as! Bool) == true ? .on : .off
         checkbox2.state  = (plistData["checkbox2"] as! Bool) == true ? .on : .off
@@ -784,13 +852,16 @@ class StatusMenuController: NSObject {
         p_cmd10_10.stringValue = plistData["p_cmd10_10"] as! String
         
         updateMenu()
-        
     }
     
     func savePropertyList() {
-//        let fileManager = FileManager.default
-        let documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-        let path = documentDirectory.appending("/com.tbrek.BashBar.plist")
+        documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+        path = documentDirectory.appending("/com.tbrek.BashBar.plist")
+        saveToPlist()
+    }
+    
+        
+    func saveToPlist() {
         let dicContent = [
             "notificationsEnabled": notificationsEnabled.state,
             
@@ -1038,11 +1109,11 @@ class StatusMenuController: NSObject {
         let plistData = NSDictionary(dictionary: dicContent)
         let success:Bool = plistData.write(toFile: path, atomically: true)
         if success {
-  //          print("file has been created!")
+
         }
             else
           {
-  //          print("unable to create the file")
+            
           }
     }
     
