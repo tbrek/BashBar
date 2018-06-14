@@ -56,35 +56,43 @@ class StatusMenuController: NSObject {
     // Import settings
     
     @IBAction func importSettings(_ sender: Any) {
-        let dialog = NSOpenPanel()
-        dialog.title = "Select a .plist file"
-        dialog.allowsMultipleSelection = false
-        dialog.showsResizeIndicator = true
-        dialog.allowedFileTypes = ["plist"]
-        
-        if (dialog.runModal() == NSApplication.ModalResponse.OK) {
-            let result = dialog.url
-            if (result != nil) {
-                path = result!.path
-                NSLog(path)
-                let fileManager = FileManager.default
-                var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
-                documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
-                if (!fileManager.fileExists(atPath: path)) {
-                    NSLog("Settings file does not exists. Creating blank one.")
-                    savePropertyList()
+        let importAlert = NSAlert()
+        importAlert.messageText = "This will overwrite your current settings"
+        importAlert.informativeText = "Blah blah"
+        importAlert.alertStyle = .warning
+        importAlert.addButton(withTitle: "OK")
+        importAlert.addButton(withTitle: "Cancel")
+        let shallWeImport = importAlert.runModal()
+        if shallWeImport == NSApplication.ModalResponse.alertFirstButtonReturn {
+            let dialog = NSOpenPanel()
+            dialog.title = "Select a .plist file"
+            dialog.allowsMultipleSelection = false
+            dialog.showsResizeIndicator = true
+            dialog.allowedFileTypes = ["plist"]
+            if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+                let result = dialog.url
+                if (result != nil) {
+                    path = result!.path
+                    NSLog(path)
+                    let fileManager = FileManager.default
+                    var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+                    documentDirectory = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .userDomainMask, true)[0] as String
+                    if (!fileManager.fileExists(atPath: path)) {
+                        NSLog("Settings file does not exists. Creating blank one.")
+                        savePropertyList()
+                    }
+                    let plistXML = FileManager.default.contents(atPath: path)!
+                    do {
+                        plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
+                    } catch {
+                        print("Error reading plist: \(error), format: \(propertyListFormat)")
+                    }
+                    convertPlist()
                 }
-                let plistXML = FileManager.default.contents(atPath: path)!
-                do {
-                    plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
-                } catch {
-                    print("Error reading plist: \(error), format: \(propertyListFormat)")
-                }
-                convertPlist()
             }
-        }
-        else {
-            NSLog("User cancelled")
+            else {
+                NSLog("User cancelled")
+            }
         }
     }
     
