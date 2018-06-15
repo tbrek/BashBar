@@ -57,8 +57,8 @@ class StatusMenuController: NSObject {
     
     @IBAction func importSettings(_ sender: Any) {
         let importAlert = NSAlert()
-        importAlert.messageText = "This will overwrite your current settings"
-        importAlert.informativeText = "Blah blah"
+        importAlert.messageText = "Are you sure?"
+        importAlert.informativeText = "This will overwrite your current settings"
         importAlert.alertStyle = .warning
         importAlert.addButton(withTitle: "OK")
         importAlert.addButton(withTitle: "Cancel")

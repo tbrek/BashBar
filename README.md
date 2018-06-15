@@ -23,6 +23,7 @@ Simply copy it to your /Application folder and run.
 
 ## Change log
 
+1.7.4 Import dialog  box update<br>
 1.7.3 Inport/Export settings added<br>
 1.7.1(2) Fixed Code-signing<br>
 1.7 Added Sparkle SWUpdate<br>
