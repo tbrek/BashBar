@@ -7,6 +7,9 @@
       <language>en</language>
       <item>
           <title>Version 1.7.4</title>
+          <description><![<![CDATA[
+            Added import/export settings option
+            ]]>]
           <!-- <sparkle:releaseNotesLink>
           </sparkle:releaseNotesLink> -->
           <pubDate>Mon, 14 Jun 2018 07:00:00 +0000</pubDate>
