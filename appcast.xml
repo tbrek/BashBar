@@ -8,7 +8,15 @@
       <item>
           <title>Version 1.7.4</title>
           <description><![CDATA[
-            Small fix for import dialog window
+            <b>1.7.4</b>
+            <li>Small fix for import dialog window</li>
+            <b>1.7.3</b>
+            <li>Added import/export settings option</li>
+            <li>Some entries from menubar are now moved to preferences</li>
+            <b>1.7.2</b>
+            <li>Codesign fix</li>
+            <b>1.7</b>
+            <li>Auto-updater added</li>
             ]]>
           </description>
           <!-- <sparkle:releaseNotesLink>
@@ -21,8 +29,14 @@
       </item>
       <item>
           <title>Version 1.7.3</title>
-         <description><![CDATA[
-            Added import/export settings option
+          <description><![CDATA[
+            <b>1.7.3</b>
+            <li>Added import/export settings option</li>
+            <li>Some entries from menubar are now moved to preferences</li>
+            <b>1.7.2</b>
+            <li>Codesign fix</li>
+            <b>1.7</b>
+            <li>Auto-updater added</li>
             ]]>
           </description>
           <!-- <sparkle:releaseNotesLink>
@@ -35,6 +49,13 @@
       </item>
       <item>
           <title>Version 1.7.2</title>
+          <description><![CDATA[
+            <b>1.7.2</b>
+            <li>Codesign fix</li>
+            <b>1.7</b>
+            <li>Auto-updater added</li>
+            ]]>
+          </description>
           <!-- <sparkle:releaseNotesLink>
           </sparkle:releaseNotesLink> -->
           <pubDate>Mon, 09 Jun 2018 07:00:00 +0000</pubDate>
@@ -55,6 +76,11 @@
       </item>
       <item>
           <title>Version 1.7</title>
+          <description><![CDATA[
+            <b>1.7</b>
+            <li>Auto-updater added</li>
+            ]]>
+          </description>
           <!-- <sparkle:releaseNotesLink>
           </sparkle:releaseNotesLink> -->
           <pubDate>Mon, 06 Jun 2018 21:00:00 +0000</pubDate>
