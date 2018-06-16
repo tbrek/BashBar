@@ -8,7 +8,7 @@
       <item>
           <title>Version 1.7.4</title>
           <description><![CDATA[
-            Added import/export settings option
+            Small fix for import dialog window
             ]]>
           </description>
           <!-- <sparkle:releaseNotesLink>
@@ -21,6 +21,10 @@
       </item>
       <item>
           <title>Version 1.7.3</title>
+         <description><![CDATA[
+            Added import/export settings option
+            ]]>
+          </description>
           <!-- <sparkle:releaseNotesLink>
           </sparkle:releaseNotesLink> -->
           <pubDate>Mon, 14 Jun 2018 07:00:00 +0000</pubDate>
