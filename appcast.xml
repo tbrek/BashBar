@@ -8,14 +8,14 @@
       <item>
           <title>Version 1.7.4</title>
           <description><![CDATA[
-            <br/><b>1.7.4</b>
+            <b>1.7.4</b>
             <li>Small fix for import dialog window</li>
-            <br/><br/><b>1.7.3</b>
+            <b>1.7.3</b>
             <li>Added import/export settings option</li>
             <li>Some entries from menubar are now moved to preferences</li>
-            <br/><b>1.7.2</b>
+            <b>1.7.2</b>
             <li>Codesign fix</li>
-            <br/><b>1.7</b>
+            <b>1.7</b>
             <li>Auto-updater added</li>
             ]]>
           </description>
@@ -30,12 +30,12 @@
       <item>
           <title>Version 1.7.3</title>
           <description><![CDATA[
-            <br><b>1.7.3</b>
+            <b>1.7.3</b>
             <li>Added import/export settings option</li>
             <li>Some entries from menubar are now moved to preferences</li>
-            <br><b>1.7.2</b>
+            <b>1.7.2</b>
             <li>Codesign fix</li>
-            <br><b>1.7</b>
+            <b>1.7</b>
             <li>Auto-updater added</li>
             ]]>
           </description>
@@ -50,9 +50,9 @@
       <item>
           <title>Version 1.7.2</title>
           <description><![CDATA[
-            <br><b>1.7.2</b>
+            <b>1.7.2</b>
             <li>Codesign fix</li>
-            <br><b>1.7</b>
+            <b>1.7</b>
             <li>Auto-updater added</li>
             ]]>
           </description>
@@ -77,7 +77,7 @@
       <item>
           <title>Version 1.7</title>
           <description><![CDATA[
-            <br><b>1.7</b>
+            <b>1.7</b>
             <li>Auto-updater added</li>
             ]]>
           </description>
