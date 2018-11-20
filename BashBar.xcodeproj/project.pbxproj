@@ -126,7 +126,7 @@
 					D52EA0AE1F9F8A2600C8EB48 = {
 						CreatedOnToolsVersion = 9.0.1;
 						DevelopmentTeam = UJTM88G62N;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
@@ -220,7 +220,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer: me@tombrek.com (9VR6422LM8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = UJTM88G62N;
@@ -281,7 +281,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer: me@tombrek.com (9VR6422LM8)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = UJTM88G62N;
@@ -307,8 +307,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -329,8 +329,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				FRAMEWORK_SEARCH_PATHS = (
