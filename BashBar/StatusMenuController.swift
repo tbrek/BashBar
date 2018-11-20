@@ -28,14 +28,15 @@ class StatusMenuController: NSObject {
     override func awakeFromNib() {
         //        statusItem.title = "bashBar"
         //        statusItem.menu = bashMenu
-        let icon = NSImage(named: NSImage.Name(rawValue: "statusIcon"))
+        let icon = NSImage(named: "statusIcon")
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = bashMenu
-        let commandpromptstatusicon = NSImage(named: NSImage.Name(rawValue: "commandprompt"))
+        let commandpromptstatusicon = NSImage(named: "commandprompt")
         commandpromptstatusicon?.isTemplate = true
         commandpromptItem.image = commandpromptstatusicon
-        
+        resultsView.textColor = NSColor(red: 236/255, green: 238/255, blue: 244/255, alpha: 1)
+        resultsView.backgroundColor = NSColor(red: 46/255, green: 51/255, blue: 64/256, alpha:1)
         readPropertyList()
         updateMenu()
         
@@ -1821,13 +1822,15 @@ class StatusMenuController: NSObject {
         if let output: NSAppleEventDescriptor = scriptObject?.executeAndReturnError(
                 &error) {
                 errorMenu.title = "Success"
-                resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
+                resultsView.textColor = NSColor(red: 236/255, green: 238/255, blue: 244/255, alpha: 1)
+                resultsView.backgroundColor = NSColor(red: 46/255, green: 51/255, blue: 64/256, alpha:1)
                 resultsView.font = NSFont(name: "Andale Mono", size: 12.0)
                 resultsView.string = output.stringValue!
  //               print(output.stringValue)
             } else if (error != nil) {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
-            resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
+            resultsView.textColor = NSColor(red: 236/255, green: 238/255, blue: 244/255, alpha: 1)
+            resultsView.backgroundColor = NSColor(red: 46/255, green: 51/255, blue: 64/256, alpha:1)
             resultsView.font = NSFont(name: "Andale Mono", size: 12.0)
             resultsView.string = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             }

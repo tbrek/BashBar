@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -1189,7 +1190,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="1054" height="535"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="1054" height="535"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1200,7 +1201,7 @@
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem identifier="" id="W08-ee-dt3">
-                                <view key="view" id="E8a-p5-8Oq">
+                                <view key="view" ambiguous="YES" id="E8a-p5-8Oq">
                                     <rect key="frame" x="10" y="33" width="1008" height="367"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -2212,7 +2213,7 @@
                                 </view>
                             </tabViewItem>
                             <tabViewItem identifier="" id="N5B-k7-aXD" userLabel="Menu 5tab">
-                                <view key="view" ambiguous="YES" id="nQR-Bi-Uvl">
+                                <view key="view" id="nQR-Bi-Uvl">
                                     <rect key="frame" x="10" y="33" width="1008" height="367"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -3849,14 +3850,13 @@ Gw
             <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="167" y="107" width="843" height="680"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
             <view key="contentView" id="bvd-IE-yJU">
                 <rect key="frame" x="0.0" y="0.0" width="843" height="680"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="paI-43-ihf">
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="paI-43-ihf">
                         <rect key="frame" x="754" y="13" width="75" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rSY-cP-90u">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -3865,18 +3865,17 @@ Gw
                             <action selector="closeResults:" target="sJd-RC-QzD" id="xzY-AZ-nmT"/>
                         </connections>
                     </button>
-                    <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azF-pO-K2V">
+                    <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azF-pO-K2V">
                         <rect key="frame" x="20" y="61" width="803" height="599"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" ambiguous="YES" id="SFu-pt-472">
+                        <clipView key="contentView" id="SFu-pt-472">
                             <rect key="frame" x="1" y="1" width="786" height="597"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Z3I-SM-VaT">
+                                <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="Z3I-SM-VaT">
                                     <rect key="frame" x="0.0" y="0.0" width="786" height="597"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="textColor" red="0.51372549019607838" green="0.58039215686274503" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" red="0.0078431372549019607" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="unemphasizedSelectedTextColor" catalog="System" colorSpace="catalog"/>
                                     <size key="minSize" width="786" height="597"/>
                                     <size key="maxSize" width="803" height="10000000"/>
                                     <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -3889,11 +3888,20 @@ Gw
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="pEq-AI-S6n">
-                            <rect key="frame" x="1" y="1" width="15" height="0.0"/>
+                            <rect key="frame" x="787" y="1" width="15" height="597"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="paI-43-ihf" secondAttribute="bottom" constant="20" symbolic="YES" id="APM-3A-U2E"/>
+                    <constraint firstItem="azF-pO-K2V" firstAttribute="leading" secondItem="bvd-IE-yJU" secondAttribute="leading" constant="20" symbolic="YES" id="Ehr-eP-njk"/>
+                    <constraint firstItem="paI-43-ihf" firstAttribute="top" secondItem="azF-pO-K2V" secondAttribute="bottom" constant="20" symbolic="YES" id="Hyx-0a-RMT"/>
+                    <constraint firstItem="azF-pO-K2V" firstAttribute="top" secondItem="bvd-IE-yJU" secondAttribute="top" constant="20" symbolic="YES" id="s9I-Uc-TGL"/>
+                    <constraint firstItem="paI-43-ihf" firstAttribute="trailing" secondItem="azF-pO-K2V" secondAttribute="trailing" id="wvM-yD-aVt"/>
+                    <constraint firstItem="paI-43-ihf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bvd-IE-yJU" secondAttribute="leading" constant="20" symbolic="YES" id="x48-pO-HIB"/>
+                    <constraint firstAttribute="trailing" secondItem="paI-43-ihf" secondAttribute="trailing" constant="20" symbolic="YES" id="yQL-Qx-goP"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="590.5" y="-617"/>
         </window>

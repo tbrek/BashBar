@@ -6,7 +6,22 @@
       <description>Most recent changes with links to updates.</description>
       <language>en</language>
       <item>
-          <title>Version 1.7.4</title>
+          <title>Version 1.7.6</title>
+          <description><![CDATA[
+            <b>1.7.6</b>
+            <li>Better colouring on output window</li>
+            ]]>
+          </description>
+          <!-- <sparkle:releaseNotesLink>
+          </sparkle:releaseNotesLink> -->
+          <pubDate>Mon, 20 Nov 2018 07:00:00 +0000</pubDate>
+          <enclosure url="https://github.com/tbrek/BashBar/releases/download/v.1.7.6/BashBar.1.7.6.dmg"
+                     sparkle:version="1.7.6"
+                     length="0"
+                     type="application/octet-stream" />
+      </item>
+      <item>
+          <title>Version 1.7.5</title>
           <description><![CDATA[
             <b>1.7.5</b>
             <li>Mojave compatibility</li>
