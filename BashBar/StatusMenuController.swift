@@ -20,27 +20,26 @@ class StatusMenuController: NSObject {
     @IBOutlet weak var bashMenu: NSMenu!
     @IBOutlet weak var errorMenu: NSMenuItem!
     @IBOutlet weak var commandpromptItem: NSMenuItem!
+    
+    
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     var plistData: [String: AnyObject] = [:]
     var path: String!
     var documentDirectory: String!
     
     override func awakeFromNib() {
-        //        statusItem.title = "bashBar"
-        //        statusItem.menu = bashMenu
         let icon = NSImage(named: "statusIcon")
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = bashMenu
         let commandpromptstatusicon = NSImage(named: "commandprompt")
         commandpromptstatusicon?.isTemplate = true
-        commandpromptItem.image = commandpromptstatusicon
+//        commandpromptItem.image = commandpromptstatusicon
+        commandpromptItem.attributedTitle = NSAttributedString(string: "Click below to display output", attributes: [ NSAttributedString.Key.font: NSFont.systemFont(ofSize: 10)])
         resultsView.textColor = NSColor(red: 236/255, green: 238/255, blue: 244/255, alpha: 1)
         resultsView.backgroundColor = NSColor(red: 46/255, green: 51/255, blue: 64/256, alpha:1)
         readPropertyList()
         updateMenu()
-        
-        // Insert code here to initialize your application
     }
     
     // Quit app
@@ -53,6 +52,13 @@ class StatusMenuController: NSObject {
         notificationsEnabled.state = notificationsEnabled.state == .on ? .off : .on
         savePropertyList()
     }
+    
+    // Show results automagically
+    
+    @IBAction func flipResults(_ sender: Any) {
+        resultsEnabled.state = resultsEnabled.state == .on ? .off : .on
+    }
+    
     
     // Import settings
     
@@ -123,11 +129,13 @@ class StatusMenuController: NSObject {
         self.preferencesWindow.orderFrontRegardless()
     }
     
+    
     @IBAction func showResults(_ sender: Any) {
         self.resultsWindow.makeKeyAndOrderFront((Any).self)
     }
     
     
+    @IBOutlet weak var resultsEnabled: NSMenuItem!
     @IBOutlet weak var notificationsEnabled: NSMenuItem!
     
     // Buttons
@@ -1806,6 +1814,9 @@ class StatusMenuController: NSObject {
     }
     
     private func shell(_ args: String) {
+        if resultsEnabled.state == .on {
+            showResults((Any).self)
+        }
 //        if args.range(of:"sudo") != nil {
 //            NSAppleScript(source: "do shell script \"sudo "+args+"\" with administrator privileges")!.executeAndReturnError(nil)
 //        }

@@ -36,6 +36,7 @@
                 <outlet property="Command8_1" destination="Huk-Sg-Dca" id="8i5-Ca-adp"/>
                 <outlet property="Command9_0" destination="Y7c-pZ-tcB" id="LO7-xc-3G8"/>
                 <outlet property="Command9_1" destination="1lc-2N-aN7" id="b0h-br-z6Q"/>
+                <outlet property="DisplayResults" destination="WLN-OD-qLb" id="bf5-7K-CtI"/>
                 <outlet property="Label10_1" destination="COq-Lv-vw4" id="NFO-RW-vu3"/>
                 <outlet property="Label1_1" destination="8uk-cy-Pzu" id="6Bl-Mc-3RQ"/>
                 <outlet property="Label2_1" destination="SYV-Vu-DxE" id="Bvj-63-TRm"/>
@@ -414,6 +415,7 @@
                 <outlet property="p_lab9_9" destination="0Zo-YD-c1m" id="9Yg-1Z-Cn0"/>
                 <outlet property="preferencesView" destination="EiT-Mj-1SZ" id="vhG-bR-bg6"/>
                 <outlet property="preferencesWindow" destination="QvC-M9-y7g" id="DVE-Bn-Sqb"/>
+                <outlet property="resultsEnabled" destination="ivE-k0-EqY" id="Aen-yu-Ao5"/>
                 <outlet property="resultsView" destination="Z3I-SM-VaT" id="S2x-1d-CUW"/>
                 <outlet property="resultsWindow" destination="EWL-p4-6Ye" id="BZV-MJ-jeC"/>
                 <outlet property="savePref" destination="U57-PO-U0i" id="mfe-0E-Y2D"/>
@@ -1168,6 +1170,12 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="enableNotifications:" target="sJd-RC-QzD" id="0CE-Dj-wMy"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Autodisplay results" id="ivE-k0-EqY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="flipResults:" target="sJd-RC-QzD" id="HcS-ET-oRT"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Preferences" id="Vuf-Vb-aDb">
@@ -3841,6 +3849,17 @@ Gw
                                 <action selector="checkForUpdates:" target="WER-YY-uxO" id="uZ4-eb-gyi"/>
                             </connections>
                         </buttonCell>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WLN-OD-qLb" userLabel="DisplayResults">
+                        <rect key="frame" x="507" y="22" width="192" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Display results automaticaly" bezelStyle="regularSquare" imagePosition="left" inset="2" id="HV2-Hi-K5E">
+                            <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="checkbox:" target="sJd-RC-QzD" id="7lV-Nd-nUp"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
