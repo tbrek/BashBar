@@ -57,6 +57,7 @@ class StatusMenuController: NSObject {
     
     @IBAction func flipResults(_ sender: Any) {
         resultsEnabled.state = resultsEnabled.state == .on ? .off : .on
+        savePropertyList()
     }
     
     
@@ -626,7 +627,13 @@ class StatusMenuController: NSObject {
         checkbox10.state  = (plistData["checkbox10"] as! Bool) == true ? .on : .off
         
         // Update notification status
-        notificationsEnabled.state = (plistData["notificationsEnabled"] as! Bool) == true ? .on : .off
+        if plistData["notificationsEnabled"] != nil {
+            notificationsEnabled.state = (plistData["notificationsEnabled"] as! Bool) == true ? .on : .off
+        }
+        
+        if plistData["showResults"] != nil {
+            resultsEnabled.state = (plistData["showResults"] as! Bool) == true ? .on : .off
+        }
         
         self.checkbox( 0 )
         
@@ -873,7 +880,7 @@ class StatusMenuController: NSObject {
     func saveToPlist() {
         let dicContent = [
             "notificationsEnabled": notificationsEnabled.state,
-            
+            "showResults": resultsEnabled.state,
             "checkbox1": checkbox1.state,
             "p_lab1_0": p_lab1_0.stringValue ,
             "p_cmd1_0": p_cmd1_0.stringValue ,
