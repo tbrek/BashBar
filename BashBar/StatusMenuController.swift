@@ -28,11 +28,11 @@ class StatusMenuController: NSObject {
     override func awakeFromNib() {
         //        statusItem.title = "bashBar"
         //        statusItem.menu = bashMenu
-        let icon = NSImage(named: NSImage.Name(rawValue: "statusIcon"))
+        let icon = NSImage(named: "statusIcon")
         icon?.isTemplate = true // best for dark mode
         statusItem.image = icon
         statusItem.menu = bashMenu
-        let commandpromptstatusicon = NSImage(named: NSImage.Name(rawValue: "commandprompt"))
+        let commandpromptstatusicon = NSImage(named: "commandprompt")
         commandpromptstatusicon?.isTemplate = true
         commandpromptItem.image = commandpromptstatusicon
         
