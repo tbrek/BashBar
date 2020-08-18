@@ -12,6 +12,7 @@ import ServiceManagement
 
 class StatusMenuController: NSObject {
     
+    @IBOutlet weak var resultToggle: NSMenuItem!
     @IBOutlet weak var resultsWindow: NSPanel!
     @IBOutlet weak var closeResults: NSButton!
     @IBOutlet weak var preferencesView: NSView!
@@ -46,6 +47,16 @@ class StatusMenuController: NSObject {
     @IBAction func quitClicked(_ sender: NSMenuItem) {
         NSApplication.shared.terminate(self)
     }
+    
+    
+     // Toggle auto-show results window
+     
+     @IBAction func toggleResults(_ sender: Any) {
+        resultToggle.state = resultToggle.state == .on ? .off : .on
+        savePropertyList()
+     }
+    
+    
     
     // Show notifications
     @IBAction func enableNotifications(_ sender: Any) {
@@ -116,6 +127,8 @@ class StatusMenuController: NSObject {
             NSLog("User cancelled")
         }
     }
+    
+ 
     
     // Show preferences
     @IBAction func showPreferences(_ sender: Any) {
@@ -618,7 +631,9 @@ class StatusMenuController: NSObject {
         
         // Update notification status
         notificationsEnabled.state = (plistData["notificationsEnabled"] as! Bool) == true ? .on : .off
-        
+        if plistData["autodisplayResults"] != nil {
+            resultToggle.state = (plistData["autodisplayResults"] as! Bool) == true ? .on : .off
+        }
         self.checkbox( 0 )
         
         p_lab1_0.stringValue = plistData["p_lab1_0"] as! String
@@ -864,7 +879,7 @@ class StatusMenuController: NSObject {
     func saveToPlist() {
         let dicContent = [
             "notificationsEnabled": notificationsEnabled.state,
-            
+            "autodisplayResults" : resultToggle.state,
             "checkbox1": checkbox1.state,
             "p_lab1_0": p_lab1_0.stringValue ,
             "p_cmd1_0": p_cmd1_0.stringValue ,
@@ -1834,7 +1849,10 @@ class StatusMenuController: NSObject {
             if notificationsEnabled.state == .on {
                 showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
             }
-      
+            
+        if resultToggle.state == .on {
+            showResults((Any).self)
+        }
         
         
     }
