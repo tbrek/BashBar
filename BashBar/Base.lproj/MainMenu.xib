@@ -1226,7 +1226,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="sDy-XB-Jag"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="aEh-o2-Z9k">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1234,7 +1234,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8uk-cy-Pzu" userLabel="Label1_1">
                                             <rect key="frame" x="15" y="283" width="62" height="16"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="lbA-0l-4rF">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1242,7 +1242,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FOm-8u-KGi" userLabel="Command1_1">
                                             <rect key="frame" x="373" y="283" width="128" height="16"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="kwg-HA-0Df">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1250,7 +1250,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v1o-FA-bbx" userLabel="Command1_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="tNo-N9-8gP">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1555,7 +1555,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="EfN-Cx-qkB"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="0NQ-Pw-fvt">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1563,7 +1563,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SYV-Vu-DxE" userLabel="Label2_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="w8B-gT-nM4">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1571,7 +1571,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OlC-eK-AFU" userLabel="Command2_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="9xO-nS-IWq">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1579,7 +1579,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Qr-Hl-2JV" userLabel="Command2_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="EW2-QN-xrS">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1884,7 +1884,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="8bT-Zd-x0z"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="MwU-93-rnC">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1892,7 +1892,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-GD-bd8" userLabel="Label3_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="mzj-X3-GQw">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1900,7 +1900,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-ZH-Ykh" userLabel="Command3_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="bPg-HG-O9v">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -1908,7 +1908,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zT7-Ti-mVR" userLabel="Command3_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="aWD-Ui-bEd">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2213,7 +2213,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="X0e-fy-rt0"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="xeO-ix-8DM">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2221,7 +2221,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="C58-lt-81J" userLabel="Label4_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="5KQ-Mf-Fw4">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2229,7 +2229,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sjg-9D-Cu9" userLabel="Command4_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="gPm-pP-1bh">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2237,7 +2237,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rc3-Me-adO" userLabel="Command4_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="zwu-7x-tHq">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2543,7 +2543,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="yfz-D1-ISh"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="tcV-tD-Cwg">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2551,7 +2551,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="slz-I7-ruX" userLabel="Label5_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="fXr-uy-YOm">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2559,7 +2559,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="abK-9W-6ch" userLabel="Command5_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="H8S-IX-Ln1">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2567,7 +2567,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hYt-pU-lyt" userLabel="Command5_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="vxj-Rg-ckj">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2872,7 +2872,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="eT3-vh-xtb"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="MVz-r0-mhc">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2880,7 +2880,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s2Q-w9-pT7" userLabel="Label6_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="59g-Hf-XuP">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2888,7 +2888,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MO8-sF-HAy" userLabel="Command6_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="zdh-ry-bwp">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -2896,7 +2896,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jhf-Vs-w8A" userLabel="Command6_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="Ob3-1J-xd9">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3201,7 +3201,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="9Uo-8Z-cAW"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Kl3-67-iBg">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3209,7 +3209,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="X7B-gR-8p2" userLabel="Label7_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="1NN-1x-1My">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3217,7 +3217,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OJS-ps-8fD" userLabel="Command7_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="puo-aZ-Erg">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3225,7 +3225,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fBq-fQ-Nfq" userLabel="Command7_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="GCE-TB-LXs">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3524,7 +3524,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="Zff-UX-7Z0"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="0Zj-Wv-s76">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3532,7 +3532,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qjW-39-Vvp" userLabel="Label8_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="yEa-1E-8Bf">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3540,7 +3540,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Huk-Sg-Dca" userLabel="Command8_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="v4X-n8-0Fj">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3548,7 +3548,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3kH-rx-bdH" userLabel="Command8_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="3rs-VO-UfI">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3853,7 +3853,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="hxW-y1-Lhn"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="tnA-0g-AjN">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3861,7 +3861,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XQi-wc-PRN" userLabel="Label9_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="9UM-Yh-COQ">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3869,7 +3869,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1lc-2N-aN7" userLabel="Command9_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="PzC-ts-9oN">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -3877,7 +3877,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y7c-pZ-tcB" userLabel="Command9_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="fsH-AL-1ph">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -4182,7 +4182,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="fuL-TT-dsf"/>
                                             </constraints>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="cv0-Wt-4Q8">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -4190,7 +4190,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="COq-Lv-vw4" userLabel="Label10_1">
                                             <rect key="frame" x="15" y="281" width="62" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Labels" id="Mrj-e5-zGi">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -4198,7 +4198,7 @@
                                         <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="str-om-Z7d" userLabel="Command10_1">
                                             <rect key="frame" x="373" y="281" width="128" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Sub Commands/Scripts" id="nM7-n1-0f4">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -4206,7 +4206,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nvl-UC-sfc" userLabel="Command10_0">
                                             <rect key="frame" x="373" y="328" width="93" height="17"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Command/Script" id="YtF-4P-J74">
-                                                <font key="font" metaFont="label" size="11"/>
+                                                <font key="font" metaFont="menu" size="11"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
@@ -4502,8 +4502,9 @@
                             <action selector="savePreferences:" target="sJd-RC-QzD" id="KTo-Lf-PuW"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-4B-4Qr">
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8R2-4B-4Qr">
                         <rect key="frame" x="888" y="13" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="g6L-Ct-m2g">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -4546,12 +4547,9 @@ Gw
                             </menu>
                         </popUpButtonCell>
                     </popUpButton>
-                    <button translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Lc-Am0" userLabel="PayPal">
-                        <rect key="frame" x="41" y="49" width="91" height="48"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="91" id="RLL-Yw-Gis"/>
-                            <constraint firstAttribute="height" constant="48" id="dGC-lg-cs7"/>
-                        </constraints>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9q-Lc-Am0" userLabel="PayPal">
+                        <rect key="frame" x="38" y="32" width="91" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="donate-paypal-1x" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="tdg-8K-we8">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -4571,28 +4569,8 @@ Gw
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1DW-fD-Ibn">
-                        <rect key="frame" x="14" y="13" width="152" height="32"/>
-                        <buttonCell key="cell" type="push" title="Check for updates" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mx7-et-Wby">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <connections>
-                                <action selector="checkForUpdates:" target="WER-YY-uxO" id="uZ4-eb-gyi"/>
-                            </connections>
-                        </buttonCell>
-                    </button>
-                    <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-HU-xFb">
-                        <rect key="frame" x="808" y="13" width="80" height="32"/>
-                        <buttonCell key="cell" type="push" title="Export" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="e1X-v0-81a">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                            <connections>
-                                <action selector="exportSettings:" target="sJd-RC-QzD" id="YJ5-U8-O5x"/>
-                            </connections>
-                        </buttonCell>
-                    </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNR-XS-FnF">
-                        <rect key="frame" x="728" y="13" width="80" height="32"/>
+                        <rect key="frame" x="691" y="13" width="80" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Import" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tfs-YM-ONe">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -4602,27 +4580,30 @@ Gw
                             </connections>
                         </buttonCell>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-HU-xFb">
+                        <rect key="frame" x="771" y="13" width="80" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Export" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="e1X-v0-81a">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <connections>
+                                <action selector="exportSettings:" target="sJd-RC-QzD" id="YJ5-U8-O5x"/>
+                            </connections>
+                        </buttonCell>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="mM8-G0-Ri8" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" symbolic="YES" id="056-Dq-I8C"/>
-                    <constraint firstItem="U57-PO-U0i" firstAttribute="baseline" secondItem="WQ8-HU-xFb" secondAttribute="baseline" id="1j4-25-AWq"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eax-sz-e5r" secondAttribute="trailing" constant="20" symbolic="YES" id="6Fd-qE-skO"/>
-                    <constraint firstItem="U57-PO-U0i" firstAttribute="leading" secondItem="8R2-4B-4Qr" secondAttribute="trailing" constant="12" symbolic="YES" id="8Bb-Bp-1vi"/>
                     <constraint firstAttribute="bottom" secondItem="U57-PO-U0i" secondAttribute="bottom" constant="20" symbolic="YES" id="BJe-Ok-1Ij"/>
                     <constraint firstItem="mM8-G0-Ri8" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="FQc-jZ-dHO"/>
                     <constraint firstAttribute="trailing" secondItem="U57-PO-U0i" secondAttribute="trailing" constant="20" symbolic="YES" id="O4M-Fu-u54"/>
-                    <constraint firstItem="16O-i4-Ec4" firstAttribute="leading" secondItem="I9q-Lc-Am0" secondAttribute="leading" id="Pcg-rI-yca"/>
-                    <constraint firstItem="U57-PO-U0i" firstAttribute="baseline" secondItem="8R2-4B-4Qr" secondAttribute="baseline" id="QxJ-jm-uZg"/>
                     <constraint firstItem="16O-i4-Ec4" firstAttribute="top" secondItem="mM8-G0-Ri8" secondAttribute="bottom" constant="8" symbolic="YES" id="RLW-Zw-Qfd"/>
                     <constraint firstItem="U57-PO-U0i" firstAttribute="top" secondItem="mM8-G0-Ri8" secondAttribute="bottom" constant="77" id="Tii-Sh-5ls"/>
-                    <constraint firstItem="U57-PO-U0i" firstAttribute="baseline" secondItem="1DW-fD-Ibn" secondAttribute="baseline" id="YE9-PJ-RQ3"/>
-                    <constraint firstItem="mM8-G0-Ri8" firstAttribute="leading" secondItem="1DW-fD-Ibn" secondAttribute="leading" id="Yzt-rW-kKy"/>
-                    <constraint firstItem="1DW-fD-Ibn" firstAttribute="top" secondItem="I9q-Lc-Am0" secondAttribute="bottom" constant="8" id="ccm-Bh-tX7"/>
                     <constraint firstItem="eax-sz-e5r" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="53" id="eu0-56-XNu"/>
                     <constraint firstItem="16O-i4-Ec4" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="41" id="hkt-rY-f5a"/>
                     <constraint firstItem="eax-sz-e5r" firstAttribute="top" secondItem="16O-i4-Ec4" secondAttribute="bottom" constant="8" symbolic="YES" id="lJW-tg-f7D"/>
                     <constraint firstItem="U57-PO-U0i" firstAttribute="trailing" secondItem="mM8-G0-Ri8" secondAttribute="trailing" id="oTE-IW-Se2"/>
-                    <constraint firstItem="8R2-4B-4Qr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WQ8-HU-xFb" secondAttribute="trailing" constant="12" symbolic="YES" id="utr-Wz-ONR"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="16O-i4-Ec4" secondAttribute="trailing" constant="20" symbolic="YES" id="yzE-3h-CW3"/>
                 </constraints>
             </view>

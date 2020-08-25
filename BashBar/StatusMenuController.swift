@@ -1826,10 +1826,38 @@ class StatusMenuController: NSObject {
 //        else {
 //            NSAppleScript(source: "do shell script \""+args+"\"")!.executeAndReturnError(nil)
 //        }
-        var myAppleScript = "do shell script \""+args+"\""
-        if args.range(of: "sudo") != nil {
+        
+        var tempArgs = args
+        let arguments = args.arguments()
+        print(args)
+        if arguments != [] {
+            for argument in arguments {
+                let argumentWindow = NSAlert()
+                argumentWindow.addButton(withTitle: "OK")
+                argumentWindow.addButton(withTitle: "Cancel")
+                argumentWindow.messageText = "Add variable for argument: "+argument
+//                argumentWindow.informativeText = "Coś tam jeszcze"
+                let txt = NSTextField(frame: NSRect(x: 0, y: 0, width: 200, height: 24))
+                txt.stringValue = ""
+                argumentWindow.accessoryView = txt
+               
+                let response: NSApplication.ModalResponse = argumentWindow.runModal()
+
+                var bResponse = false
+                if (response == NSApplication.ModalResponse.alertFirstButtonReturn) {
+                    bResponse = true
+                    NSLog(txt.stringValue, bResponse)
+                    tempArgs = tempArgs.replacingOccurrences(of: "{"+argument+"}", with: txt.stringValue)
+                } else {
+                    return
+                }
+            }
+        }
+        var myAppleScript = "do shell script \""+tempArgs+"\""
+        if tempArgs.range(of: "sudo") != nil {
             myAppleScript = myAppleScript + " with administrator privileges"
         }
+        print(tempArgs)
         
         var error: NSDictionary?
         let scriptObject = NSAppleScript(source: myAppleScript)
@@ -1847,7 +1875,7 @@ class StatusMenuController: NSObject {
             resultsView.string = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             }
             if notificationsEnabled.state == .on {
-                showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
+                showNotification(message: "\(tempArgs):\n\(errorMenu.title)",title: "Command prompt output for")
             }
             
         if resultToggle.state == .on {
@@ -1885,4 +1913,19 @@ class StatusMenuController: NSObject {
     }
     
     
+}
+
+extension String
+{
+    func arguments() -> [String]
+    {
+        if let regex = try? NSRegularExpression(pattern: "\\{[a-z0-9]+\\}", options: .caseInsensitive)
+        {
+            let string = self as NSString
+            return regex.matches(in: self, options: [], range: NSRange(location: 0, length: string.length)).map {
+                string.substring(with: $0.range).replacingOccurrences(of: "[\\{\\}]", with: "",options: .regularExpression).lowercased()
+            }
+        }
+        return []
+    }
 }
