@@ -15,6 +15,19 @@ When you hit **Preferences** you'll be presented 10 tabs which you can use to en
 
 ![preferences]
 
+From version 1.8.0 it is possible to use variables in commands i.e:
+
+Adding: `%% var <Variable description> %%` to the function:
+
+![variable1]
+
+```
+ls -la %% var <Variable description> %%
+```
+will trigger input dialog:
+
+![variable2]
+
 ### Installing
 
 Download latest version from [here](https://tbrek.github.io/BashBar/)
@@ -23,6 +36,7 @@ Simply copy it to your /Application folder and run.
 
 ## Change log
 
+1.8.0 Added variables
 1.7.4 Import dialog  box update<br>
 1.7.3 Inport/Export settings added<br>
 1.7.1(2) Fixed Code-signing<br>
@@ -38,4 +52,5 @@ Simply copy it to your /Application folder and run.
 [bashbarlogo]: /images/logo_128x128.png
 [menu]: /images/menu.png
 [preferences]: /images/preferences.png
-
+[variable1]: /images/variable1.png
+[variable2]: /images/variable2.png
