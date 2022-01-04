@@ -11,8 +11,6 @@
 		D52EA0B51F9F8A2600C8EB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D52EA0B41F9F8A2600C8EB48 /* Assets.xcassets */; };
 		D52EA0B81F9F8A2600C8EB48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D52EA0B61F9F8A2600C8EB48 /* MainMenu.xib */; };
 		D5CBD4451FA13C2100115484 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CBD4441FA13C2100115484 /* StatusMenuController.swift */; };
-		D5E3516120C7EA4E003B95F3 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E3516020C7EA4E003B95F3 /* Sparkle.framework */; };
-		D5E3516220C7EA8D003B95F3 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D5E3516020C7EA4E003B95F3 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +20,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D5E3516220C7EA8D003B95F3 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +33,6 @@
 		D52EA0B91F9F8A2600C8EB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52EA0BA1F9F8A2600C8EB48 /* BashBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BashBar.entitlements; sourceTree = "<group>"; };
 		D5CBD4441FA13C2100115484 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
-		D5E3516020C7EA4E003B95F3 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5E3516120C7EA4E003B95F3 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +79,6 @@
 		D5E3515920C7E783003B95F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5E3516020C7EA4E003B95F3 /* Sparkle.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,13 +114,13 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Tom Brek";
 				TargetAttributes = {
 					D52EA0AE1F9F8A2600C8EB48 = {
 						CreatedOnToolsVersion = 9.0.1;
 						DevelopmentTeam = UJTM88G62N;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1320;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -215,6 +209,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -276,6 +271,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -311,6 +307,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.8.0;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,10 +316,11 @@
 				INFOPLIST_FILE = BashBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.BashBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -333,6 +331,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.8.0;
 				DEVELOPMENT_TEAM = UJTM88G62N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,10 +340,11 @@
 				INFOPLIST_FILE = BashBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbrek.BashBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

@@ -1804,18 +1804,46 @@ class StatusMenuController: NSObject {
      
     }
     
-    private func shell(_ args: String) {
-//        if args.range(of:"sudo") != nil {
-//            NSAppleScript(source: "do shell script \"sudo "+args+"\" with administrator privileges")!.executeAndReturnError(nil)
-//        }
-//        else {
-//            NSAppleScript(source: "do shell script \""+args+"\"")!.executeAndReturnError(nil)
-//        }
+    private func shell(_ arguments: String) {
+        var args = arguments
+        let nsString = args as NSString
+        let range = NSRange(location: 0, length: args.count)
+        let regex = try! NSRegularExpression(pattern: "%% .*? %%")
+        let results = regex.matches(in: args, range: range)
+        let variables = results.map { nsString.substring(with: $0.range)}
+        var aborted = false
+        
+        // Iterate trough variables
+        for variable in variables {
+            let range = NSRange(location: 0, length: variable.count)
+            let regex = try! NSRegularExpression(pattern: "(?<=<).*(?=>)")
+            let nsString = variable as NSString
+            let results = regex.matches(in: variable, range: range)
+            let description = results.map { nsString.substring(with: $0.range)}
+            let msg = NSAlert()
+            msg.addButton(withTitle: "OK")
+            msg.addButton(withTitle: "Abort")
+            msg.messageText = "Input variable"
+            let inputTextField = NSTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
+            inputTextField.placeholderString = description[0]
+            msg.accessoryView = inputTextField
+            let res = msg.runModal()
+            if res == NSApplication.ModalResponse.alertSecondButtonReturn {
+                aborted = true
+                break
+                }
+            let value = inputTextField.stringValue
+            args = args.replacingOccurrences(of: variable, with: value as String)
+        }
+        if aborted {
+            return
+        }
+
         var myAppleScript = "do shell script \""+args+"\""
         if args.range(of: "sudo") != nil {
             myAppleScript = myAppleScript + " with administrator privileges"
         }
-        
+
         var error: NSDictionary?
         let scriptObject = NSAppleScript(source: myAppleScript)
         if let output: NSAppleEventDescriptor = scriptObject?.executeAndReturnError(
@@ -1834,11 +1862,8 @@ class StatusMenuController: NSObject {
             if notificationsEnabled.state == .on {
                 showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
             }
-      
-        
-        
     }
-
+    
     // Actions
     @IBAction func menuClicked(_ sender: NSMenuItem) {
         shell(sender.toolTip!)
