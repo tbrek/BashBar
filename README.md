@@ -2,6 +2,7 @@
 
 An open-source terminal command/script launcher
 
+---
 ## Getting started
 
 This simple menubar application will let you run terminal commands or script using the menubar.
@@ -28,14 +29,22 @@ will trigger input dialog:
 
 ![variable2]
 
-### Installing
+There are two type of variables:
+1. Path `%% path <Variable description> %%` - triggers File/Directory browser
+2. Other `%% variable <Manual entry> %%` - triggers input modal
+
+
+---
+## Installing
 
 Download latest version from [here](https://tbrek.github.io/BashBar/)
 
 Simply copy it to your /Application folder and run.
 
+---
 ## Change log
 
+1.8.1 Added variable types
 1.8.0 Added variables
 1.7.4 Import dialog  box update<br>
 1.7.3 Inport/Export settings added<br>

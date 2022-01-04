@@ -1816,29 +1816,53 @@ class StatusMenuController: NSObject {
         // Iterate trough variables
         for variable in variables {
             let range = NSRange(location: 0, length: variable.count)
-            let regex = try! NSRegularExpression(pattern: "(?<=<).*(?=>)")
+            var regex = try! NSRegularExpression(pattern: "(?<=<).*(?=>)")
             let nsString = variable as NSString
-            let results = regex.matches(in: variable, range: range)
+            var results = regex.matches(in: variable, range: range)
             let description = results.map { nsString.substring(with: $0.range)}
-            let msg = NSAlert()
-            msg.addButton(withTitle: "OK")
-            msg.addButton(withTitle: "Abort")
-            msg.messageText = "Input variable"
-            let inputTextField = NSTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
-            inputTextField.placeholderString = description[0]
-            msg.accessoryView = inputTextField
-            let res = msg.runModal()
-            if res == NSApplication.ModalResponse.alertSecondButtonReturn {
-                aborted = true
-                break
+            regex = try! NSRegularExpression(pattern: "(?<=%% ).*(?= <)")
+            results = regex.matches(in: variable, range: range)
+            let variable_type = results.map { nsString.substring(with: $0.range)}
+            var value = ""
+            switch variable_type[0] {
+            case "path":
+                let dialog = NSOpenPanel()
+                dialog.message = "Select file or directory"
+                dialog.allowsMultipleSelection = false
+                dialog.showsResizeIndicator = true
+                dialog.canChooseDirectories = true
+                if (dialog.runModal() == NSApplication.ModalResponse.OK) {
+                    let result = dialog.url
+                    if (result != nil) {
+                        value = result!.path
+                    }
                 }
-            let value = inputTextField.stringValue
+                else {
+                    aborted = true
+                    break
+                }
+            default:
+                let msg = NSAlert()
+                msg.addButton(withTitle: "OK")
+                msg.addButton(withTitle: "Abort")
+                msg.messageText = "Input variable"
+                let inputTextField = NSTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
+                inputTextField.placeholderString = description[0]
+                msg.accessoryView = inputTextField
+                let res = msg.runModal()
+                if res == NSApplication.ModalResponse.alertSecondButtonReturn {
+                    aborted = true
+                    break
+                    }
+                value = inputTextField.stringValue
+            }
+            if aborted {
+                aborted = false
+                return
+            }
             args = args.replacingOccurrences(of: variable, with: value as String)
         }
-        if aborted {
-            return
-        }
-
+        
         var myAppleScript = "do shell script \""+args+"\""
         if args.range(of: "sudo") != nil {
             myAppleScript = myAppleScript + " with administrator privileges"
@@ -1852,7 +1876,6 @@ class StatusMenuController: NSObject {
                 resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
                 resultsView.font = NSFont(name: "Andale Mono", size: 12.0)
                 resultsView.string = output.stringValue!
- //               print(output.stringValue)
             } else if (error != nil) {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
@@ -1887,9 +1910,5 @@ class StatusMenuController: NSObject {
         notification.hasReplyButton = false
         notification.hasActionButton = false
         NSUserNotificationCenter.default.deliver(notification)
-        
-        
     }
-    
-    
 }
