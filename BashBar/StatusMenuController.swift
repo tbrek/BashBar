@@ -53,6 +53,13 @@ class StatusMenuController: NSObject {
         savePropertyList()
     }
     
+    
+    @IBAction func enableOutputWindow(_ sender: Any) {
+        outputWindowEnabled.state = outputWindowEnabled.state == .on ? .off : .on
+        savePropertyList()
+    }
+    
+    
     // Import settings
     
     @IBAction func importSettings(_ sender: Any) {
@@ -128,6 +135,7 @@ class StatusMenuController: NSObject {
     
     
     @IBOutlet weak var notificationsEnabled: NSMenuItem!
+    @IBOutlet weak var outputWindowEnabled: NSMenuItem!
     
     // Buttons
     @IBOutlet weak var savePref: NSButton!
@@ -617,7 +625,13 @@ class StatusMenuController: NSObject {
         checkbox10.state  = (plistData["checkbox10"] as! Bool) == true ? .on : .off
         
         // Update notification status
-        notificationsEnabled.state = (plistData["notificationsEnabled"] as! Bool) == true ? .on : .off
+        if (plistData["notificationsEnabled"] != nil) {
+            notificationsEnabled.state = (plistData["notificationsEnabled"] as! Bool) == true ? .on : .off
+        }
+        if (plistData["outputWindowEnabled"] != nil) {
+            outputWindowEnabled.state = (plistData["outputWindowEnabled"] as! Bool) == true ? .on : .off
+        }
+            
         
         self.checkbox( 0 )
         
@@ -864,6 +878,7 @@ class StatusMenuController: NSObject {
     func saveToPlist() {
         let dicContent = [
             "notificationsEnabled": notificationsEnabled.state,
+            "outputWindowEnabled": outputWindowEnabled.state,
             
             "checkbox1": checkbox1.state,
             "p_lab1_0": p_lab1_0.stringValue ,
@@ -1885,6 +1900,9 @@ class StatusMenuController: NSObject {
             if notificationsEnabled.state == .on {
                 showNotification(message: "\(args):\n\(errorMenu.title)",title: "Command prompt output for")
             }
+        if outputWindowEnabled.state == .on {
+            showResults(self)
+        }
     }
     
     // Actions
