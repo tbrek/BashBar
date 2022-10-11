@@ -12,6 +12,7 @@ import ServiceManagement
 
 class StatusMenuController: NSObject {
     
+    @IBOutlet weak var tailLogsCheckbox: NSButton!
     @IBOutlet weak var resultsWindow: NSPanel!
     @IBOutlet weak var closeResults: NSButton!
     @IBOutlet weak var preferencesView: NSView!
@@ -1890,7 +1891,12 @@ class StatusMenuController: NSObject {
                 errorMenu.title = "Success"
                 resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
                 resultsView.font = NSFont(name: "Andale Mono", size: 12.0)
+            if tailLogsCheckbox.state == .on {
+                resultsView.string = resultsView.string + "\n" + output.stringValue!
+            } else {
                 resultsView.string = output.stringValue!
+            }
+                
             } else if (error != nil) {
                 errorMenu.title = (error?.object(forKey: NSAppleScript.errorMessage) as! String)
             resultsView.textColor = NSColor(red: 131/255, green: 148/255, blue: 150/255, alpha: 1)
