@@ -1508,316 +1508,121 @@ class StatusMenuController: NSObject {
         m_lab10_0.isHidden = (p_lab10_0.stringValue == "" || checkbox10.state == .off) ? true : false
       
         // Submenus
-        m_lab1_1.title    = p_lab1_1.stringValue
-        m_lab1_1.toolTip  = p_cmd1_1.stringValue
-        m_lab1_1.isHidden = p_lab1_1.stringValue == "" ? true : false
-        m_lab1_2.title    = p_lab1_2.stringValue
-        m_lab1_2.toolTip  = p_cmd1_2.stringValue
-        m_lab1_2.isHidden = p_lab1_2.stringValue == "" ? true : false
-        m_lab1_3.title    = p_lab1_3.stringValue
-        m_lab1_3.toolTip  = p_cmd1_3.stringValue
-        m_lab1_3.isHidden = p_lab1_3.stringValue == "" ? true : false
-        m_lab1_4.title    = p_lab1_4.stringValue
-        m_lab1_4.toolTip  = p_cmd1_4.stringValue
-        m_lab1_4.isHidden = p_lab1_4.stringValue == "" ? true : false
-        m_lab1_5.title    = p_lab1_5.stringValue
-        m_lab1_5.toolTip  = p_cmd1_5.stringValue
-        m_lab1_5.isHidden = p_lab1_5.stringValue == "" ? true : false
-        m_lab1_6.title    = p_lab1_6.stringValue
-        m_lab1_6.toolTip  = p_cmd1_6.stringValue
-        m_lab1_6.isHidden = p_lab1_6.stringValue == "" ? true : false
-        m_lab1_7.title    = p_lab1_7.stringValue
-        m_lab1_7.toolTip  = p_cmd1_7.stringValue
-        m_lab1_7.isHidden = p_lab1_7.stringValue == "" ? true : false
-        m_lab1_8.title    = p_lab1_8.stringValue
-        m_lab1_8.toolTip  = p_cmd1_8.stringValue
-        m_lab1_8.isHidden = p_lab1_8.stringValue == "" ? true : false
-        m_lab1_9.title    = p_lab1_9.stringValue
-        m_lab1_9.toolTip  = p_cmd1_9.stringValue
-        m_lab1_9.isHidden = p_lab1_9.stringValue == "" ? true : false
-        m_lab1_10.title    = p_lab1_10.stringValue
-        m_lab1_10.toolTip  = p_cmd1_10.stringValue
-        m_lab1_10.isHidden = p_lab1_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab1_1, nameField: p_lab1_1, commandField: p_cmd1_1)
+        setup(menuItem: m_lab1_2, nameField: p_lab1_2, commandField: p_cmd1_2)
+        setup(menuItem: m_lab1_3, nameField: p_lab1_3, commandField: p_cmd1_3)
+        setup(menuItem: m_lab1_4, nameField: p_lab1_4, commandField: p_cmd1_4)
+        setup(menuItem: m_lab1_5, nameField: p_lab1_5, commandField: p_cmd1_5)
+        setup(menuItem: m_lab1_6, nameField: p_lab1_6, commandField: p_cmd1_6)
+        setup(menuItem: m_lab1_7, nameField: p_lab1_7, commandField: p_cmd1_7)
+        setup(menuItem: m_lab1_8, nameField: p_lab1_8, commandField: p_cmd1_8)
+        setup(menuItem: m_lab1_9, nameField: p_lab1_9, commandField: p_cmd1_9)
+        setup(menuItem: m_lab1_10, nameField: p_lab1_10, commandField: p_cmd1_10)
         
-        m_lab2_1.title    = p_lab2_1.stringValue
-        m_lab2_1.toolTip  = p_cmd2_1.stringValue
-        m_lab2_1.isHidden = p_lab2_1.stringValue == "" ? true : false
-        m_lab2_2.title    = p_lab2_2.stringValue
-        m_lab2_2.toolTip  = p_cmd2_2.stringValue
-        m_lab2_2.isHidden = p_lab2_2.stringValue == "" ? true : false
-        m_lab2_3.title    = p_lab2_3.stringValue
-        m_lab2_3.toolTip  = p_cmd2_3.stringValue
-        m_lab2_3.isHidden = p_lab2_3.stringValue == "" ? true : false
-        m_lab2_4.title    = p_lab2_4.stringValue
-        m_lab2_4.toolTip  = p_cmd2_4.stringValue
-        m_lab2_4.isHidden = p_lab2_4.stringValue == "" ? true : false
-        m_lab2_5.title    = p_lab2_5.stringValue
-        m_lab2_5.toolTip  = p_cmd2_5.stringValue
-        m_lab2_5.isHidden = p_lab2_5.stringValue == "" ? true : false
-        m_lab2_6.title    = p_lab2_6.stringValue
-        m_lab2_6.toolTip  = p_cmd2_6.stringValue
-        m_lab2_6.isHidden = p_lab2_6.stringValue == "" ? true : false
-        m_lab2_7.title    = p_lab2_7.stringValue
-        m_lab2_7.toolTip  = p_cmd2_7.stringValue
-        m_lab2_7.isHidden = p_lab2_7.stringValue == "" ? true : false
-        m_lab2_8.title    = p_lab2_8.stringValue
-        m_lab2_8.toolTip  = p_cmd2_8.stringValue
-        m_lab2_8.isHidden = p_lab2_8.stringValue == "" ? true : false
-        m_lab2_9.title    = p_lab2_9.stringValue
-        m_lab2_9.toolTip  = p_cmd2_9.stringValue
-        m_lab2_9.isHidden = p_lab2_9.stringValue == "" ? true : false
-        m_lab2_10.title    = p_lab2_10.stringValue
-        m_lab2_10.toolTip  = p_cmd2_10.stringValue
-        m_lab2_10.isHidden = p_lab2_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab2_1, nameField: p_lab2_1, commandField: p_cmd2_1)
+        setup(menuItem: m_lab2_2, nameField: p_lab2_2, commandField: p_cmd2_2)
+        setup(menuItem: m_lab2_3, nameField: p_lab2_3, commandField: p_cmd2_3)
+        setup(menuItem: m_lab2_4, nameField: p_lab2_4, commandField: p_cmd2_4)
+        setup(menuItem: m_lab2_5, nameField: p_lab2_5, commandField: p_cmd2_5)
+        setup(menuItem: m_lab2_6, nameField: p_lab2_6, commandField: p_cmd2_6)
+        setup(menuItem: m_lab2_7, nameField: p_lab2_7, commandField: p_cmd2_7)
+        setup(menuItem: m_lab2_8, nameField: p_lab2_8, commandField: p_cmd2_8)
+        setup(menuItem: m_lab2_9, nameField: p_lab2_9, commandField: p_cmd2_9)
+        setup(menuItem: m_lab2_10, nameField: p_lab2_10, commandField: p_cmd2_10)
         
-        m_lab3_1.title    = p_lab3_1.stringValue
-        m_lab3_1.toolTip  = p_cmd3_1.stringValue
-        m_lab3_1.isHidden = p_lab3_1.stringValue == "" ? true : false
-        m_lab3_2.title    = p_lab3_2.stringValue
-        m_lab3_2.toolTip  = p_cmd3_2.stringValue
-        m_lab3_2.isHidden = p_lab3_2.stringValue == "" ? true : false
-        m_lab3_3.title    = p_lab3_3.stringValue
-        m_lab3_3.toolTip  = p_cmd3_3.stringValue
-        m_lab3_3.isHidden = p_lab3_3.stringValue == "" ? true : false
-        m_lab3_4.title    = p_lab3_4.stringValue
-        m_lab3_4.toolTip  = p_cmd3_4.stringValue
-        m_lab3_4.isHidden = p_lab3_4.stringValue == "" ? true : false
-        m_lab3_5.title    = p_lab3_5.stringValue
-        m_lab3_5.toolTip  = p_cmd3_5.stringValue
-        m_lab3_5.isHidden = p_lab3_5.stringValue == "" ? true : false
-        m_lab3_6.title    = p_lab3_6.stringValue
-        m_lab3_6.toolTip  = p_cmd3_6.stringValue
-        m_lab3_6.isHidden = p_lab3_6.stringValue == "" ? true : false
-        m_lab3_7.title    = p_lab3_7.stringValue
-        m_lab3_7.toolTip  = p_cmd3_7.stringValue
-        m_lab3_7.isHidden = p_lab3_7.stringValue == "" ? true : false
-        m_lab3_8.title    = p_lab3_8.stringValue
-        m_lab3_8.toolTip  = p_cmd3_8.stringValue
-        m_lab3_8.isHidden = p_lab3_8.stringValue == "" ? true : false
-        m_lab3_9.title    = p_lab3_9.stringValue
-        m_lab3_9.toolTip  = p_cmd3_9.stringValue
-        m_lab3_9.isHidden = p_lab3_9.stringValue == "" ? true : false
-        m_lab3_10.title    = p_lab3_10.stringValue
-        m_lab3_10.toolTip  = p_cmd3_10.stringValue
-        m_lab3_10.isHidden = p_lab3_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab3_1, nameField: p_lab3_1, commandField: p_cmd3_1)
+        setup(menuItem: m_lab3_2, nameField: p_lab3_2, commandField: p_cmd3_2)
+        setup(menuItem: m_lab3_3, nameField: p_lab3_3, commandField: p_cmd3_3)
+        setup(menuItem: m_lab3_4, nameField: p_lab3_4, commandField: p_cmd3_4)
+        setup(menuItem: m_lab3_5, nameField: p_lab3_5, commandField: p_cmd3_5)
+        setup(menuItem: m_lab3_6, nameField: p_lab3_6, commandField: p_cmd3_6)
+        setup(menuItem: m_lab3_7, nameField: p_lab3_7, commandField: p_cmd3_7)
+        setup(menuItem: m_lab3_8, nameField: p_lab3_8, commandField: p_cmd3_8)
+        setup(menuItem: m_lab3_9, nameField: p_lab3_9, commandField: p_cmd3_9)
+        setup(menuItem: m_lab3_10, nameField: p_lab3_10, commandField: p_cmd3_10)
         
-        m_lab4_1.title    = p_lab4_1.stringValue
-        m_lab4_1.toolTip  = p_cmd4_1.stringValue
-        m_lab4_1.isHidden = p_lab4_1.stringValue == "" ? true : false
-        m_lab4_2.title    = p_lab4_2.stringValue
-        m_lab4_2.toolTip  = p_cmd4_2.stringValue
-        m_lab4_2.isHidden = p_lab4_2.stringValue == "" ? true : false
-        m_lab4_3.title    = p_lab4_3.stringValue
-        m_lab4_3.toolTip  = p_cmd4_3.stringValue
-        m_lab4_3.isHidden = p_lab4_3.stringValue == "" ? true : false
-        m_lab4_4.title    = p_lab4_4.stringValue
-        m_lab4_4.toolTip  = p_cmd4_4.stringValue
-        m_lab4_4.isHidden = p_lab4_4.stringValue == "" ? true : false
-        m_lab4_5.title    = p_lab4_5.stringValue
-        m_lab4_5.toolTip  = p_cmd4_5.stringValue
-        m_lab4_5.isHidden = p_lab4_5.stringValue == "" ? true : false
-        m_lab4_6.title    = p_lab4_6.stringValue
-        m_lab4_6.toolTip  = p_cmd4_6.stringValue
-        m_lab4_6.isHidden = p_lab4_6.stringValue == "" ? true : false
-        m_lab4_7.title    = p_lab4_7.stringValue
-        m_lab4_7.toolTip  = p_cmd4_7.stringValue
-        m_lab4_7.isHidden = p_lab4_7.stringValue == "" ? true : false
-        m_lab4_8.title    = p_lab4_8.stringValue
-        m_lab4_8.toolTip  = p_cmd4_8.stringValue
-        m_lab4_8.isHidden = p_lab4_8.stringValue == "" ? true : false
-        m_lab4_9.title    = p_lab4_9.stringValue
-        m_lab4_9.toolTip  = p_cmd4_9.stringValue
-        m_lab4_9.isHidden = p_lab4_9.stringValue == "" ? true : false
-        m_lab4_10.title    = p_lab4_10.stringValue
-        m_lab4_10.toolTip  = p_cmd4_10.stringValue
-        m_lab4_10.isHidden = p_lab4_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab4_1, nameField: p_lab4_1, commandField: p_cmd4_1)
+        setup(menuItem: m_lab4_2, nameField: p_lab4_2, commandField: p_cmd4_2)
+        setup(menuItem: m_lab4_3, nameField: p_lab4_3, commandField: p_cmd4_3)
+        setup(menuItem: m_lab4_4, nameField: p_lab4_4, commandField: p_cmd4_4)
+        setup(menuItem: m_lab4_5, nameField: p_lab4_5, commandField: p_cmd4_5)
+        setup(menuItem: m_lab4_6, nameField: p_lab4_6, commandField: p_cmd4_6)
+        setup(menuItem: m_lab4_7, nameField: p_lab4_7, commandField: p_cmd4_7)
+        setup(menuItem: m_lab4_8, nameField: p_lab4_8, commandField: p_cmd4_8)
+        setup(menuItem: m_lab4_9, nameField: p_lab4_9, commandField: p_cmd4_9)
+        setup(menuItem: m_lab4_10, nameField: p_lab4_10, commandField: p_cmd4_10)
         
-        m_lab5_1.title    = p_lab5_1.stringValue
-        m_lab5_1.toolTip  = p_cmd5_1.stringValue
-        m_lab5_1.isHidden = p_lab5_1.stringValue == "" ? true : false
-        m_lab5_2.title    = p_lab5_2.stringValue
-        m_lab5_2.toolTip  = p_cmd5_2.stringValue
-        m_lab5_2.isHidden = p_lab5_2.stringValue == "" ? true : false
-        m_lab5_3.title    = p_lab5_3.stringValue
-        m_lab5_3.toolTip  = p_cmd5_3.stringValue
-        m_lab5_3.isHidden = p_lab5_3.stringValue == "" ? true : false
-        m_lab5_4.title    = p_lab5_4.stringValue
-        m_lab5_4.toolTip  = p_cmd5_4.stringValue
-        m_lab5_4.isHidden = p_lab5_4.stringValue == "" ? true : false
-        m_lab5_5.title    = p_lab5_5.stringValue
-        m_lab5_5.toolTip  = p_cmd5_5.stringValue
-        m_lab5_5.isHidden = p_lab5_5.stringValue == "" ? true : false
-        m_lab5_6.title    = p_lab5_6.stringValue
-        m_lab5_6.toolTip  = p_cmd5_6.stringValue
-        m_lab5_6.isHidden = p_lab5_6.stringValue == "" ? true : false
-        m_lab5_7.title    = p_lab5_7.stringValue
-        m_lab5_7.toolTip  = p_cmd5_7.stringValue
-        m_lab5_7.isHidden = p_lab5_7.stringValue == "" ? true : false
-        m_lab5_8.title    = p_lab5_8.stringValue
-        m_lab5_8.toolTip  = p_cmd5_8.stringValue
-        m_lab5_8.isHidden = p_lab5_8.stringValue == "" ? true : false
-        m_lab5_9.title    = p_lab5_9.stringValue
-        m_lab5_9.toolTip  = p_cmd5_9.stringValue
-        m_lab5_9.isHidden = p_lab5_9.stringValue == "" ? true : false
-        m_lab5_10.title    = p_lab5_10.stringValue
-        m_lab5_10.toolTip  = p_cmd5_10.stringValue
-        m_lab5_10.isHidden = p_lab5_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab5_1, nameField: p_lab5_1, commandField: p_cmd5_1)
+        setup(menuItem: m_lab5_2, nameField: p_lab5_2, commandField: p_cmd5_2)
+        setup(menuItem: m_lab5_3, nameField: p_lab5_3, commandField: p_cmd5_3)
+        setup(menuItem: m_lab5_4, nameField: p_lab5_4, commandField: p_cmd5_4)
+        setup(menuItem: m_lab5_5, nameField: p_lab5_5, commandField: p_cmd5_5)
+        setup(menuItem: m_lab5_6, nameField: p_lab5_6, commandField: p_cmd5_6)
+        setup(menuItem: m_lab5_7, nameField: p_lab5_7, commandField: p_cmd5_7)
+        setup(menuItem: m_lab5_8, nameField: p_lab5_8, commandField: p_cmd5_8)
+        setup(menuItem: m_lab5_9, nameField: p_lab5_9, commandField: p_cmd5_9)
+        setup(menuItem: m_lab5_10, nameField: p_lab5_10, commandField: p_cmd5_10)
         
-        m_lab6_1.title    = p_lab6_1.stringValue
-        m_lab6_1.toolTip  = p_cmd6_1.stringValue
-        m_lab6_1.isHidden = p_lab6_1.stringValue == "" ? true : false
-        m_lab6_2.title    = p_lab6_2.stringValue
-        m_lab6_2.toolTip  = p_cmd6_2.stringValue
-        m_lab6_2.isHidden = p_lab6_2.stringValue == "" ? true : false
-        m_lab6_3.title    = p_lab6_3.stringValue
-        m_lab6_3.toolTip  = p_cmd6_3.stringValue
-        m_lab6_3.isHidden = p_lab6_3.stringValue == "" ? true : false
-        m_lab6_4.title    = p_lab6_4.stringValue
-        m_lab6_4.toolTip  = p_cmd6_4.stringValue
-        m_lab6_4.isHidden = p_lab6_4.stringValue == "" ? true : false
-        m_lab6_5.title    = p_lab6_5.stringValue
-        m_lab6_5.toolTip  = p_cmd6_5.stringValue
-        m_lab6_5.isHidden = p_lab6_5.stringValue == "" ? true : false
-        m_lab6_6.title    = p_lab6_6.stringValue
-        m_lab6_6.toolTip  = p_cmd6_6.stringValue
-        m_lab6_6.isHidden = p_lab6_6.stringValue == "" ? true : false
-        m_lab6_7.title    = p_lab6_7.stringValue
-        m_lab6_7.toolTip  = p_cmd6_7.stringValue
-        m_lab6_7.isHidden = p_lab6_7.stringValue == "" ? true : false
-        m_lab6_8.title    = p_lab6_8.stringValue
-        m_lab6_8.toolTip  = p_cmd6_8.stringValue
-        m_lab6_8.isHidden = p_lab6_8.stringValue == "" ? true : false
-        m_lab6_9.title    = p_lab6_9.stringValue
-        m_lab6_9.toolTip  = p_cmd6_9.stringValue
-        m_lab6_9.isHidden = p_lab6_9.stringValue == "" ? true : false
-        m_lab6_10.title    = p_lab6_10.stringValue
-        m_lab6_10.toolTip  = p_cmd6_10.stringValue
-        m_lab6_10.isHidden = p_lab6_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab6_1, nameField: p_lab6_1, commandField: p_cmd6_1)
+        setup(menuItem: m_lab6_2, nameField: p_lab6_2, commandField: p_cmd6_2)
+        setup(menuItem: m_lab6_3, nameField: p_lab6_3, commandField: p_cmd6_3)
+        setup(menuItem: m_lab6_4, nameField: p_lab6_4, commandField: p_cmd6_4)
+        setup(menuItem: m_lab6_5, nameField: p_lab6_5, commandField: p_cmd6_5)
+        setup(menuItem: m_lab6_6, nameField: p_lab6_6, commandField: p_cmd6_6)
+        setup(menuItem: m_lab6_7, nameField: p_lab6_7, commandField: p_cmd6_7)
+        setup(menuItem: m_lab6_8, nameField: p_lab6_8, commandField: p_cmd6_8)
+        setup(menuItem: m_lab6_9, nameField: p_lab6_9, commandField: p_cmd6_9)
+        setup(menuItem: m_lab6_10, nameField: p_lab6_10, commandField: p_cmd6_10)
         
-        m_lab7_1.title    = p_lab7_1.stringValue
-        m_lab7_1.toolTip  = p_cmd7_1.stringValue
-        m_lab7_1.isHidden = p_lab7_1.stringValue == "" ? true : false
-        m_lab7_2.title    = p_lab7_2.stringValue
-        m_lab7_2.toolTip  = p_cmd7_2.stringValue
-        m_lab7_2.isHidden = p_lab7_2.stringValue == "" ? true : false
-        m_lab7_3.title    = p_lab7_3.stringValue
-        m_lab7_3.toolTip  = p_cmd7_3.stringValue
-        m_lab7_3.isHidden = p_lab7_3.stringValue == "" ? true : false
-        m_lab7_4.title    = p_lab7_4.stringValue
-        m_lab7_4.toolTip  = p_cmd7_4.stringValue
-        m_lab7_4.isHidden = p_lab7_4.stringValue == "" ? true : false
-        m_lab7_5.title    = p_lab7_5.stringValue
-        m_lab7_5.toolTip  = p_cmd7_5.stringValue
-        m_lab7_5.isHidden = p_lab7_5.stringValue == "" ? true : false
-        m_lab7_6.title    = p_lab7_6.stringValue
-        m_lab7_6.toolTip  = p_cmd7_6.stringValue
-        m_lab7_6.isHidden = p_lab7_6.stringValue == "" ? true : false
-        m_lab7_7.title    = p_lab7_7.stringValue
-        m_lab7_7.toolTip  = p_cmd7_7.stringValue
-        m_lab7_7.isHidden = p_lab7_7.stringValue == "" ? true : false
-        m_lab7_8.title    = p_lab7_8.stringValue
-        m_lab7_8.toolTip  = p_cmd7_8.stringValue
-        m_lab7_8.isHidden = p_lab7_8.stringValue == "" ? true : false
-        m_lab7_9.title    = p_lab7_9.stringValue
-        m_lab7_9.toolTip  = p_cmd7_9.stringValue
-        m_lab7_9.isHidden = p_lab7_9.stringValue == "" ? true : false
-        m_lab7_10.title    = p_lab7_10.stringValue
-        m_lab7_10.toolTip  = p_cmd7_10.stringValue
-        m_lab7_10.isHidden = p_lab7_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab7_1, nameField: p_lab7_1, commandField: p_cmd7_1)
+        setup(menuItem: m_lab7_2, nameField: p_lab7_2, commandField: p_cmd7_2)
+        setup(menuItem: m_lab7_3, nameField: p_lab7_3, commandField: p_cmd7_3)
+        setup(menuItem: m_lab7_4, nameField: p_lab7_4, commandField: p_cmd7_4)
+        setup(menuItem: m_lab7_5, nameField: p_lab7_5, commandField: p_cmd7_5)
+        setup(menuItem: m_lab7_6, nameField: p_lab7_6, commandField: p_cmd7_6)
+        setup(menuItem: m_lab7_7, nameField: p_lab7_7, commandField: p_cmd7_7)
+        setup(menuItem: m_lab7_8, nameField: p_lab7_8, commandField: p_cmd7_8)
+        setup(menuItem: m_lab7_9, nameField: p_lab7_9, commandField: p_cmd7_9)
+        setup(menuItem: m_lab7_10, nameField: p_lab7_10, commandField: p_cmd7_10)
         
-        m_lab8_1.title    = p_lab8_1.stringValue
-        m_lab8_1.toolTip  = p_cmd8_1.stringValue
-        m_lab8_1.isHidden = p_lab8_1.stringValue == "" ? true : false
-        m_lab8_2.title    = p_lab8_2.stringValue
-        m_lab8_2.toolTip  = p_cmd8_2.stringValue
-        m_lab8_2.isHidden = p_lab8_2.stringValue == "" ? true : false
-        m_lab8_3.title    = p_lab8_3.stringValue
-        m_lab8_3.toolTip  = p_cmd8_3.stringValue
-        m_lab8_3.isHidden = p_lab8_3.stringValue == "" ? true : false
-        m_lab8_4.title    = p_lab8_4.stringValue
-        m_lab8_4.toolTip  = p_cmd8_4.stringValue
-        m_lab8_4.isHidden = p_lab8_4.stringValue == "" ? true : false
-        m_lab8_5.title    = p_lab8_5.stringValue
-        m_lab8_5.toolTip  = p_cmd8_5.stringValue
-        m_lab8_5.isHidden = p_lab8_5.stringValue == "" ? true : false
-        m_lab8_6.title    = p_lab8_6.stringValue
-        m_lab8_6.toolTip  = p_cmd8_6.stringValue
-        m_lab8_6.isHidden = p_lab8_6.stringValue == "" ? true : false
-        m_lab8_7.title    = p_lab8_7.stringValue
-        m_lab8_7.toolTip  = p_cmd8_7.stringValue
-        m_lab8_7.isHidden = p_lab8_7.stringValue == "" ? true : false
-        m_lab8_8.title    = p_lab8_8.stringValue
-        m_lab8_8.toolTip  = p_cmd8_8.stringValue
-        m_lab8_8.isHidden = p_lab8_8.stringValue == "" ? true : false
-        m_lab8_9.title    = p_lab8_9.stringValue
-        m_lab8_9.toolTip  = p_cmd8_9.stringValue
-        m_lab8_9.isHidden = p_lab8_9.stringValue == "" ? true : false
-        m_lab8_10.title    = p_lab8_10.stringValue
-        m_lab8_10.toolTip  = p_cmd8_10.stringValue
-        m_lab8_10.isHidden = p_lab8_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab8_1, nameField: p_lab8_1, commandField: p_cmd8_1)
+        setup(menuItem: m_lab8_2, nameField: p_lab8_2, commandField: p_cmd8_2)
+        setup(menuItem: m_lab8_3, nameField: p_lab8_3, commandField: p_cmd8_3)
+        setup(menuItem: m_lab8_4, nameField: p_lab8_4, commandField: p_cmd8_4)
+        setup(menuItem: m_lab8_5, nameField: p_lab8_5, commandField: p_cmd8_5)
+        setup(menuItem: m_lab8_6, nameField: p_lab8_6, commandField: p_cmd8_6)
+        setup(menuItem: m_lab8_7, nameField: p_lab8_7, commandField: p_cmd8_7)
+        setup(menuItem: m_lab8_8, nameField: p_lab8_8, commandField: p_cmd8_8)
+        setup(menuItem: m_lab8_9, nameField: p_lab8_9, commandField: p_cmd8_9)
+        setup(menuItem: m_lab8_10, nameField: p_lab8_10, commandField: p_cmd8_10)
         
-        m_lab9_1.title    = p_lab9_1.stringValue
-        m_lab9_1.toolTip  = p_cmd9_1.stringValue
-        m_lab9_1.isHidden = p_lab9_1.stringValue == "" ? true : false
-        m_lab9_2.title    = p_lab9_2.stringValue
-        m_lab9_2.toolTip  = p_cmd9_2.stringValue
-        m_lab9_2.isHidden = p_lab9_2.stringValue == "" ? true : false
-        m_lab9_3.title    = p_lab9_3.stringValue
-        m_lab9_3.toolTip  = p_cmd9_3.stringValue
-        m_lab9_3.isHidden = p_lab9_3.stringValue == "" ? true : false
-        m_lab9_4.title    = p_lab9_4.stringValue
-        m_lab9_4.toolTip  = p_cmd9_4.stringValue
-        m_lab9_4.isHidden = p_lab9_4.stringValue == "" ? true : false
-        m_lab9_5.title    = p_lab9_5.stringValue
-        m_lab9_5.toolTip  = p_cmd9_5.stringValue
-        m_lab9_5.isHidden = p_lab9_5.stringValue == "" ? true : false
-        m_lab9_6.title    = p_lab9_6.stringValue
-        m_lab9_6.toolTip  = p_cmd9_6.stringValue
-        m_lab9_6.isHidden = p_lab9_6.stringValue == "" ? true : false
-        m_lab9_7.title    = p_lab9_7.stringValue
-        m_lab9_7.toolTip  = p_cmd9_7.stringValue
-        m_lab9_7.isHidden = p_lab9_7.stringValue == "" ? true : false
-        m_lab9_8.title    = p_lab9_8.stringValue
-        m_lab9_8.toolTip  = p_cmd9_8.stringValue
-        m_lab9_8.isHidden = p_lab9_8.stringValue == "" ? true : false
-        m_lab9_9.title    = p_lab9_9.stringValue
-        m_lab9_9.toolTip  = p_cmd9_9.stringValue
-        m_lab9_9.isHidden = p_lab9_9.stringValue == "" ? true : false
-        m_lab9_10.title    = p_lab9_10.stringValue
-        m_lab9_10.toolTip  = p_cmd9_10.stringValue
-        m_lab9_10.isHidden = p_lab9_10.stringValue == "" ? true : false
+        setup(menuItem: m_lab9_1, nameField: p_lab9_1, commandField: p_cmd9_1)
+        setup(menuItem: m_lab9_2, nameField: p_lab9_2, commandField: p_cmd9_2)
+        setup(menuItem: m_lab9_3, nameField: p_lab9_3, commandField: p_cmd9_3)
+        setup(menuItem: m_lab9_4, nameField: p_lab9_4, commandField: p_cmd9_4)
+        setup(menuItem: m_lab9_5, nameField: p_lab9_5, commandField: p_cmd9_5)
+        setup(menuItem: m_lab9_6, nameField: p_lab9_6, commandField: p_cmd9_6)
+        setup(menuItem: m_lab9_7, nameField: p_lab9_7, commandField: p_cmd9_7)
+        setup(menuItem: m_lab9_8, nameField: p_lab9_8, commandField: p_cmd9_8)
+        setup(menuItem: m_lab9_9, nameField: p_lab9_9, commandField: p_cmd9_9)
+        setup(menuItem: m_lab9_10, nameField: p_lab9_10, commandField: p_cmd9_10)
         
-        m_lab10_1.title    = p_lab10_1.stringValue
-        m_lab10_1.toolTip  = p_cmd10_1.stringValue
-        m_lab10_1.isHidden = p_lab10_1.stringValue == "" ? true : false
-        m_lab10_2.title    = p_lab10_2.stringValue
-        m_lab10_2.toolTip  = p_cmd10_2.stringValue
-        m_lab10_2.isHidden = p_lab10_2.stringValue == "" ? true : false
-        m_lab10_3.title    = p_lab10_3.stringValue
-        m_lab10_3.toolTip  = p_cmd10_3.stringValue
-        m_lab10_3.isHidden = p_lab10_3.stringValue == "" ? true : false
-        m_lab10_4.title    = p_lab10_4.stringValue
-        m_lab10_4.toolTip  = p_cmd10_4.stringValue
-        m_lab10_4.isHidden = p_lab10_4.stringValue == "" ? true : false
-        m_lab10_5.title    = p_lab10_5.stringValue
-        m_lab10_5.toolTip  = p_cmd10_5.stringValue
-        m_lab10_5.isHidden = p_lab10_5.stringValue == "" ? true : false
-        m_lab10_6.title    = p_lab10_6.stringValue
-        m_lab10_6.toolTip  = p_cmd10_6.stringValue
-        m_lab10_6.isHidden = p_lab10_6.stringValue == "" ? true : false
-        m_lab10_7.title    = p_lab10_7.stringValue
-        m_lab10_7.toolTip  = p_cmd10_7.stringValue
-        m_lab10_7.isHidden = p_lab10_7.stringValue == "" ? true : false
-        m_lab10_8.title    = p_lab10_8.stringValue
-        m_lab10_8.toolTip  = p_cmd10_8.stringValue
-        m_lab10_8.isHidden = p_lab10_8.stringValue == "" ? true : false
-        m_lab10_9.title    = p_lab10_9.stringValue
-        m_lab10_9.toolTip  = p_cmd10_9.stringValue
-        m_lab10_9.isHidden = p_lab10_9.stringValue == "" ? true : false
-        m_lab10_10.title    = p_lab10_10.stringValue
-        m_lab10_10.toolTip  = p_cmd10_10.stringValue
-        m_lab10_10.isHidden = p_lab10_10.stringValue == "" ? true : false
-     
+        setup(menuItem: m_lab10_1, nameField: p_lab10_1, commandField: p_cmd10_1)
+        setup(menuItem: m_lab10_2, nameField: p_lab10_2, commandField: p_cmd10_2)
+        setup(menuItem: m_lab10_3, nameField: p_lab10_3, commandField: p_cmd10_3)
+        setup(menuItem: m_lab10_4, nameField: p_lab10_4, commandField: p_cmd10_4)
+        setup(menuItem: m_lab10_5, nameField: p_lab10_5, commandField: p_cmd10_5)
+        setup(menuItem: m_lab10_6, nameField: p_lab10_6, commandField: p_cmd10_6)
+        setup(menuItem: m_lab10_7, nameField: p_lab10_7, commandField: p_cmd10_7)
+        setup(menuItem: m_lab10_8, nameField: p_lab10_8, commandField: p_cmd10_8)
+        setup(menuItem: m_lab10_9, nameField: p_lab10_9, commandField: p_cmd10_9)
+        setup(menuItem: m_lab10_10, nameField: p_lab10_10, commandField: p_cmd10_10)
+    }
+    
+    private func setup(menuItem: NSMenuItem, nameField: NSTextField, commandField: NSTextField) {
+        menuItem.title    = nameField.stringValue
+        menuItem.toolTip  = commandField.stringValue
+        menuItem.isHidden = nameField.stringValue == "" ? true : false
     }
     
     private func shell(_ arguments: String) {
