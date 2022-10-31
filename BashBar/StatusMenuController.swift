@@ -1447,65 +1447,16 @@ class StatusMenuController: NSObject {
         menu10tab.label = p_lab10_0.stringValue
         
         // Menus
-        m_lab1.title      = p_lab1_0.stringValue
-        m_lab1.toolTip    = p_cmd1_0.stringValue
-        m_lab1.isHidden   = (p_lab1_0.stringValue == "" || checkbox1.state == .on) ? true : false
-        m_lab1_0.title    = p_lab1_0.stringValue
-        m_lab1_0.isHidden = (p_lab1_0.stringValue == "" || checkbox1.state == .off) ? true : false
-        
-        m_lab2.title      = p_lab2_0.stringValue
-        m_lab2.toolTip    = p_cmd2_0.stringValue
-        m_lab2.isHidden   = (p_lab2_0.stringValue == "" || checkbox2.state == .on) ? true : false
-        m_lab2_0.title    = p_lab2_0.stringValue
-        m_lab2_0.isHidden = (p_lab2_0.stringValue == "" || checkbox2.state == .off) ? true : false
-        
-        m_lab3.title      = p_lab3_0.stringValue
-        m_lab3.toolTip    = p_cmd3_0.stringValue
-        m_lab3.isHidden   = (p_lab3_0.stringValue == "" || checkbox3.state == .on) ? true : false
-        m_lab3_0.title    = p_lab3_0.stringValue
-        m_lab3_0.isHidden = (p_lab3_0.stringValue == "" || checkbox3.state == .off) ? true : false
-        
-        m_lab4.title      = p_lab4_0.stringValue
-        m_lab4.toolTip    = p_cmd4_0.stringValue
-        m_lab4.isHidden   = (p_lab4_0.stringValue == "" || checkbox4.state == .on) ? true : false
-        m_lab4_0.title    = p_lab4_0.stringValue
-        m_lab4_0.isHidden = (p_lab4_0.stringValue == "" || checkbox4.state == .off) ? true : false
-        
-        m_lab5.title      = p_lab5_0.stringValue
-        m_lab5.toolTip    = p_cmd5_0.stringValue
-        m_lab5.isHidden   = (p_lab5_0.stringValue == "" || checkbox5.state == .on) ? true : false
-        m_lab5_0.title    = p_lab5_0.stringValue
-        m_lab5_0.isHidden = (p_lab5_0.stringValue == "" || checkbox5.state == .off) ? true : false
-        
-        m_lab6.title      = p_lab6_0.stringValue
-        m_lab6.toolTip    = p_cmd6_0.stringValue
-        m_lab6.isHidden   = (p_lab6_0.stringValue == "" || checkbox6.state == .on) ? true : false
-        m_lab6_0.title    = p_lab6_0.stringValue
-        m_lab6_0.isHidden = (p_lab6_0.stringValue == "" || checkbox6.state == .off) ? true : false
-        
-        m_lab7.title      = p_lab7_0.stringValue
-        m_lab7.toolTip    = p_cmd7_0.stringValue
-        m_lab7.isHidden   = (p_lab7_0.stringValue == "" || checkbox7.state == .on) ? true : false
-        m_lab7_0.title    = p_lab7_0.stringValue
-        m_lab7_0.isHidden = (p_lab7_0.stringValue == "" || checkbox7.state == .off) ? true : false
-        
-        m_lab8.title      = p_lab8_0.stringValue
-        m_lab8.toolTip    = p_cmd8_0.stringValue
-        m_lab8.isHidden   = (p_lab8_0.stringValue == "" || checkbox8.state == .on) ? true : false
-        m_lab8_0.title    = p_lab8_0.stringValue
-        m_lab8_0.isHidden = (p_lab8_0.stringValue == "" || checkbox8.state == .off) ? true : false
-        
-        m_lab9.title      = p_lab9_0.stringValue
-        m_lab9.toolTip    = p_cmd9_0.stringValue
-        m_lab9.isHidden   = (p_lab9_0.stringValue == "" || checkbox9.state == .on) ? true : false
-        m_lab9_0.title    = p_lab9_0.stringValue
-        m_lab9_0.isHidden = (p_lab9_0.stringValue == "" || checkbox9.state == .off) ? true : false
-        
-        m_lab10.title      = p_lab10_0.stringValue
-        m_lab10.toolTip    = p_cmd10_0.stringValue
-        m_lab10.isHidden   = (p_lab10_0.stringValue == "" || checkbox10.state == .on) ? true : false
-        m_lab10_0.title    = p_lab10_0.stringValue
-        m_lab10_0.isHidden = (p_lab10_0.stringValue == "" || checkbox10.state == .off) ? true : false
+		setup(menuItem: m_lab1, menuLabeltem: m_lab1_0, textField: p_lab1_0, cmdTextField: p_cmd1_0, checkBox: checkbox1)
+		setup(menuItem: m_lab2, menuLabeltem: m_lab2_0, textField: p_lab2_0, cmdTextField: p_cmd2_0, checkBox: checkbox2)
+		setup(menuItem: m_lab3, menuLabeltem: m_lab3_0, textField: p_lab3_0, cmdTextField: p_cmd3_0, checkBox: checkbox3)
+		setup(menuItem: m_lab4, menuLabeltem: m_lab4_0, textField: p_lab4_0, cmdTextField: p_cmd4_0, checkBox: checkbox4)
+		setup(menuItem: m_lab5, menuLabeltem: m_lab5_0, textField: p_lab5_0, cmdTextField: p_cmd5_0, checkBox: checkbox5)
+		setup(menuItem: m_lab6, menuLabeltem: m_lab6_0, textField: p_lab6_0, cmdTextField: p_cmd6_0, checkBox: checkbox6)
+		setup(menuItem: m_lab7, menuLabeltem: m_lab7_0, textField: p_lab7_0, cmdTextField: p_cmd7_0, checkBox: checkbox7)
+		setup(menuItem: m_lab8, menuLabeltem: m_lab8_0, textField: p_lab8_0, cmdTextField: p_cmd8_0, checkBox: checkbox8)
+		setup(menuItem: m_lab9, menuLabeltem: m_lab9_0, textField: p_lab9_0, cmdTextField: p_cmd9_0, checkBox: checkbox9)
+		setup(menuItem: m_lab10, menuLabeltem: m_lab10_0, textField: p_lab10_0, cmdTextField: p_cmd10_0, checkBox: checkbox10)
       
         // Submenus
         setup(menuItem: m_lab1_1, nameField: p_lab1_1, commandField: p_cmd1_1)
@@ -1618,7 +1569,15 @@ class StatusMenuController: NSObject {
         setup(menuItem: m_lab10_9, nameField: p_lab10_9, commandField: p_cmd10_9)
         setup(menuItem: m_lab10_10, nameField: p_lab10_10, commandField: p_cmd10_10)
     }
-    
+	
+	private func setup(menuItem: NSMenuItem, menuLabeltem: NSMenuItem, textField: NSTextField, cmdTextField: NSTextField, checkBox: NSButton) {
+		menuItem.title      = textField.stringValue
+		menuItem.toolTip    = cmdTextField.stringValue
+		menuItem.isHidden   = (textField.stringValue == "" || checkBox.state == .on) ? true : false
+		menuLabeltem.title    = textField.stringValue
+		menuLabeltem.isHidden = (textField.stringValue == "" || checkBox.state == .off) ? true : false
+	}
+	
     private func setup(menuItem: NSMenuItem, nameField: NSTextField, commandField: NSTextField) {
         menuItem.title    = nameField.stringValue
         menuItem.toolTip  = commandField.stringValue
