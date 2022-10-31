@@ -1447,16 +1447,16 @@ class StatusMenuController: NSObject {
         menu10tab.label = p_lab10_0.stringValue
         
         // Menus
-		setup(menuItem: m_lab1, menuLabeltem: m_lab1_0, textField: p_lab1_0, cmdTextField: p_cmd1_0, checkBox: checkbox1)
-		setup(menuItem: m_lab2, menuLabeltem: m_lab2_0, textField: p_lab2_0, cmdTextField: p_cmd2_0, checkBox: checkbox2)
-		setup(menuItem: m_lab3, menuLabeltem: m_lab3_0, textField: p_lab3_0, cmdTextField: p_cmd3_0, checkBox: checkbox3)
-		setup(menuItem: m_lab4, menuLabeltem: m_lab4_0, textField: p_lab4_0, cmdTextField: p_cmd4_0, checkBox: checkbox4)
-		setup(menuItem: m_lab5, menuLabeltem: m_lab5_0, textField: p_lab5_0, cmdTextField: p_cmd5_0, checkBox: checkbox5)
-		setup(menuItem: m_lab6, menuLabeltem: m_lab6_0, textField: p_lab6_0, cmdTextField: p_cmd6_0, checkBox: checkbox6)
-		setup(menuItem: m_lab7, menuLabeltem: m_lab7_0, textField: p_lab7_0, cmdTextField: p_cmd7_0, checkBox: checkbox7)
-		setup(menuItem: m_lab8, menuLabeltem: m_lab8_0, textField: p_lab8_0, cmdTextField: p_cmd8_0, checkBox: checkbox8)
-		setup(menuItem: m_lab9, menuLabeltem: m_lab9_0, textField: p_lab9_0, cmdTextField: p_cmd9_0, checkBox: checkbox9)
-		setup(menuItem: m_lab10, menuLabeltem: m_lab10_0, textField: p_lab10_0, cmdTextField: p_cmd10_0, checkBox: checkbox10)
+        setup(menuItem: m_lab1, menuLabeltem: m_lab1_0, textField: p_lab1_0, cmdTextField: p_cmd1_0, checkBox: checkbox1)
+        setup(menuItem: m_lab2, menuLabeltem: m_lab2_0, textField: p_lab2_0, cmdTextField: p_cmd2_0, checkBox: checkbox2)
+        setup(menuItem: m_lab3, menuLabeltem: m_lab3_0, textField: p_lab3_0, cmdTextField: p_cmd3_0, checkBox: checkbox3)
+        setup(menuItem: m_lab4, menuLabeltem: m_lab4_0, textField: p_lab4_0, cmdTextField: p_cmd4_0, checkBox: checkbox4)
+        setup(menuItem: m_lab5, menuLabeltem: m_lab5_0, textField: p_lab5_0, cmdTextField: p_cmd5_0, checkBox: checkbox5)
+        setup(menuItem: m_lab6, menuLabeltem: m_lab6_0, textField: p_lab6_0, cmdTextField: p_cmd6_0, checkBox: checkbox6)
+        setup(menuItem: m_lab7, menuLabeltem: m_lab7_0, textField: p_lab7_0, cmdTextField: p_cmd7_0, checkBox: checkbox7)
+        setup(menuItem: m_lab8, menuLabeltem: m_lab8_0, textField: p_lab8_0, cmdTextField: p_cmd8_0, checkBox: checkbox8)
+        setup(menuItem: m_lab9, menuLabeltem: m_lab9_0, textField: p_lab9_0, cmdTextField: p_cmd9_0, checkBox: checkbox9)
+        setup(menuItem: m_lab10, menuLabeltem: m_lab10_0, textField: p_lab10_0, cmdTextField: p_cmd10_0, checkBox: checkbox10)
       
         // Submenus
         setup(menuItem: m_lab1_1, nameField: p_lab1_1, commandField: p_cmd1_1)
@@ -1569,15 +1569,15 @@ class StatusMenuController: NSObject {
         setup(menuItem: m_lab10_9, nameField: p_lab10_9, commandField: p_cmd10_9)
         setup(menuItem: m_lab10_10, nameField: p_lab10_10, commandField: p_cmd10_10)
     }
-	
-	private func setup(menuItem: NSMenuItem, menuLabeltem: NSMenuItem, textField: NSTextField, cmdTextField: NSTextField, checkBox: NSButton) {
-		menuItem.title      = textField.stringValue
-		menuItem.toolTip    = cmdTextField.stringValue
-		menuItem.isHidden   = (textField.stringValue == "" || checkBox.state == .on) ? true : false
-		menuLabeltem.title    = textField.stringValue
-		menuLabeltem.isHidden = (textField.stringValue == "" || checkBox.state == .off) ? true : false
-	}
-	
+
+    private func setup(menuItem: NSMenuItem, menuLabeltem: NSMenuItem, textField: NSTextField, cmdTextField: NSTextField, checkBox: NSButton) {
+        menuItem.title      = textField.stringValue
+        menuItem.toolTip    = cmdTextField.stringValue
+        menuItem.isHidden   = (textField.stringValue == "" || checkBox.state == .on) ? true : false
+        menuLabeltem.title    = textField.stringValue
+        menuLabeltem.isHidden = (textField.stringValue == "" || checkBox.state == .off) ? true : false
+    }
+
     private func setup(menuItem: NSMenuItem, nameField: NSTextField, commandField: NSTextField) {
         menuItem.title    = nameField.stringValue
         menuItem.toolTip  = commandField.stringValue
